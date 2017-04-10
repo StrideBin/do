@@ -1,0 +1,11 @@
+busi_serno
+sys_id
+server_ip
+select_db_status
+dcn_no
+mac
+cpu
+memory
+io
+createTime
+updateTime

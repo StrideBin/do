@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.web.controller;
+package com.lb.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
