@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<div id="loadingModal" class="modal fade" style="text-align: center;display:none">
+	<div class="modal-dialog modal-sm">
+		<div>
+			<img class="loading-img-top loading-img-top-size" 
+				src="<%=basePath%>/common/images/loading_tag.png">
+			<img id="loadingImgBottom" class="loading-img-bottom loading-img-bottom-size loading-rotate" 
+				src="<%=basePath%>/common/images/loading_circle.png">
+		</div>
+	</div>
+</div>

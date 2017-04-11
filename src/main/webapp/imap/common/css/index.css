@@ -1,0 +1,1983 @@
+/*----------------------首页样式----------------------------------*/
+.header {
+    left: 37px;
+    top: 4%
+}
+
+.header .logo {
+    background-image: url(/pad/map/static/img/logo.png);
+    width: 210px;
+    height: 33px;
+    display: inline-block;
+    margin-right: 20px
+}
+
+.header .menu {
+    display: inline-block;
+    font-size: 26px;
+    color: #244b99
+}
+
+.header .msg {
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    color: #244b99
+}
+.header .act {
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+}
+.header .act .act-icon{
+    background: url(../img/actIcon.png) no-repeat;
+    background-size: 100%;
+    width: 38px;
+    height: 80px;
+    position: absolute;
+    top: -31px;
+}
+.header .msg .num {
+    top: 8px;
+    right: 9px;
+    background-color: #db2130;
+    width: 20px;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center
+}
+
+.header .msg .glyphicon {
+    margin: 15px 0 0 7px;
+}
+
+/* refactoring bootstrap */
+a {
+    color: #1444ac;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form-control, .input-group-addon, .btn {
+}
+
+.input-group-addon {
+    background-color: transparent
+}
+
+#accordion {
+    margin: 20px 0;
+    width: 390px;
+}
+
+#accordion .tit {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    line-height: 70px;
+    padding-left: 20px;
+    margin-top: 16px;
+    display: block
+}
+
+#accordion .currTit {
+    display: none
+}
+
+#accordion .panel-collapse {
+}
+
+.collapseClose {
+    height: 0px !important;
+}
+
+.panel-collapse {
+    margin-top: 16px;
+}
+
+.curr-panel-collapse {
+}
+
+.pt-perspective {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.pt-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.pt-page-current, .no-js .pt-page {
+    visibility: visible;
+    z-index: 1;
+}
+
+.pt-triggers {
+    position: absolute;
+    width: 300px;
+    z-index: 999999;
+    top: 12%;
+    left: 50%;
+    margin-top: 130px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.pt-page-scaleDown {
+    z-index: -1
+}
+
+/*高度固定2000px 需要修改*/
+#homeMainScroller {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.homeMainScrollerwrapper {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/*背景滑动 start*/
+.swiper-container, .page2-bg {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    visibility: visible;
+}
+
+.pagination {
+    position: absolute;
+    z-index: 2;
+    left: 230px;
+    bottom: 30px;
+}
+
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #8194b1;
+    margin-right: 17px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.swiper-visible-switch {
+    background: #aaa;
+}
+
+.swiper-active-switch {
+    background: #fff;
+}
+
+/*背景滑动 end*/
+
+/*机票预订 start*/
+#collapseTwo .start_end_Air{height: 100px;position:relative;top:-30px;}
+#collapseTwo .starDate{
+    height: 40px;
+    position: absolute;
+    width: 125px;
+    padding-left: 39px;
+    top: -2px;
+    left: -2px;
+}
+#collapseTwo .endDate{
+    right:130px;
+}
+#accordion {
+    padding-left: 5px;
+}
+
+#collapseOne {
+    width: 840px;
+    margin-left: -5px
+}
+
+.scroller2 {
+    height: 230px;
+}
+
+.scroller2Con {
+    width: 1690px;
+    padding-left: 5px
+}
+
+.scroller2Con .snap {
+    width: 390px;;
+    margin-right: 30px;
+    padding-left: 5px
+}
+.scroller2Con .snap:last-child{
+    padding:0;
+    margin-left: -2px;
+}
+.scrollEnd {
+    height: 240px;
+}
+
+.infobox {
+}
+
+.infotopbg {
+    width: 396px;
+    height: 226px;
+    background: url(../img/infoBg.png) center top;
+    margin-left: -3px
+}
+
+.infobox .no {
+    padding-top: 25px
+}
+
+.infobox .deptDt, .infobox .arrDt {
+    bottom: 8px;
+    background: url(/pad/map/static/img/dateiconbg.png) left top no-repeat;
+    padding: 4px 6px
+}
+
+.infobox .deptDt {
+    left: 33px
+}
+
+.infobox .arrDt {
+    right: 53px
+}
+
+/*.infobox input { background-color:transparent; color:#fff; width:100px; border:0}*/
+#deptCd, #arrCd {
+    background-color: transparent;
+    color: #fff;
+    width: 100px;
+    border: 0
+}
+
+#deptDtRt, #deptDt {
+    background-color: transparent;
+    color: #fff;
+    width: 80px;
+    border: 0
+}
+
+.infobox .from {
+    left: 48px;
+    top: 88px
+}
+
+.infobox .to {
+    right: 49px;
+    top: 88px
+}
+
+.fromAirport, .toAirport {
+    top: 126px;
+    color: #afc9fb;
+    width: 100px
+}
+
+.fromAirport {
+    left: 50px
+}
+
+.toAirport {
+    right: 51px
+}
+
+.infobox .infoBtm {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 1;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.infobox .infoBtm label {
+}
+
+.infobox .infoBtm .span1 {
+    margin-left: 225px;
+    padding-top: 9px;
+}
+
+.infobox .infoBtm .span2 {
+    margin-left: 57px
+}
+
+.infobox .tab {
+    padding: 13px 0;
+}
+
+.infobox .tab a {
+    color: #afc9fb;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #092b76;
+    margin-left: 30px
+}
+
+.infobox .tab a.curr {
+    border-bottom-color: #fff;
+    color: #fff
+}
+
+.infobox .morearea {
+    margin-top: 13px;
+    color: #afc9fb;
+    text-decoration: none;
+}
+
+#areaswap {
+    display: block;
+    height: 60px;
+    left: 170px;
+    top: 80px;
+    width: 60px;
+}
+.t-title{
+    position: absolute;
+    line-height: 48px;
+    left: 20px;
+    top:0;
+}
+.way-option{
+    position:absolute;
+    right: 20px;
+    top:0;
+    bottom:inherit;
+}
+
+/*机票预订 end*/
+
+/*航班动态 start*/
+#collapseThree .searchbox {
+    border-radius: 5px;
+    background: url(../img/searchTopBoxBg.jpg) #093285 no-repeat center center;
+}
+
+#collapseThree .serchTopBox {
+    padding: 25px 25px 0;
+}
+
+#collapseThree .submitBox {
+    background: #fff;
+    padding: 10px
+}
+
+#collapseThree .input-group {
+    background-color: #fff;
+    border-radius: 5px
+}
+
+#collapseThree ul {
+    margin: 20px 0
+}
+
+#collapseThree li {
+    width: 32%;
+    padding: 1%;
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    color: #afc9fb
+}
+
+#collapseThree li:nth-child(2) {
+    /*border:1px solid #516ba6; border-width:0 1px*/
+}
+
+#collapseThree .curr {
+    color: #fff
+}
+
+#collapseThree .curr:before {
+    border: solid;
+    border-color: #fff transparent;
+    border-width: 10px;
+    border-top: 10px solid transparent;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 45%;
+    position: absolute;
+    z-index: 1;
+}
+
+.searchSelectBox {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 340px;
+    margin-top: -168px;
+    margin-left: 25px
+}
+
+.searchSelectBox dt {
+    background-color: #f3f3f3;
+    line-height: 46px;
+    border-bottom: 1px solid #ccc
+}
+
+.searchSelectBox dd {
+    line-height: 46px;
+}
+
+.searchSelectBox ul {
+    list-style: none
+}
+
+.searchSelectBox li {
+    border-bottom: 1px solid #ccc
+}
+
+.searchSelectBox li:last-child {
+    border-bottom: 0
+}
+
+.searchSelectBox .label {
+    font-size: 15px;
+    padding: 0.3em 0.6em 0.1em;
+}
+
+.searchSelectBox span {
+    margin: 0 10px
+}
+
+.searchSelectBox dt {
+    padding: 0 10px
+}
+.flight-Date .deptDt{
+    bottom: 8px;
+    background: url(/pad/map/static/img/dateiconbg.png) left top no-repeat;
+    padding: 4px 6px;
+    left: 26px;
+}
+.flight-Date .deptDt input.selectDate{
+    background-color: transparent;
+    color: #fff;
+    width: 130px;
+    border: 0;
+    height: 40px;
+    position: absolute;
+    top: -3px;
+    padding-left: 35px;
+    left: 0;
+}
+.flight-Date{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:24px;
+}
+.flight-Date .l_cont,.flight-Date .r_cont{
+    color:#afc9fb;
+}
+.flight-Date .mid_cont input{
+    border:0;
+    background:transparent;
+}
+.flight-Date .mid_cont{
+    margin-left: 16px;
+    position: relative;
+    top:-2px;
+}
+.flight-Date .l_cont .l_arrow:before{
+    content:'\e079';
+}
+.flight-Date .r_cont .r_arrow:before{
+    content:'\e080';
+}
+/*航班动态 end*/
+
+/*机票预订选择机场 弹出层start*/
+.depDtTip, .depDtRtTip {
+    pointer-events: none;
+    position: absolute;
+    margin-left: -12px;
+    margin-top: -32px;
+}
+
+.depDtTip span, .depDtRtTip span {
+    border-radius: 5px;
+    background-color: #0d42aa;
+    padding: 10px 15px;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+}
+
+.depDtTip span:before, .depDtRtTip span:before {
+    border: solid;
+    border-color: #0d42aa transparent;
+    border-width: 5px;
+    border-bottom: 5px solid transparent;
+    bottom: -10px;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
+    z-index: 1;
+}
+
+.airport-mark{
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+    position: fixed;
+}
+
+#airportlist {
+    top: 260px;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 4
+}
+#airportlist .close{
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    top: 22px;
+    font-style: normal;
+}
+
+#airportlist .arrow {
+    border: solid;
+    border-color: #eee transparent;
+    border-width: 10px;
+    border-top: 10px solid transparent;
+    top: -18px;
+    /*content: "";*/
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#airportlist[for='arrCd']:before {
+    right: 13%
+}
+
+#airportlist .head .form-control {
+    width: 180px;
+}
+
+#airportlist .body .scrollbox {
+    height: 295px
+}
+
+#airportlistScroller {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    overflow: hidden;
+}
+
+.airportlistScrollerWrapper {
+    width: 3800px;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#airportlistScroller .iScrollHorizontalScrollbar {
+    position: absolute;
+    z-index: 9999;
+    height: 36px;
+    left: 2px;
+    right: 2px;
+    bottom: 06px;
+}
+
+#airportlistScroller .iScrollIndicator {
+    position: absolute;
+    border-radius: 9px;
+}
+
+#airportlistScroller .iScrollIndicator {
+    padding-top: 10px;
+    height: 36px;
+    width: 100%;
+}
+
+#airportlistScroller .iScrollIndicator .iScrollIndicatorCon {
+    border-radius: 9px;
+    height: 18px;
+    width: 100%;
+    background: -moz-linear-gradient(top, #4477d5 0%, #2150a4 100%);
+    background: -webkit-linear-gradient(top, #4477d5 0%, #2150a4 100%);
+    background: -o-linear-gradient(top, #4477d5 0%, #2150a4 100%);
+    background: -ms-linear-gradient(top, #4477d5 0%, #2150a4 100%);
+    background: linear-gradient(to bottom, #4477d5 0%, #2150a4 100%);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#airportlistScroller .iScrollIndicator .iScrollIndicatorCon:before {
+    content: "";
+    display: block;
+    background-image: url(../img/scrollbarbg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#airportlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+#airportlist li {
+    display: inline-block;
+    vertical-align: top
+}
+
+#airportlist dt {
+    font-size: 24px;
+    color: #999;
+    font-weight: normal;
+}
+
+#airportlist dd ul {
+    column-width: 100px;
+    -moz-column-width: 100px;
+    -webkit-column-width: 100px;
+    height: 220px
+}
+
+#airportlist dd ul li {
+    width: 110px;
+    line-height: 2
+}
+
+#airportlist .nav a {
+    padding: 10px
+}
+
+/*机票预订选择机场 end*/
+
+/*我的行程 start*/
+#scroller2 .ticket-loadingbg{
+    background:url(../img/lboxTopBg_loading.png) top repeat-y!important;
+}
+#scroller2 .tit-bottom{
+    width: 98.5%;margin: auto;
+}
+#scroller2 .bot-content{
+    height: 77px;
+    box-shadow: -1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+#scroller2 .bot-btn{
+    padding:7px 30px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-top:20px;
+}
+#scroller2 .no-trip-bg{
+    height:210px;
+    background:url(../img/none-trip-bg.png) no-repeat;
+    background-size:100%;
+    margin-left: -5px;
+}
+/*----------------------------------天气icon start*/
+span.weather{height: 30px;width: 30px;display: inline-block;position: absolute;top: 12px;}
+i.air_wea{height: 30px;width: 30px;display: inline-block;vertical-align: middle;position: relative;top: -4px;}
+i.city-size{
+    height: 25px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 20px!important;
+    position: relative;
+    top: 0;
+}
+/*零星阵雨*/
+#collapseOne .w1,.page-flighting-abnormal .station-detail .w1,.city-info .w1{
+    background:url(/pad/map/static/img/climate/gray/wicon1.png) no-repeat;
+    background-size:30px;
+}
+/*细冻雨*/
+#collapseOne .w2,.page-flighting-abnormal .station-detail .w2,.city-info .w2{
+    background:url(/pad/map/static/img/climate/gray/wicon2.png) no-repeat;
+    background-size:30px;
+}
+/*细雨*/
+#collapseOne .w3,.page-flighting-abnormal .station-detail .w3,.city-info .w3{
+    background:url(/pad/map/static/img/climate/gray/wicon3.png) no-repeat;
+    background-size:30px;
+}
+/*阵雨*/
+#collapseOne .w4,.page-flighting-abnormal .station-detail .w4,.city-info .w4{
+    background:url(/pad/map/static/img/climate/gray/wicon4.png) no-repeat;
+    background-size:30px;
+}
+/*冻雨*/
+#collapseOne .w5,.page-flighting-abnormal .station-detail .w5,.city-info .w5{
+    background:url(/pad/map/static/img/climate/gray/wicon5.png) no-repeat;
+    background-size:30px;
+}
+/*大雨*/
+#collapseOne .w6,.page-flighting-abnormal .station-detail .w6,.city-info .w6{
+    background:url(/pad/map/static/img/climate/gray/wicon6.png) no-repeat;
+    background-size:30px;
+}
+/*雨*/
+#collapseOne .w7,.page-flighting-abnormal .station-detail .w7,.city-info .w7{
+    background:url(/pad/map/static/img/climate/gray/wicon7.png) no-repeat;
+    background-size:30px;
+}
+/*小雨*/
+#collapseOne .w8,.page-flighting-abnormal .station-detail .w8,.city-info .w8{
+    background:url(/pad/map/static/img/climate/gray/wicon8.png) no-repeat;
+    background-size:30px;
+}
+/*阴霾*/
+#collapseOne .w9,.page-flighting-abnormal .station-detail .w9,.city-info .w9{
+    background:url(/pad/map/static/img/climate/gray/wicon9.png) no-repeat;
+    background-size:30px;
+}
+/*冰雹*/
+#collapseOne .w10,.page-flighting-abnormal .station-detail .w10,.city-info .w10{
+    background:url(/pad/map/static/img/climate/gray/wicon10.png) no-repeat;
+    background-size:30px;
+}
+/*混合雨和冰雹*/
+#collapseOne .w11,.page-flighting-abnormal .station-detail .w11,.city-info .w11{
+    background:url(/pad/map/static/img/climate/gray/wicon11.png) no-repeat;
+    background-size:30px;
+}
+/*飘雪  零星阵雪*/
+#collapseOne .w12,.page-flighting-abnormal .station-detail .w12,.city-info .w12{
+    background:url(/pad/map/static/img/climate/gray/wicon12.png) no-repeat;
+    background-size:30px;
+}
+/*暴风雪 暴雪*/
+#collapseOne .w13,.page-flighting-abnormal .station-detail .w13,.city-info .w13{
+    background:url(/pad/map/static/img/climate/gray/wicon13.png) no-repeat;
+    background-size:30px;
+}
+/*大雪*/
+#collapseOne .w14,.page-flighting-abnormal .station-detail .w14,.city-info .w14{
+    background:url(/pad/map/static/img/climate/gray/wicon14.png) no-repeat;
+    background-size:30px;
+}
+/*中雪*/
+#collapseOne .w15,.page-flighting-abnormal .station-detail .w15,.city-info .w15{
+    background:url(/pad/map/static/img/climate/gray/wicon15.png) no-repeat;
+    background-size:30px;
+}
+/*小雪 吹雪*/
+#collapseOne .w16,.page-flighting-abnormal .station-detail .w16,.city-info .w16{
+    background:url(/pad/map/static/img/climate/gray/wicon16.png) no-repeat;
+    background-size:30px;
+}
+/*雨夹雪 雨雪 雨和雨雪 混合雨雪*/
+#collapseOne .w17,.page-flighting-abnormal .station-detail .w17,.city-info .w17{
+    background:url(/pad/map/static/img/climate/gray/wicon17.png) no-repeat;
+    background-size:30px;
+}
+/*阵雪 小阵雪*/
+#collapseOne .w18,.page-flighting-abnormal .station-detail .w18,.city-info .w18{
+    background:url(/pad/map/static/img/climate/gray/wicon18.png) no-repeat;
+    background-size:30px;
+}
+/*炎热*/
+#collapseOne .w19,.page-flighting-abnormal .station-detail .w19,.city-info .w19{
+    background:url(/pad/map/static/img/climate/gray/wicon19.png) no-repeat;
+    background-size:30px;
+}
+/*晴朗 晴朗(白） 局部晴 大部分晴 大部分晴朗*/
+#collapseOne .w20,.page-flighting-abnormal .station-detail .w20,.city-info .w20{
+    background:url(/pad/map/static/img/climate/gray/wicon20.png) no-repeat;
+    background-size:30px;
+}
+/*多云转晴*/
+#collapseOne .w21,.page-flighting-abnormal .station-detail .w21,.city-info .w21{
+    background:url(/pad/map/static/img/climate/gray/wicon21.png) no-repeat;
+    background-size:30px;
+}
+/*晴转多云 晴间多云*/
+#collapseOne .w22,.page-flighting-abnormal .station-detail .w22,.city-info .w22{
+    background:url(/pad/map/static/img/climate/gray/wicon22.png) no-repeat;
+    background-size:30px;
+}
+/*晴朗（夜）*/
+#collapseOne .w23,.page-flighting-abnormal .station-detail .w23,.city-info .w23{
+    background:url(/pad/map/static/img/climate/gray/wicon23.png) no-repeat;
+    background-size:30px;
+}
+/*烟雾*/
+#collapseOne .w24,.page-flighting-abnormal .station-detail .w24,.city-info .w24{
+    background:url(/pad/map/static/img/climate/gray/wicon24.png) no-repeat;
+    background-size:30px;
+}
+/*尘埃*/
+#collapseOne .w25,.page-flighting-abnormal .station-detail .w25,.city-info .w25{
+    background:url(/pad/map/static/img/climate/gray/wicon25.png) no-repeat;
+    background-size:30px;
+}
+/*多云 大部分多云（白） 局部多云（白）*/
+#collapseOne .w26,.page-flighting-abnormal .station-detail .w26,.city-info .w26{
+    background:url(/pad/map/static/img/climate/gray/wicon26.png) no-repeat;
+    background-size:30px;
+}
+/*大部分多云（夜） 局部多云（夜）*/
+#collapseOne .w27,.page-flighting-abnormal .station-detail .w27,.city-info .w27{
+    background:url(/pad/map/static/img/climate/gray/wicon27.png) no-repeat;
+    background-size:30px;
+}
+/*闷热*/
+#collapseOne .w28,.page-flighting-abnormal .station-detail .w28,.city-info .w28{
+    background:url(/pad/map/static/img/climate/gray/wicon28.png) no-repeat;
+    background-size:30px;
+}
+/*扬沙*/
+#collapseOne .w29,.page-flighting-abnormal .station-detail .w29,.city-info .w29{
+    background:url(/pad/map/static/img/climate/gray/wicon29.png) no-repeat;
+    background-size:30px;
+}
+/*扬尘*/
+#collapseOne .w30,.page-flighting-abnormal .station-detail .w30,.city-info .w30{
+    background:url(/pad/map/static/img/climate/gray/wicon30.png) no-repeat;
+    background-size:30px;
+}
+/*零星雷雨  局部雷阵雨  雷阵雨*/
+#collapseOne .w31,.page-flighting-abnormal .station-detail .w31,.city-info .w31{
+    background:url(/pad/map/static/img/climate/gray/wicon31.png) no-repeat;
+    background-size:30px;
+}
+/*雾*/
+#collapseOne .w32,.page-flighting-abnormal .station-detail .w32,.city-info .w32{
+    background:url(/pad/map/static/img/climate/gray/wicon32.png) no-repeat;
+    background-size:30px;
+}
+/*闪电*/
+#collapseOne .w33,.page-flighting-abnormal .station-detail .w33,.city-info .w33{
+    background:url(/pad/map/static/img/climate/gray/wicon33.png) no-repeat;
+    background-size:30px;
+}
+/*冷*/
+#collapseOne .w34,.page-flighting-abnormal .station-detail .w34,.city-info .w34{
+    background:url(/pad/map/static/img/climate/gray/wicon34.png) no-repeat;
+    background-size:30px;
+}
+/*强雷暴  特强雷暴*/
+#collapseOne .w35,.page-flighting-abnormal .station-detail .w35,.city-info .w35{
+    background:url(/pad/map/static/img/climate/gray/wicon35.png) no-repeat;
+    background-size:30px;
+}
+/*雷暴  局部地区性雷暴*/
+#collapseOne .w36,.page-flighting-abnormal .station-detail .w36,.city-info .w36{
+    background:url(/pad/map/static/img/climate/gray/wicon36.png) no-repeat;
+    background-size:30px;
+}
+/*大风*/
+#collapseOne .w37,.page-flighting-abnormal .station-detail .w37,.city-info .w37{
+    background:url(/pad/map/static/img/climate/gray/wicon37.png) no-repeat;
+    background-size:30px;
+}
+/*飓风*/
+#collapseOne .w38,.page-flighting-abnormal .station-detail .w38,.city-info .w38{
+    background:url(/pad/map/static/img/climate/gray/wicon38.png) no-repeat;
+    background-size:30px;
+}
+/*热带风暴*/
+#collapseOne .w39,.page-flighting-abnormal .station-detail .w39,.city-info .w39{
+    background:url(/pad/map/static/img/climate/gray/wicon39.png) no-repeat;
+    background-size:30px;
+}
+/*龙卷风*/
+#collapseOne .w40,.page-flighting-abnormal .station-detail .w40,.city-info .w40{
+    background:url(/pad/map/static/img/climate/gray/wicon40.png) no-repeat;
+    background-size:30px;
+}
+/*风  风暴*/
+#collapseOne .w41,.page-flighting-abnormal .station-detail .w41,.city-info .w41{
+    background:url(/pad/map/static/img/climate/gray/wicon41.png) no-repeat;
+    background-size:30px;
+}
+/*强沙尘暴*/
+#collapseOne .w42,.page-flighting-abnormal .station-detail .w42,.city-info .w42{
+    background:url(/pad/map/static/img/climate/gray/wicon42.png) no-repeat;
+    background-size:30px;
+}
+/*沙尘暴*/
+#collapseOne .w43,.page-flighting-abnormal .station-detail .w43,.city-info .w43{
+    background:url(/pad/map/static/img/climate/gray/wicon43.png) no-repeat;
+    background-size:30px;
+}
+/*雪*/
+#collapseOne .w44,.page-flighting-abnormal .station-detail .w44,.city-info .w44{
+    background:url(/pad/map/static/img/climate/gray/wicon44.png) no-repeat;
+    background-size:30px;
+}
+/*---------------------------------------天气icon end*/
+.back {
+    top: 95px;
+    left: 48px;
+    text-decoration: none;
+}
+
+.back:hover, .back:focus {
+    text-decoration: none;
+}
+
+.searchKeywordBox {
+    top: 137px;
+    left: 35px;
+    border-radius: 5px;
+}
+
+.Ticket {
+    width: 390px;
+}
+
+.Ticket .top {
+    height: 5px;
+    line-height: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #0a2c77;
+    margin-left: -2px;
+    margin-right: 3px;
+}
+
+.Ticket .bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px
+}
+
+.Ticket .topBg {
+    background: url(../img/lboxTopBg.png) top repeat-y;
+    height: 107px;
+    margin-left: -5px
+}
+
+.Ticket .conBg {
+    background: url(../img/lboxBg.png) center top repeat-y;
+    margin-left: -5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -1px
+}
+
+.Ticket .from {
+    top: 36px;
+    left: 29px;
+}
+
+.Ticket .fromAirport {
+    top: 72px;
+    left: 29px;
+}
+
+.Ticket .to {
+    top: 36px;
+    right: 29px;
+}
+
+.Ticket .toAirport {
+    top: 72px;
+    right: 29px;
+}
+
+.Ticket .no {
+    top: 82px;
+    width: 100%
+}
+
+.Ticket .depDt {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px
+}
+
+.Ticket .depDtRt {
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px
+}
+
+.Ticket .bottom {
+    padding: 10px 25px
+}
+
+.Ticket .bottom:before {
+    border: solid;
+    border-color: #f0f7ff transparent;
+    border-width: 10px;
+    border-top: 10px solid transparent;
+    top: -18px;
+    content: "";
+    display: block;
+    left: 20%;
+    position: absolute;
+    z-index: 1;
+}
+
+.Ticket .bottom.notip:before {
+    border: 0
+}
+
+.Ticket .con {
+    padding: 10px 25px
+}
+
+.Ticket .link {
+    width: 40px;
+    height: 6px;
+    background-image: url(../img/link.png);
+    vertical-align: middle;
+    display: inline-block
+}
+
+.Ticket .depRtBottom:before {
+    right: 20%;
+    left: auto
+}
+
+.Ticket .topBg2 {
+    background: url(../img/lboxTopBg2.png) top repeat-y;
+    height: 87px
+}
+
+.Ticket .topBg2 .no {
+    top: 65px
+}
+
+.Ticket.o8 {
+    opacity: .8
+}
+
+.Ticket.o8 .g3, .Ticket.o8 .g6, .Ticket.o8 .g9 {
+    opacity: .5
+}
+
+.lBoxTopBg {
+    background: url(../img/lboxTopBg.png) center top no-repeat;
+    width: 400px;
+    height: 100px;
+}
+
+.lBoxTopBg .from {
+    top: 36px;
+    left: 29px;
+}
+
+.lBoxTopBg .fromAirport {
+    top: 72px;
+    left: 29px;
+}
+
+.lBoxTopBg .to {
+    top: 36px;
+    right: 29px;
+}
+
+.lBoxTopBg .toAirport {
+    top: 72px;
+    right: 29px;
+}
+
+.lBoxBg {
+    background: url(../img/lboxBg.png) center top repeat-y;
+    padding: 22px 30px 20px;
+}
+
+.lBoxBottomBg {
+    background: url(../img/lboxbottomBg.png) center top no-repeat;
+    height: 9px;
+}
+
+/*我的行程 end*/
+
+/*登机牌弹窗 start*/
+.h35 {
+    height: 35px;
+    line-height: 23px;
+}
+
+.recheckCodepop {
+    background-color: #fff;
+    width: 500px;
+    left: 50%;
+    height: 630px;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+
+.code-pic {
+    width: 207.5px;
+    height: 275.5px;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 0 0 0 89px;
+}
+
+.code-pic img {
+    width: 207.5px;
+    height: 275.5px;
+    display: block;
+}
+
+.code-pic-active {
+}
+
+.code-pic-origin {
+    opacity: .3;
+}
+
+#checkInQrcodeScroll {
+    width: 300px;
+    margin: 0 100px 0 60px;
+    box-sizing: content-box;
+    position: relative;
+    height: 276px;
+}
+
+#checkInQrcodeScroll:before {
+    position: absolute;
+    left: -80px;
+    top: -40px;
+    content: "";
+    width: 90px;
+    height: 320px;
+    background: rgba(255, 255, 255, .8);
+    z-index: 2;
+}
+
+#checkInQrcodeScroll:after {
+    position: absolute;
+    right: -120px;
+    top: -40px;
+    content: "";
+    width: 120px;
+    height: 320px;
+    background: rgba(255, 255, 255, .8);
+    z-index: 2;
+}
+
+#checkInQrcodeScroll p span {
+    box-sizing: content-box;
+}
+
+#checkInQrcodeScrollIndicator {
+    position: relative;
+    width: 110px;
+    height: 20px;
+    margin: 0 auto;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUBAMAAABohZD3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUGCDYztyDUJgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAGFBMVEUAAADNzc3Nzc3Nzc3Nzc3Nzc3Nzc3///8aWwwLAAAABnRSTlMAX5Ks3/nRD0HIAAAAAWJLR0QHFmGI6wAAAFtJREFUGFdjYGBgEHYNMWRAAJE0IHCEc5nSwEABxleD8JOgXMY0KBCA8FlgfAcIXwzGT4TwzWD8ZAjfDcZPgfDDYPxU7Hx09ejmoduH7h5096L7B8O/6OGBGl4APYg8TQ0XAScAAAAASUVORK5CYII=);
+}
+
+#checkInQrcodeScrollIndicator div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #777;
+}
+
+.mark-icon {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -40px;
+    left: 15px;
+}
+
+.mark-icon1 {
+    background: transparent url(../img/mi1.png);
+    background-size: 90px;
+}
+
+.mark-icon2 {
+    background: transparent url(../img/mi2.png);
+    background-size: 90px;
+}
+
+.mark-icon3 {
+    background: transparent url(../img/mi3.png);
+    background-size: 90px;
+}
+
+.mark-icon4 {
+    background: transparent url(../img/mi4.png);
+    background-size: 90px;
+}
+
+/*登机牌弹窗 end*/
+
+/*预约值机start*/
+.reserveCheckpop {
+    background-color: #fff;
+    width: 520px;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+
+/*预约值机end*/
+
+/*值机相关 start*/
+.gradientbg {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: -webkit-linear-gradient(top, #09286f, #093285);
+    background: -moz-linear-gradient(top, #09286f, #093285);
+    background: -o-linear-gradient(top, #09286f, #093285);
+}
+
+#collapseFour .h45 {
+    height: 45px;
+}
+
+.waring-icon:before {
+    content: "\e016";
+    font-family: 'Glyphicons Halflings' !important;
+    z-index: 1000;
+    font-size: 30px;
+    position: relative;
+    top: 8px;
+}
+
+/*值机相关 end*/
+
+/*登录弹窗 start*/
+.loginpop .closeBtn{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: -18px;
+    right: -16px;
+    z-index: 5;
+}
+.loginpop .closeBtn .close-d {
+    width: 3px;
+    height: 26px;
+    border-radius: 2px;
+    background: #0a2c77;
+    left: 46%;
+    top: 20%;
+}
+.loginpop {
+    background-color: #fff;
+    width: 532px;
+    left: 50%;
+    height: 415px;
+    top: 50%;
+    margin-left: -255px;
+    margin-top: -214px;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+.loginpop .loading{
+    background:rgba(0,0,0,0.5);
+}
+.loginpop .loading-pic{
+    position: absolute;
+    top:35%;
+    width:100%;
+}
+.tab-title{
+    z-index: 500;
+}
+.tab-title a {
+    color: #afc9fb;
+    text-decoration: none;
+    position: relative;
+}
+
+.tab-active {
+    background: #1b4eac!important;
+    color: #fff !important;
+}
+
+.tab-active:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: 50px;
+    right: 45.8%;
+}
+
+.tab-content {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    padding: 0 30px 10px 30px;
+    z-index:500px;
+}
+
+.loginBottom {
+    border-top: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+.logintip1 {
+    position: relative;
+    top: -26px;
+}
+
+.logintip2 {
+    position: relative;
+    top: 41px;
+}
+
+.code-img {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border: 1px solid #e2986d;
+    height: 33px;
+    width: 79px;
+}
+span.code {
+    color: #1b4eac;
+    line-height: 35px;
+}
+#loginpop span.code {
+    color: #1b4eac;
+    line-height: 35px;
+}
+span.code-active {
+    color: #d8d8d8;
+    line-height: 15px;
+    padding-top: 3px;
+}
+
+span.p {
+    top: -1px;
+    right: 15px;
+    height: 35px;
+    width: 32%;
+}
+
+span.p1 {
+    top: -1px;
+    right: 63px;
+    height: 35px;
+    width: 15%;
+    font-size: 12px;
+}
+.loginpop .pl25{
+    padding-left: 25%;
+}
+span.right-icon{
+    background:transparent url(../img/right_icon.png) no-repeat center;
+    height: 33px;
+    width: 27px;
+    background-size:27px;
+}
+span.error-icon{
+    background:transparent url(../img/error_icon.png) no-repeat center;
+    height: 33px;
+    width: 27px;
+    background-size:27px;
+}
+.errorPop_wrap{
+    position: absolute;
+    /*top: 98px;*/
+    top:87px;
+    left: 36%;
+    z-index:1000;
+}
+.errorPop_box{
+    background:#fff;
+    border:1px solid #d1d1d1;
+    padding:10px;
+    border-radius: 5px;
+    padding:5px 10px;
+    font-size: 15px;
+    height: 38px;
+}
+.errorPop_box .errorInfo{
+    position: relative;
+    top:3px;
+}
+.errorPop_box .close-icon{
+    float:right;
+    display: inline-block;
+    background:#bdc0c7;
+    height: 25px;
+    width: 25px;
+    border-radius: 12px;
+}
+.errorPop_box .close-icon .close-d{
+    width:3px;
+    height: 15px;
+    border-radius: 2px;
+    background:#fff;
+    left: 46%;
+    top: 18%
+}
+.errorPop_wrap .arrow_down{
+    width: 15px;
+    height: 15px;
+    -webkit-transform:rotate(45deg); 
+    border-bottom:1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    border-bottom-right-radius: 5px;
+    background:#fff;
+    position:absolute;
+    right: 50%;
+    bottom: -18.5%;
+}
+
+/*登录弹窗 end*/
+
+/*首页弹窗*/
+.noticeToUsersPop .close{
+    z-index: 10;
+}
+.noticeToUsersCon {
+    /*margin-top: 40px;*/
+}
+.noticeToUsersCon .cont{
+    max-height: 420px;
+    overflow: auto;
+    margin: 20px;
+}
+#selectContactPop ul{
+    list-style: none;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+#selectContactPop ul li{
+    padding: 10px;
+}
+#selectContactPop ul li input{
+    margin-right: 10px;
+}
+#selectContactPop ul li:nth-child(2n){
+    background: #f8f8f8;
+}
+#selectContactPop ul li span{
+    margin-left: 10px;
+}
+
+.lypop {
+    width: 500px;
+    height: 600px;
+    top: 50%;
+    display: none;
+    z-index: 4;
+    left: 50%;
+}
+
+/*首页导航*/
+.header .menu,.header .msg{
+    position: relative;
+}
+.header .menu .menu-cont:before,.header .menu .menu-cont:after{
+    display: table;
+    content: "";
+}
+.header .menu .menu-cont:after{
+    clear: both;
+}
+.header .menu .menu-cont{
+    display: none;
+    position: absolute;
+    top:10px;
+    left: 0px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #244b99;
+    box-shadow:  0 0 3px rgba(0,0,0,.4);
+    font-size: 15px;
+    padding: 30px 0;
+    width: 450px;
+    left: -209px;
+    z-index: 999;
+    top: 60px;
+}
+.header .menu .menu-cont:before{
+    content: "";
+    position: absolute;
+    left: 207px;
+    top: -50px;
+    border: 25px solid;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) #244b99 rgba(0,0,0,0);
+}
+.header .menu .menu-cont ul{
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 15px;
+    height: 225px;
+}
+.header .menu .menu-cont .more{
+    height: 47px;
+    line-height: 47px;
+    text-align: right;
+    padding: 0 16px;
+    font-size: 15px;
+    border-top: 1px solid #efefef;
+}
+.header .menu .menu-cont .more a{
+    color: #1f4591;
+}
+.header .menu .menu-cont ul:nth-child(1),.header .menu .menu-cont ul:nth-child(2){
+    border-right: 1px solid #efefef;
+}
+.header .menu .menu-cont ul:nth-child(1){
+    margin-left: 42px;
+}
+.header .menu .menu-cont a{
+    color: #333333;
+}
+.header .menu .menu-cont a:hover{
+    color: #1444ac;
+}
+.header .menu .menu-cont ul li{
+    padding: 8px 0;
+    width: 100px;
+    /*list-style-type: disc;
+    color:#1444ac;*/
+}
+.header .msg .msg-cont{
+    display: none;
+    position: absolute;
+    top:10px;
+    left: 0px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #244b99;
+    box-shadow:  0 0 3px rgba(0,0,0,.4);
+    font-size: 15px;
+    width: 390px;
+    left: -213px;
+    z-index: 9;
+    top: 62px;
+}
+.header .act .act-cont{
+    display: none;
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #244b99;
+    box-shadow:  0 0 3px rgba(0,0,0,.4);
+    font-size: 15px;
+    width: 820px;
+    left: -213px;
+    z-index: 9;
+    top: 65px;
+}
+.header .act .act-cont:before{
+    content: "";
+    position: absolute;
+    left: 207px;
+    top: -50px;
+    border: 25px solid;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) #244b99 rgba(0,0,0,0);
+}
+.header .msg .msg-cont:before{
+    content: "";
+    position: absolute;
+    left: 207px;
+    top: -50px;
+    border: 25px solid;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) #244b99 rgba(0,0,0,0);
+}
+.header .act .act-cont ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+    height: 255px;
+    width:100%;
+}
+.header .act .act-cont ul li{
+    float: left;
+    margin-right: 15px;
+    width:306px;
+    height: 241px;
+}
+.header .act .act-cont ul li img{
+    width:100%;
+}
+.header .act .act-cont ul li:last-child{
+    margin-right: 0;
+}
+.header .act .act-cont .scrollBar{
+    width:100%;
+    height: 5px;
+    background:#bdbdbd;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.header .act .act-cont .iScrollAct{
+    width: 150px;
+    height: 17px;
+    background: url(../img/act_scroll.png) no-repeat 0 -1px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 25px;
+}
+.header .msg .msg-cont ul{
+    padding: 0 20px 0 35px;
+    margin: 0;
+    list-style: disc;
+}
+.header .msg .msg-cont ul li{
+    margin: 17px 0;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    list-style-type:disc;
+    list-style-position: inside;
+    color:#1444ac;
+    padding-left:2px;
+}
+.header .msg .msg-cont ul li a{
+    color: #333;
+}
+.header .msg .msg-cont ul li a:hover{
+    color: #1444ac;
+}
+.header .msg .msg-cont .more{
+    height: 47px;
+    line-height: 47px;
+    text-align: right;
+    padding: 0 16px;
+    font-size: 15px;
+    border-top: 1px solid #efefef;
+}
+.header .msg .msg-cont .more a{
+    color: #1f4591;
+}
+
+/*航班动态*/
+.flight{
+    width: 385px;
+}
+.flight .tab{
+    font-size: 15px;
+    background: #092b76;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px 5px 0 0;
+}
+.flight .tab span{
+    margin-left: 20px;
+    color: #afc9fb;
+    padding: 12px 0;
+}
+.flight .tab span.on{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.flight .form-box{
+    height: 135px;
+    background: url(/pad/map/static/img/flightBg.png);
+    background-size: 100% 100%;
+    padding-top: 20px;
+}
+.flight .flight-num{
+    width: 340px;
+    height: 45px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 0 0 25px;
+    line-height: 45px;
+}
+.flight .flight-num > i,.flight .flight-num > div,.flight .flight-num > input{
+    float: left;
+}
+.flight .flight-num .start-icon,.flight .flight-num .end-icon{
+    font-size: 28px;
+    color: #2451ad;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.flight .flight-num .start-icon:before{
+    content: "\e171";
+}
+.flight .flight-num .end-icon:before{
+    content: "\e094";
+}
+.flight .flight-num .clear{
+    font-size: 28px;
+    color: #2451ad;
+    margin-left: 10px;
+    color: #bdc0c7;
+    margin-top: 8px;
+}
+.flight .flight-num .clear:before{
+    content: "\e083";
+}
+.flight .flight-num .num{
+    height: 35px;
+    line-height: 35px;
+    margin-left: 10px;
+    width: 90%;
+    border: 0;
+    background: none;
+    font-size: 20px;
+    color: #000;
+    margin-top:8px;
+}
+.flight .flight-num.round .num{
+    width: 109px;
+    margin-left: 0;
+    padding-left: 10px;
+}
+.flight .flight-num .switcher{
+    background: url(../img/flight-switcher.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.flight .flight-num.round i{
+    margin-left: 7px;
+}
+.flight .days ul{
+    padding: 0;
+    margin: 20px 0;
+}
+.flight .days ul li{
+    color: #afc9fb;
+    display: inline-block;
+    line-height: 2;
+    padding: 1%;
+    text-align: center;
+    width: 32%;
+}
+.flight .days ul li p:first-child{
+    font-size: 12px;
+}
+.flight .days ul li p:last-child{
+    font-size: 16px;
+}
+.flight .days ul li.on{
+    color: #fff!important;
+}
+.flight .submit{
+    background: #fff;
+    height: 70px;
+    padding: 15px 35px;
+    border-radius: 0 0 5px 5px;
+}
+#collapseThree ul.dropdown-menu{
+    margin: 0;
+    min-width: 50px;
+}
+#collapseThree ul.dropdown-menu li{
+    display: block;
+    width: auto;
+}
+.flight .flight-num.round{
+    display: none;
+}
+/* 我的东航 */
+.myCeair .info{
+    color: #000;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    font-size: 15px;
+}
+.myCeair .info .title{
+    margin-bottom: 20px;
+}
+.myCeair .info .title .name{
+    font-size: 20px;
+}
+.myCeair .info .title .member{
+    background: #024294;
+    color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.myCeair .info .title .member.l2{
+    background: #b0b1b1;
+}
+.myCeair .info .title .member.l3{
+    background: #983701;
+}
+.myCeair .action{
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    font-size: 15px;
+    background: #f3f3f3;
+}
+.myCeair .action a{
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+}
+.myCeair .action a:hover{
+    color: #1444ac;
+}
+.myCeair .action a:last-child{
+    margin-bottom: 0;
+}
+.myCeair .action a:before{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 30px;
+    background: #1444ac;
+    content: "";
+    left: -15px;
+    top: 8px;
+}
+.quan_Tip{
+    background-color: #db2130;
+    border-radius: 10px;
+    text-align: center;
+    color:#fff;
+    margin-left: 3px;
+    font-size:12px;
+    padding:0 6px;
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -o-transform:scale(0.9);
+    position: relative;
+    top:-1px;
+}
+/*我的东航左边导航*/
+.myCeair-menu p{
+    font-size: 24px;
+    color: #000;
+}
+.myCeair-menu a{
+    font-size: 15px;
+    color: #333333;
+    display: block;
+    text-decoration: none;
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    padding: 0 10px;
+}
+.myCeair-menu a.on{
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    background: #1b4eac;
+    position: relative;
+    z-index: 1;
+}
+.myCeair-menu a.on:after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    border: 22px solid;
+    border-color: transparent transparent transparent #1b4eac;
+    right: -44px;
+    top: 0;
+}
+.myCeair-menu a.wlx{
+    margin-top: 20px;
+}
+/*banner start*/
+.banner-page .banner-l-title a{
+    padding-right: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+a.btnRent{
+    background-color:#e89216;
+}
+a.btnRent:hover{
+    color:#fff;
+    background-color: #e38f16;
+}
+/*banner end*/

@@ -1,0 +1,6194 @@
+/*---------鍊兼満妯″潡 start-----------------------------------------*/
+/*鍊兼満 start*/
+.checkinput:before{
+	display: inline-block;
+	color: #1444ac !important;
+	font-size: 30px!important;
+	font-family: 'Glyphicons Halflings'!important;
+	position: absolute;
+	left: 25px;
+}
+.cardicon:before{
+	content: "\e020";
+}
+.peopleicon:before{
+	content:"\e008";
+}
+.cardP{
+	padding: 15px 25px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: 0 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.arrow-right{
+	width:0px; 
+	height:0px; 
+	border-bottom:8px solid transparent;  /* left arrow slant */
+	border-top:8px solid transparent; /* right arrow slant */
+	border-left:8px solid #666; /* bottom, add background color here */
+	display: inline-block;
+}
+.page-checkin .leftbox .leftbox-active{
+    color:#fff;
+    background-color: #0f3d93;
+    border-color: #0f3d93;
+}
+.page-checkin .leftbox .leftbox-active:hover{
+    color:#fff;
+    background-color: #0f3d93;
+    border-color: #0f3d93;
+}
+.page-checkin .leftbox .leftbox-active .arrow-right{
+    border-left:8px solid #fff;
+}
+.page-checkin .leftbox .rightNoPos{
+    position: absolute;
+    right:35px;
+    top:3px;
+    font-size: 30px;
+}
+.seaticons ul li{
+	float: left;
+	list-style: none;
+	text-align: center;
+	width: 18%;
+}
+.seaticons ul li img{
+	width: 37px;
+}
+.seaticons ul li span{
+	display: block;
+	margin-top:3px;
+}
+.margL-15{
+	margin-left: -15px;
+}
+.plane-head{
+	background: transparent url(../img/planeHead.png) -1px top no-repeat;
+	background-size: 375px;
+    width: 375px;
+    height: 199px;
+    margin-left:55px;
+}
+.plane-body{
+	background: transparent url(../img/planebody.png) center repeat-y;
+	background-size: 375px ;
+	width:375px;
+    margin-left:55px;
+}
+.plane-bottom{
+	background: transparent url(../img/planebottom.png) 6px top no-repeat;
+    background-size: 504px;
+    height: 180px;
+    margin-left: -15px;
+}
+#minimap-indicator{
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ff010f;
+/*box-shadow: 0 0 5px #000;*/
+    background: rgba(255,255,255,0.5);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%!important;
+}
+.thumb-plane{width: 103px;position: absolute;right:16px;top:16px;background:rgba(0,0,0,0.3);border-radius: 5px;z-index: 2;}
+/*23 鎺掍互涓�*/
+.plane23{
+    height: 195px;
+    background: rgba(0,0,0,0.3) url(../img/plane23.png) no-repeat scroll center 7px;background-size:96px auto;
+}
+/*24-32 鎺�*/
+.plane24_32{
+    height: 235px;
+    background: rgba(0,0,0,0.3) url(../img/plane24_32.png) no-repeat scroll center 7px;background-size:96px auto;
+}
+/*33 鎺掍互涓�*/
+.plane33{
+    height: 270px;
+    background: rgba(0,0,0,0.3) url(../img/plane33.png) no-repeat scroll center 7px;background-size:96px auto;
+}
+.plane-body dd.h25{height: 25px;}
+.plane-body dl{margin-bottom: 10px;}
+.plane-body dl dd:first-child{width:30px!important;text-align: right;margin-right:10px!important;}
+.plane-body dl dd:last-child{margin-right:0!important;}
+.plane-body .unavailable-cabin{position:absolute;width:99%;background: rgba(90,103,111,0.9);top: 0;left: 2px;font-size: 28px;text-align: center;z-index:1;}
+.plane-body .unavailable-cabin span{position: absolute;top:42%;left: 40%;color: #9ca4a9;}
+
+.valuable-icon{background:transparent url(../img/icon/sicon3.png) no-repeat;}/*鍙��*/
+.selected-icon{background:transparent url(../img/icon/sicon4.png) no-repeat;}/*閫変腑 绾㈣壊*/
+.unvaluable-icon{background:transparent url(../img/icon/sicon1.png) no-repeat;}/*涓嶅彲閫� 鐏拌壊*/
+.reserved-icon{background:transparent url(../img/icon/sicon5.gif) no-repeat;}/*棰勭暀*/
+.exit-icon{background:transparent url(../img/icon/exit_icon.png) no-repeat;}/*閫氶亾*/
+.ckinRightH .seatTip a{width: 100%!important;}
+
+.seat7 dl dd:first-child{line-height: 42px;}
+.seat7 dl dd{position: relative;float: left;margin-right: 2px;height: 42px;width: 42px;background-size: 40px;}
+.seat7 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:49px;left:-53px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat7 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat8 dl dd:first-child{line-height: 36px;}
+.seat8 dl dd{position: relative;float: left;margin-right: 2px;height: 36px;width: 36px;background-size: 34px;}
+.seat8 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:44px;left:-56px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat8 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat5 dl dd:first-child{line-height: 60px;}
+.seat5 dl dd{position: relative;float: left;margin-right: 2px;height: 60px;width: 60px;background-size: 55px;}
+.seat5 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:68px;left:-45px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat5 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat6 dl dd:first-child{line-height: 50px;}
+.seat6 dl dd{position: relative;float: left;margin-right: 2px;height: 50px;width:50px;background-size: 46px;}
+.seat6 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:57px;left:-50px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat6 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat10 dl dd:first-child{line-height: 29px;}
+.seat10 dl dd{position: relative;float: left;margin-right: 2px;height: 29px;width: 29px;background-size: 27px;}
+.seat10 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:35px;left:-59px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat10 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat11 dl dd:first-child{line-height: 26px;}
+.seat11 dl dd{position: relative;float: left;margin-right: 2px;height: 26px;width: 26px;background-size: 25px;}
+.seat11 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:33px;left:-60px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat11 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat12 dl dd:first-child{line-height: 23px;}
+.seat12 dl dd{position: relative;float: left;margin-right: 2px;height: 23px;width: 23px;background-size: 22px}
+.seat12 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:30px;left:-61px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat12 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.seat14 dl dd:first-child{line-height: 20px;}
+.seat14 dl dd{position: relative;float: left;margin-right: 2px;height: 20px;width: 20px;background-size: 19px;}
+.seat14 .seatTip{width:145px;background:#fff;position: absolute;padding:10px 15px 15px 15px;bottom:28px;left:-63px;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;}
+.seat14 .seatTip:after{content:'';width:0;height: 0;display: inline-block;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:6px solid #fff;box-shadow: 0 2px 5px rgba(14,5,10,0.3);z-index: 200;position: absolute;z-index: 300;bottom:-6px;right: 45%;}
+
+.checkinfooter{
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 100%;
+	z-index: 1000;
+}
+
+.form-horizontal-1 .form-group{
+	margin-bottom: 10px;
+}
+.form-horizontal-1 .control-label{
+	text-align: right;
+	padding-top: 7px;
+	margin-top: 0;
+	margin-bottom: 0; 
+}
+.form-horizontal-1 .col-md-4{
+	width:25%;
+}
+.form-horizontal-1 .col-md-5{
+	width:57%;
+	padding-right: 0;
+}
+.form-horizontal-1 .col-md-7{
+	width:42%;
+}
+.form-horizontal-1 .col-md-9{
+	width: 30.7%;
+}
+.form-horizontal-1 .form-control-danger{
+    border:1px solid #f33;
+}
+.btn .caret1{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 100px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+/*鍊兼満end*/
+
+/*鍙栨秷鍊兼満start*/
+
+
+.cancelCheckinpop{
+	background-color:#fff;
+	width:370px; 
+	left:50%;
+	top:50%;
+	border-radius:5px;
+	z-index:4; 
+	display:none;
+}
+
+.fpic{font-family: 'Glyphicons Halflings'!important;}
+a.leftArrow, a.rightArrow{position: absolute;display: inline-block;width:27px;height: 27px;}
+a.leftArrow{left:20px;top:15px;} 
+a.rightArrow{right: 20px;top:15px;}
+a.leftArrow:before{
+	content:"\e079";
+	color:#1444ac;
+	position:absolute;
+	left: -4px;
+	top: -15px;
+	font-size: 30px;
+}
+a.rightArrow:before{
+	content:"\e080";
+	color:#1444ac;
+	position: absolute;
+	left: -4px;
+	top: -15px;
+	font-size: 30px;
+}
+.board-icon:before{
+	content: "\e032";
+	font-family: 'Glyphicons Halflings'!important;
+	z-index: 1000;
+	font-size: 30px;
+	position: relative;
+	top: 8px;
+}
+.dinner-icon:before{
+	content: "\e045";
+	font-family: 'Glyphicons Halflings'!important;
+	z-index: 1000;
+	font-size: 30px;
+	position: relative;
+	top: 8px;
+}
+.code-icon:before{
+	content: "\e040";
+	font-family: 'Glyphicons Halflings'!important;
+	z-index: 1000;
+	font-size: 20px;
+	position: absolute;
+	left: 85px;
+	top: 11px;
+}
+.page-cancelCheckin .right_seat{
+    position: absolute;
+    right:35px;
+    top:3px;
+    font-size: 30px!important;
+}
+/*鍙栨秷鍊兼満end*/
+
+/*---------鍊兼満妯″潡 end-----------------------------------------*/
+
+/*---------鏈虹エ棰勮妯″潡 start---------------------------------------*/
+/*鏈虹エ棰勮鏍峰紡*/
+.ticketListCon {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    border-radius: 5px;
+}
+#minLoading{
+    z-index: 5;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.1);
+    padding-top: 50%;
+}
+#minLoading > div{
+    text-align: center;
+}
+
+.ticketListScrollWrapper {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%;
+}
+
+.ticketListWeek {
+    font-size: 0
+}
+
+.ticketListWeek a {
+    width: 26.6%;
+    text-decoration: none;
+    padding: 4px 0;
+    color: #464646
+}
+
+.ticketListWeek .curr {
+    color: #ce1525
+}
+
+.ticketListWeek .prev, .ticketListWeek .next {
+    width: 10%
+}
+
+.ticketListFilter{
+    height: 116px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.ticketListHeadWrap {
+    height: 45px;
+    position: static;
+    left: 0;
+    top: 116px;
+    width: 100%;
+}
+.ticketListCont{
+    background: #fff;
+}
+
+.ticketListHead {
+    color: #afc9fb;
+    height: 45px;
+    vertical-align: middle;
+    line-height: 45px;
+    padding: 0 20px
+}
+
+.ticketListHead a {
+    color: #afc9fb;
+    text-decoration: none
+}
+
+.ticketListHead.abs {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ticketListHead .curr {
+    color: #fff
+}
+
+.ticketListHead .curr:before {
+    border: solid;
+    border-color: #fff transparent;
+    border-width: 6px;
+    border-top: 6px solid transparent;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.ticketList {
+    list-style: none;
+    background-color: #fff;
+    min-height: 400px
+}
+.ticketList .all-cabin-desc{
+    position: relative;
+    top:20px;
+}
+.ticketList li {
+    padding: 22px 20px 20px;
+    position: relative;
+    background: #fff
+}
+
+.ticketList li:nth-child(2n) {
+    background-color: #f6f6f6;
+}
+
+.ticketList .line span {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1
+}
+
+.ticketList .airbox {
+    width: 60px;
+    height: 19px;
+    background: url(/pad/map/static/img/air.png) no-repeat;
+    color: #999;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    vertical-align: top;
+    margin: 0 5px;
+    position: relative;
+}
+
+.ticketList .airbox .cont {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 3px;
+    top: 32px;
+    left: -60px;
+    display: none;
+}
+
+.ticketList .airbox .cont img {
+    display: block;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.ticketList .airbox:hover .cont {
+    display: block;
+}
+
+.ticketList .more-down {
+    color: #999;
+    padding: 10px;
+    padding-right: 26px;
+}
+
+.ticketList .more-down:before {
+    border: solid;
+    border-color: #999 transparent;
+    border-width: 6px;
+    border-bottom: 6px solid transparent;
+    right: 10px;
+    top: 14px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.ticketList .more-up {
+    color: #999;
+    padding: 10px;
+    padding-right: 26px;
+}
+
+.ticketList .more-up:before {
+    border: solid;
+    border-color: #999 transparent;
+    border-width: 6px;
+    border-top: 6px solid transparent;
+    right: 10px;
+    top: 8px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.ticketList .sub {
+    padding: 20px 10px 20px 20px;;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #fafafa;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: -20px;
+    display: none;
+    position: relative;
+    top:20px;
+}
+
+.bs-callout {
+    border: 1px solid #b7b7b7;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-bottom: 7px;
+    background-color: #fff
+}
+
+.bs-callout-success {
+    border-left: 5px solid #9fc46c
+}
+
+.bs-callout-info {
+    border-left: 5px solid #7baec5
+}
+
+.bs-callout-warning {
+    border-left: 5px solid #fd8d2c
+}
+
+.seats .name {
+    left: 20px;
+    top: 13px
+}
+
+.seats .type {
+    left: 110px;
+    top: 13px
+}
+
+.seats .icon {
+    width: 20px;
+    height: 22px;
+    background: url(../img/tui-icon.png) no-repeat;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px
+}
+
+.seats .no {
+}
+
+.seats .yes {
+    background-position: right
+}
+
+.seats .m {
+    background-position: center
+}
+.ticketListWeek {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.ticketList .lit-icon{
+    font-size: 12px;
+    position: relative;
+    width:35px;
+    line-height: 15px!important;
+    border-radius: 3px;
+    padding:1px;
+    text-align: center;
+}
+.ticketList .lit-icon span{
+    height: 15px;
+    width: 100%;
+    border-radius: 3px;
+    z-index: 5;
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+}
+.ticketList .lit-icon:before{
+    content: "";
+    width:0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top:10px;
+    left: 14%;
+    -webkit-transform: rotate(-90deg);
+    z-index: 1;
+}
+.ticketList .disc-icon span{
+    background:#618dd3;
+}
+.ticketList .disc-icon:before{
+    border-top:5px solid #618dd3;
+}
+.ticketList .supper-disc-icon span{
+    background:#e80404;
+}
+.ticketList .supper-disc-icon:before{
+    border-top:5px solid #e80404;
+}
+.ticketList span.luxury{
+    background: url(../img/luxury.png);
+    width:57px;
+    height: 28px;
+}
+.ticketList span.luxury span.desc{
+    height: 28px;
+    line-height: 28px;
+    width: 53px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+}
+.ticketList span.luxury_p1{
+    position: absolute;
+    right: -64px;
+    top: 28px;
+}
+.ticketList span.luxury_p2{
+    position: absolute;
+    right: -64px;
+    top: -2px;
+}
+.ticketList .left-tip{
+    width:19%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    text-align: left;
+}
+.ticketList div.left-tiny-icons{
+    position:absolute;
+    top:-7px;
+    left: 85px;
+    z-index:300;
+}
+.ticketList div.right-tiny-icons{
+    position:absolute;
+    top:-8px;
+    right: 15px;
+    z-index:300;
+}
+.ticketList div.right-tiny-icons span{
+    float:right;
+    display: inline-block;
+}
+.ticketList .economy{
+    font-size: 12px;
+    border:1px solid #9fc46c;
+    border-radius: 2px;
+    color:#9fc46c;
+    display: inline-block;
+    padding:0 5px;
+}
+.ticketList .first{
+    font-size: 12px;
+    border:1px solid #fd8d2c;
+    border-radius: 2px;
+    color:#fd8d2c;
+    display: inline-block;
+    padding:0 5px;
+}
+.ticketList .business{
+    font-size: 12px;
+    border:1px solid #7baec5;
+    border-radius: 2px;
+    color:#7baec5;
+    display: inline-block;
+    padding:0 5px;
+}
+.ticketList .r-price-position{
+    position: relative;
+    top:16px;
+}
+.ticketList li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.ticketList .line {
+    margin-top: 4px
+}
+
+.lybtn {
+    width: 25px;
+    height: 22px;
+    background: url(../img/icon/icon.png) no-repeat scroll -2px -42px;
+    background-size: 192px 135px;
+    display: inline-block;
+}
+
+.catering {
+    width: 19px;
+    height: 21px;
+    background: url(../img/icon/icon.png) no-repeat scroll -30px -34px;
+    background-size: 160px 115px;
+    display: inline-block;
+}
+.ticketList .stopby{
+    font-size: 12px;
+    background:#f0f0f0;
+    color:#797e86;
+    border:1px solid #797e86;
+    border-radius: 6px;
+    padding:0px 6px;
+}
+.ticketList .sharing {
+    position: relative;
+    width: 37px;
+    height: 21px;
+    background: url(../img/icon/icon.png) no-repeat scroll -42px -33px;
+    background-size: 140px 111px;
+    display: inline-block;
+}
+
+.ticketList .sharing .sharing-box {
+    position: absolute;
+    right: -42px;
+    top: 18px;
+    min-width: 115px;
+    text-align: left;
+    font-size: 12px !important;
+    cursor: default;
+    box-shadow: 2px 2px 0px #ddd;
+    background: #1183BC;
+    padding: 0 10px;
+    z-index: 2;
+    color: #fff;
+    display: none;
+}
+
+.ticketList .sharing:hover .sharing-box {
+    display: block;
+}
+
+.customerCon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff
+}
+
+#customerlistScroll {
+}
+
+.customerlistScrollwrapper {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%
+}
+
+/* 瀹㈡埛淇℃伅纭璁㈠崟 */
+.ticketListHead.r5 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.customermenu {
+    background-color: #fff;
+    width: 100%;
+}
+
+.customermenu .customermenubox {
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.17);
+    padding: 10px 40px 0 20px;
+    line-height: 35px;
+    overflow: hidden;
+    height: 54px
+}
+
+.customermenu .customermenubox .txtbox {
+    margin-right: 30px;
+}
+
+.customermenu li {
+    float: left;
+    width: 20%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.customermenu .more {
+    right: 30px;
+    top: 20px;
+}
+
+.customermenu .more:before {
+    border: solid;
+    border-color: #0a2c77 transparent;
+    border-width: 6px;
+    border-bottom: 6px solid transparent;
+    top: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.customermenu .more.open:before {
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid #0a2c77;
+    top: -4px
+}
+
+.customerlist {
+    /*min-height: 180px;*/
+    background: url(../img/customerlistbg.png) repeat-x;
+}
+
+.customerlist li {
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+
+.customerlist li:nth-child(2n) {
+    background-color: #fff
+}
+
+.customerlist .del {
+    width: 10%;
+    display: inline-block;
+}
+
+.customerlist .del a {
+    color: #b5b8bf;
+    text-decoration: none;
+}
+
+.customerlist .customername {
+    width: 30%;
+    display: inline-block;
+}
+
+.customerlist .customercode {
+    width: 50%;
+    display: inline-block;
+}
+.customerlist .glyphicon-baby{
+    position: relative;
+    top:-2px;
+}
+.customerlist .glyphicon-baby:before{
+    content:'\e123';
+}
+.customerlist .glyphicon-adult{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/adult_icon.png) no-repeat 0 0px;
+    background-size: 16px;
+    position: relative;
+    top: 5px;
+    left: 1px;
+}
+.customerlist .passenger-edit{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/edit-icon.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    position: relative;
+    top: 4px;
+    margin-left: 15px;
+}
+.contactInpBox .code{
+    top: 0;
+    right: 15px;
+    height: 34px;
+    width: 32.5%;
+}
+.contactInpBox .code-active{
+    color: #d8d8d8;
+    line-height: 15px;
+    padding-top: 3px;
+}
+.contactInpBox .loading{
+    background: rgba(0,0,0,0.5);
+}
+.contactInpBox .loading .loading-pic{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+.contactInpBox span.codeShadow{
+    top: 0;
+    right: 15px;
+    height: 34px;
+    width: 32.5%;
+}
+.contactInpBox {
+    background-color: #fff
+}
+
+.contactInpBox input {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.customerfooter {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+.lypopbg {
+    background: url(../img/lypop.jpg) no-repeat center bottom #fff;
+}
+
+.lypopcon {
+    padding: 20px;
+}
+
+#usa-address-form {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#usa-address-form form {
+    min-height: 470px
+}
+
+/**/
+
+.ticketScrollbox {
+    height: 300px;
+    overflow: hidden
+}
+
+#ticketScroll {
+}
+
+.ticketScrollwrapper {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%
+}
+
+.paymentCon {
+}
+
+#paymentScroller {
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.paymentScrollerwrapper {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%
+}
+
+#unionpay-card, #payment-card, #payment-wap, #payment-quick {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 600px;
+}
+
+.paybtnbox {
+    width: 100%;
+}
+
+#unionpay-card form {
+    min-height: 355px;
+    text-align: center
+}
+
+#unionpay-card form img {
+    width: 200px;
+}
+
+#payment-card form {
+    min-height: 230px; /*390*/
+}
+
+#payment-wap form {
+    min-height: 350px
+}
+
+#payment-quick form {
+    min-height: 350px
+}
+
+.paymentNavTabs a {
+    /*width: 80px;*/
+}
+
+.paymentNavTabs .more {
+    width: 32px;
+}
+
+.day-dropdown-menu {
+    width: 280px
+}
+
+.day-dropdown-menu > li {
+    display: inline-block
+}
+
+.day-dropdown-menu > li > a {
+    width: 50px;
+    display: inline-block
+}
+#paymentQuickPop{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    width: 390px;
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px
+}
+#paymentQuickPop h3{
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+/*鏀粯鎴愬姛*/
+.paymentokScrollerBox {
+    height: 270px;
+    overflow: hidden;
+    width:400px;
+}
+
+.paymentokbox {
+    width: 526px;
+    height: 600px;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: 10%;
+}
+
+#paymentokScroller {
+}
+
+.paymentokScrollerwrapper {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%
+}
+.cabin-limited{
+    width: 500px;
+    top: 50%;
+    display: none;
+    z-index: 4;
+    left: 50%;
+    background: #fff;
+}
+#planeFood{
+    width: 585px;
+    top: 50%;
+    display: none;
+    z-index: 4;
+    left: 50%;
+    background: #fff;
+    height: 555px;
+}
+#planeFood ul{
+    padding:5px 0;
+    position:relative;
+    left:10px;
+}
+#planeFood ul li{
+    float: left;
+    height: 139px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    list-style: none;
+    position: relative;
+}
+#planeFood ul li span{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+}
+.goback-date{
+    height: 45px;
+    line-height: 40px;
+    margin-right: 5px;
+    margin-top:3px;
+}
+.goback-date-icon{
+    background: #afc9fb;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: #0a2c77;
+}
+.national-tickets .tl-leftCont-float,.transfer-tickets .tl-leftCont-float{
+    height: 165px;
+    width:300px;
+    position: absolute;
+    top:1px;
+    left: 45px;
+    background: url(../img/goback_bg.png) no-repeat right top;
+    background-size: 55%;
+}
+.national-tickets .tl-rightCont,.tl-leftCont-float .tl-rightCont{
+    position:absolute;
+    top:45px;
+    right: 20px;
+}
+.national-tickets .width15,.transfer-tickets .width15{
+    width:15%!important;
+}
+.national-tickets .cabinBorder,.transfer-tickets .cabinBorder{
+    position: relative;
+    float: left;
+    height: 37px;
+    margin-top: 2px;
+    line-height: 37px;
+    padding: 0 10px;
+    font-size: 15px;
+    width: 25%;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-radius: 3px;
+}
+.national-tickets .cabinBorder .gocome-icon{
+    position: absolute;
+    right: 0;
+    top:0;
+    width:0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-top:10px solid #92b3e8;
+    border-right:10px solid #92b3e8;
+    border-top-right-radius: 3px;
+}
+.transfer-tickets .gocome-icon{
+    position: absolute;
+    right: 0;
+    top:0;
+    width:0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-bottom:12px solid transparent;
+    border-top:12px solid #92b3e8;
+    border-right:12px solid #92b3e8;
+    border-top-right-radius: 3px;
+}
+.national-tickets .cabinBorder .gocome-icon .gb-position{
+    position:absolute;
+    top: -21px;
+    right: -10px;
+    color:#fff;
+    font-size: 9px;
+}
+.transfer-tickets .cabinBorder .gocome-icon .gb-position{
+    position:absolute;
+    top: -21px;
+    right: -18px;
+    color:#fff;
+    font-size: 9px;
+    width:20px;
+}
+/*--绉垎鍏戞崲鍏嶇エ start--*/
+.integral_icon{
+    width: 13px;
+    height: 14px;
+    background: url(../img/integral_icon.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    top:1px;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+.integral_icon1{
+    width: 15px;
+    height: 16px;
+    background: url(../img/integral_icon.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    top:2px;
+    right: 2px;
+}
+.customermenubox i.radio{
+    display: inline-block;
+    width:22px;
+    height: 26px;
+}
+.customermenubox i:hover{
+    background: url(../img/blue.png) no-repeat -20px 2px;
+    background-size: auto 21px;
+}
+.customermenubox i.radio_o{
+    background: url(../img/blue.png) no-repeat 3px 2px;
+    background-size: auto 21px;
+}
+.customermenubox i.radio_s{
+    background: url(../img/blue.png) no-repeat -40px 2px;
+    background-size: auto 21px;
+}
+.outbound{
+    width: 25px;
+    height: 6px;
+    display: inline-block;
+    background: url(../img/cb_icon.png) no-repeat;
+    background-size: 25px;
+    position: relative;
+    bottom: 3px;
+}
+.cb_icon{
+    width: 25px;
+    height: 15px;
+    display: inline-block;
+    background: url(../img/cb_icon.png) no-repeat 0 1px;
+    background-size: 25px;
+    position: relative;
+    top:2px;
+}
+/*--绉垎鍏戞崲鍏嶇エ end--*/
+/*绛涢�� start*/
+.pricefilter_line{
+    width: 250px;
+    height: 2px;
+    background: #cccccc;
+    bottom: 3px;
+}
+.pricefilter_line i.slideBtn{
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px #6da0f3;
+}
+.pricefilter_line i.slideBtn_l{
+    top: -12px;
+    left: 20%;
+}
+.pricefilter_line i.slideBtn_r{
+    top: -12px;
+    left: 50%;
+}
+.pricefilter_line i.line_point{
+    height: 6px;
+    width: 6px;
+    background: #999999;
+    border-radius: 50%;
+}
+.pricefilter_line i.point_l{
+    top: -2px;
+    left: 0;
+}
+.pricefilter_line i.point_r{
+    top: -2px;
+    right: 0;
+}
+.pricefilter_line .selected_line{
+    height: 2px;
+    background: #0a2c77;
+    top: 0;
+    width: 30%;
+    left: 27%;
+}
+.pricefilter_line .p_position_1{
+    top:-40px;
+    left: -5px;
+}
+.pricefilter_line .p_position_r{
+    top:-40px;
+    right: -5px;
+}
+/*绛涢�� end*/
+/*---------鏈虹エ棰勮妯″潡 end---------------------------------------*/
+
+
+/*---------闈欐�佹ā鍧�(淇℃伅鏈嶅姟锛屽府鍔╀腑蹇�)start---------------------------------------*/
+.templemenu {top: 137px;left: 50px;}
+.templemenu a {display:block; width:284px; height:45px; line-height:45px;text-indent:16px;color:#333;font-size:15px}
+.templemenu .curr {background:url(../img/temple-tab.png); background-size:100% 100%; color:#fff}
+
+.templebody{font-size: 14px;}
+.templebody p, .templebody dl dd, .templebody ul li{line-height: 24px;}
+.templebody .bluetitbg {border-top-left-radius:5px; border-top-right-radius:5px; line-height:5px; height:5px; overflow:hidden; background-color:#1b4eac}
+.templebody h4 {margin:0;padding:15px 20px;border-bottom:1px solid #ccc}
+.templebody ul {font-size:15px;margin:0;padding:0; list-style-position: inside; color:#1444ac;}
+.templebody ul a {color:#000;line-height:34px}
+.templebody dt {padding:25px 28px 20px;line-height:1;}
+.templebody dd {padding-left:28px;}
+
+.templebodybg {border-bottom-left-radius:10px;border-bottom-right-radius:10px; background:url(../img/temple-bg.jpg) #fff no-repeat right bottom; background-size:294px 253px}
+.templemenu p{
+	color: #000;
+	font-size: 24px;
+}
+#info2 .tm-title li{
+	float: left;
+	width: 50%;
+	padding-left: 5px;
+}
+h4.pb{
+	padding-left: 0;
+	border-bottom:0; 
+	color:#2a6496;
+}
+#info3 dl dd,#info4 dl dd,#info5 dl dd,#info6 dl dd,#info7 dl dd{
+	position: relative;
+}
+#info3 dl dd:before,#info4 dl dd:before,#info5 dl dd:before,#info6 dl dd:before,#info7 dl dd:before{
+	content:'';
+	width: 4px;
+	height: 4px;
+	background:#000;
+	border-radius: 2px;
+	display: inline-block;
+	position: absolute;
+	top:9px;
+	left: 5px;
+}
+.cabin-bg{
+    background: url(../img/lypop.jpg) no-repeat right bottom #fff;
+    background-size: 100%;
+}
+#plane-picPop{
+    width: 600px;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    display: none;
+}
+#info11 ul li, #info12 ul li{
+    float: left;
+    height: 139px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    list-style: none;
+    position: relative;
+}
+#info11 ul li span{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    color:#fff;
+}
+#info12 ul li span{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    color:#fff;
+}
+#info12 ul li img{
+    width:129px;
+}
+#help11 table tr td{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+/*---------闈欐�佹ā鍧�(淇℃伅鏈嶅姟锛屽府鍔╀腑蹇�)end---------------------------------------*/
+
+/*---------涓滄柟涓囬噷琛屾ā鍧� start---------------------------------------*/
+.easternS-upgrade{
+    background-color: #fff;
+    width: 480px;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+.easternS-window{
+	background-color: #fff;
+	width: 370px;
+	left: 50%;
+	top: 50%;
+	border-radius: 5px;
+	z-index: 4;
+	display: none;
+}
+.ji-query-Pop,.ji-exchange-Pop,.bd-rule-Pop,.bd-history-Pop{
+    background-color: #fff;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+.bd-tip-pop,.pic-tip-pop{
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+.ji-buy-Pop,.ji-invalid-Pop{
+    background-color: #fff;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+.jifen-table table tr th,.jifen-table table tr td{
+    text-align: center;
+}
+.jifen-table table tr th{
+    background:#ddd;
+}
+.jifen-table table tr:nth-child(odd){
+    background:#f1f1f1;
+}
+/*涓囬噷琛屾敞鍐� start*/
+.memberReg .documentType {
+	padding-top: 7px;
+}
+.memberReg .documentType .curr{
+	color: #1444ac;
+}
+.memberReg .documentType a {
+	margin-left: 10px;
+	color: #000;
+	text-decoration: none;
+}
+.memberReg label {font-weight:normal}
+.line-title{
+	text-indent: 20px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+.emiles-nav a{
+    width: 200px!important;
+    font-size:18px;
+}
+
+.emiles-nav ul{
+    padding:0;
+    list-style: none;
+}
+.emiles-nav .sub-nav{
+    padding-left: 10px;
+    margin-top:-5px;
+    margin-bottom: 20px;
+    display: none;
+}
+.emiles-nav .sub-title{
+    height: 50px;
+    line-height: 50px;
+}
+.emiles-nav .on-color{
+    color:#1b4eac;
+    font-weight: bold;
+}
+.emiles-nav .sub-nav a{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.emiles-nav a.on{
+    background:url(../img/temple-tab.png) no-repeat;
+    background-size:100%;
+    color:#fff;
+}
+.page-easternMiles-baseinfo .global-closeBtn:after {
+    content: '\e083';
+    font-size: 30px;
+    color: #bdc0c7;
+}
+.gender .gender-icon{
+    width:27px;
+    height:27px;
+    display: inline-block;
+}
+.gender .male-on{
+    background:url(../img/male-on.png);
+    background-size: 100%;
+}
+.gender .male{
+    background:url(../img/male.png);
+    background-size: 100%;
+}
+.gender .female-on{
+    background:url(../img/female-on.png);
+    background-size: 100%;
+}
+.gender .female{
+    background:url(../img/female.png) 0 2px;
+    background-size: 100%;
+}
+i.emiles-edit{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/edit-icon.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+}
+i.emiles-del{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/delete-icon.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+}
+.bene-eidt-pop,.bene-rule-pop,.ben-tips-pop{
+    background-color: #fff;
+    width: 530px;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    z-index: 4;
+}
+.ben-pic-icon{
+    padding-right: 90px;
+    padding-top:10px;
+    text-align: right;
+}
+.bene-eidt-pop .form-p{
+    padding:20px 50px;
+}
+/*涓囬噷琛屾敞鍐� end*/
+/*璐︽埛鏌ヨ start*/
+.btc2c2c2{
+	border-top:1px solid #c2c2c2;
+}
+.downArrow,.upArrow{
+	width:16px;
+	height: 16px;
+	position: relative;
+	right: 13px;
+}
+.downArrow:before{
+	content:'';
+	display: inline-block;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid #999;
+}
+.upArrow:before{
+	content: '';
+	display: inline-block;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-top: 8px solid #999;
+}
+/*璐︽埛鏌ヨ end*/
+/*閲岀▼绱Н鏌ヨ start*/
+.bl0{border-left: 0!important;}
+.departAir-icon, .arriveAir-icon{
+	width:28px;
+	height: 28px;
+	top:1px;
+	left: -37px;
+	position: absolute;
+}
+.departAir-icon:before{
+	content: "\e171";
+	font-family: 'Glyphicons Halflings'!important;
+	font-size: 27px;
+	color: #2451ad;
+}
+.arriveAir-icon:before{
+	content: "\e094";
+	font-family: 'Glyphicons Halflings'!important;
+	font-size: 27px;
+	color: #2451ad;
+}
+.cabinOption .select2-choice{
+    height: 50px;
+    line-height: 50px;
+}
+.cabinOption .select2-arrow b{
+    background-position: 0 13px!important;
+}
+
+/*閲岀▼绱Н鏌ヨ end*/
+
+/*---------涓滄柟涓囬噷琛屾ā鍧� end---------------------------------------*/
+
+/*鎰忚鍙嶉*/
+.advice-wrap{
+    border-radius: 5px;
+    background: #fff;
+    border-top: 5px solid #1b4eac;
+}
+.advice-wrap .title{
+    padding: 0 28px;
+    border-bottom: 1px solid #ccc;
+    height: 48px;
+    line-height: 48px;
+}
+.advice-wrap .title h3{
+    float: left;
+    font-size: 24px;
+    margin: 0;
+    height: 48px;
+    line-height: 48px;
+}
+.advice-wrap .title span{
+    font-size: 15px;
+    float: right;
+    color: #1b4eac;
+}
+.advice-cont{
+    padding: 28px;
+    font-size: 15px;
+}
+.advice-cont h4{
+    margin: 0;
+    font-size: 18px;
+    color: #1b4eac;
+}
+.advice-cont p{
+    margin-top: 20px;
+}
+.advice-cont p label{
+    margin-right: 15px;
+}
+.advice-cont p .form-control{
+    background: #f8f8f8;
+}
+.advice-cont p textarea.form-control{
+    height: 180px;
+}
+/*鎰忚鍙嶉缁撴潫*/
+/*鍏虫敞涓滆埅*/
+.forward-ceair h4{
+    background: #fff;
+}
+.attention{
+    padding: 30px 100px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.attention dl{
+    width: 50%;
+}
+.attention dl,.attention dt,.attention dd{
+    padding: 0;
+}
+.attention dl img{
+    width: 120px;
+    height: 120px;
+}
+.attention dt{
+    height: 20px;
+    line-height: 20px;
+    background: url(../img/icon/forward-icon.png) no-repeat scroll 0 0;
+    background-size: 23px 83px;
+    margin-bottom: 25px;
+}
+.attention .weChat{
+    float: left;
+}
+.attention .weChat dt{
+    background-position: 30% 0;
+}
+.attention .weiBo{
+    float: right;
+}
+.attention .weiBo dt{
+    background-position: 30% -20px;
+    height: 17px;
+    line-height: 17px;
+}
+.attention .weiBo dd{
+    margin-top: 12px;
+}
+.download{
+    background: #f7f7f7;
+    padding: 15px 80px;
+}
+.download img{
+    width: 120px;
+    height: 120px;
+}
+.download .ios,.download .android{
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    text-align: center;
+}
+.download .ios{
+    float: left;
+}
+.download .ios p.text,.download .android p.text{
+    background: url(../img/icon/forward-icon.png) no-repeat scroll 0 0;
+    background-size: 23px 83px;
+    height: 23px;
+    line-height: 23px;
+    margin: 0;
+}
+.download .ios p.text{
+    background-position: 0px -37px;
+}
+.download .android{
+    float: right;
+}
+.download .android p.text{
+    background-position: 0px -60px;
+    padding-left: 20px;
+}
+.forward-ceair .rightContH{
+    background: #f7f7f7;
+    border-radius:5px;
+}
+/*鍏虫敞涓滆埅缁撴潫*/
+/*閬楀け鐗╁搧鏌ヨ*/
+.lose-search-wrap{
+    border-radius: 5px;
+    background: #fff;
+    border-top: 5px solid #1b4eac;
+}
+.lose-search-wrap .title{
+    padding: 0 28px;
+    border-bottom: 1px solid #ccc;
+    height: 48px;
+    line-height: 48px;
+}
+.lose-search-wrap .title h3{
+    float: left;
+    font-size: 24px;
+    margin: 0;
+    height: 48px;
+    line-height: 48px;
+}
+.lose-search-cont{
+    padding: 28px;
+    font-size: 15px;
+}
+.lose-search-cont form .select2-arrow b{
+    background-position: 0 10px!important;
+}
+.lose-search-cont form label{
+    padding-top: 13px!important;
+}
+.lose-search-cont div span.input-wrap{
+    display: block;
+    margin-left: 135px;
+    margin-right: 50px;
+}
+.lose-search-cont div .select2{
+    display: block;
+}
+.lose-search-cont div .form-control{
+    background: #f8f8f8;
+    height: 43px;
+    line-height: 43px;
+}
+.lose-search-cont div .select2-choice{
+    height: 43px;
+    line-height: 43px;
+}
+.lose-search-explain{
+    padding:10px 28px;
+    font-size: 15px;
+}
+#loseResult{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    width: 390px;
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+    padding-bottom: 20px;
+}
+#loseResult h3{
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+#loseResult .hasResult,#loseResult .noResult{
+    height: 160px;
+}
+#loseResult .hasResult ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+#loseResult .hasResult ul li{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+#loseResult .hasResult ul li:first-child{
+    background: #f1f1f1;
+}
+#loseResult .hasResult ul li span{
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+}
+#loseResult .noResult p{
+    text-align: center;
+    margin-top: 80px;
+}
+#loseResult .cancel{
+    width: auto;
+}
+/*閬楀け鐗╁搧鏌ヨ缁撴潫*/
+/*涓囬噷琛屼細鍛橀椤�*/
+.eastern-miles-wrap{
+    border-top: 5px solid #1444ac;
+    border-radius: 5px;
+    /*padding: 20px;*/
+    background: #fff;
+}
+.eastern-miles-wrap p{
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+.eastern-miles-wrap .btn{
+    padding-left:20px;
+    padding-right:20px;
+}
+.btn-white{
+    border: 1px solid #a6a6a6;
+    background: #fff;
+}
+.eastern-miles-wrap .name{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.eastern-miles-wrap .info{
+    margin-top: 20px;
+    padding-right: 140px;
+    position: relative;
+}
+.eastern-miles-wrap .e-card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.eastern-miles-wrap .title{
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    background: #f1f1f1;
+}
+.eastern-miles-wrap span.red{
+    color: #ce1525;
+    font-weight: 700;
+    font-size: 24px;
+}
+.eastern-miles-wrap .member{
+    background: #024294;
+    color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.eastern-miles-wrap .member.l2{
+    background: #b0b1b1;
+}
+.eastern-miles-wrap .member.l3{
+    background: #983701;
+}
+#eCard{
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+#eCard img{
+    display: block;
+    margin: 20px auto;
+    /*width: 280px;*/
+}
+
+.full-process{
+    height: 10px;
+    background:#e4e9e9;
+    border-radius: 15px;
+    width:300px;
+}
+
+.part-process{
+    height: 100%;
+    background:url(../img/process-bg.png) repeat-x;
+    width:10%;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    position:absolute;
+    left: 0;
+}
+.arrow-r{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    background:-webkit-gradient(linear,0 0, 0 100%, from(#eee),to(#ffffff));
+    background:-moz-linear-gradient(top,#eee,#ffffff);
+    position: absolute;
+    left: 8%;
+    top: -2px;
+    box-shadow: inset 1px -1px 7px #999;
+}
+.p-position{
+    top:12px;
+    left: 8%;
+}
+.date-input{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+/*涓囬噷琛岃祫璁腑蹇�*/
+.easternMiles-information-right .easternMiles-information-tabs{
+    font-size: 15px;
+    background: #f7f7f7;
+}
+.easternMiles-information-right .easternMiles-information-tabs a{
+    color: #000;
+    border-bottom: 1px solid #f7f7f7;
+    display: inline-block;
+    margin: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.easternMiles-information-right .easternMiles-information-tabs a.on{
+    color: #1b4eac;
+    border-bottom: 1px solid #1b4eac;
+}
+.easternMiles-information-right .easternMiles-information-cont > div{
+    display: none;
+    padding: 20px;
+}
+.easternMiles-information-right .easternMiles-information-cont > div:first-child{
+    display: block;
+}
+.easternMiles-information-right .easternMiles-information-cont ul{
+    list-style: none;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li:before,.easternMiles-information-right .easternMiles-information-cont ul li:after{
+    display: table;
+    content: "";
+}
+.easternMiles-information-right .easternMiles-information-cont ul li:after{
+    clear: both;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li{
+    margin-bottom: 15px;
+    color: #000;
+    position: relative;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li a{
+    color: #000;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li span{
+    float: left;
+    height: 21px;
+    line-height: 21px;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li span.title{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li span.title:before{
+    position: absolute;
+    content:"";
+    width: 5px;
+    height: 5px;
+    background: #1b4eac;
+    border-radius: 30px;
+    left: 0px;
+    top: 9px;
+}
+.easternMiles-information-right .easternMiles-information-cont ul li span.time{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*涓囬噷琛岃祫璁腑蹇冭缁�*/
+.easternMiles-information-detail-right{
+    padding: 20px;
+    font-size: 15px;
+}
+.easternMiles-information-detail-right h4{
+    font-size: 20px;
+    color: #1b4eac;
+    border: none;
+}
+/*涓囬噷琛屽彈鐩婁汉鏌ヨ*/
+#more_credential ul{
+    margin:0;
+    padding:0;
+}
+#more_credential ul li:nth-child(2){
+    background:#f8f8f8;
+}
+#more_credential ul li{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    padding-left: 20px;
+}
+/*鎴戠殑涓滆埅 涔樻満浜鸿仈绯讳汉绠＄悊*/
+.page-myCeair-contact .info{
+    background: #fff;
+}
+.page-myCeair-contact .info .left{
+    float: left;
+    color: #000;
+}
+.page-myCeair-contact .info .right{
+    float: right;
+    color: #999999;
+}
+.page-myCeair-contact .info .title{
+    background: #0a2c77;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.page-myCeair-contact .info .title .right{
+    color: #afc9fb;
+    cursor: pointer;
+}
+.page-myCeair-contact .info .title .right .plus{
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.page-myCeair-contact .info .title .right .plus:after{
+    content: "\2b";
+}
+.page-myCeair-contact .info .title:first-child{
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-contact .info .title .left{
+    color: #fff;
+}
+.page-myCeair-contact .info .title .right{
+    color: #afc9fb;
+}
+.page-myCeair-contact .info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.page-myCeair-contact .info ul li{
+    padding-top:20px;
+}
+.page-myCeair-contact .info ul li:first-child{
+    padding: 0;
+}
+.page-myCeair-contact .info ul li > div{
+    background: #f8f8f8;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+}
+.page-myCeair-contact .info ul li > div >div{
+    padding: 0 10px;
+}
+.page-myCeair-contact .info ul li .name{
+    height: 50px;
+    line-height: 50px;
+}
+.page-myCeair-contact .info ul li .name span{
+    color: #999999;
+}
+.page-myCeair-contact .info ul li .name .mr10{
+    color: #000;
+}
+.page-myCeair-contact .info ul li .name i.edit{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/edit-icon.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    margin-top: 12px;
+}
+.page-myCeair-contact .info ul li .name i.delete{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/delete-icon.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    margin-top: 12px;
+}
+.page-myCeair-contact .info ul li div .other-info{
+    padding-top: 10px;
+}
+.page-myCeair-contact .info ul li div .other-info:nth-child(2){
+    border-top: 1px solid #c2c2c2;
+}
+.page-myCeair-contact .info ul li div .other-info:last-child{
+    padding-bottom: 10px;
+}
+/*鎴戠殑涓滆埅涓汉淇℃伅绠＄悊*/
+.page-myCeair-infoManage .info{
+    border-top: 5px solid #1b4eac;
+    border-radius: 5px;
+    background: #fff url(../img/modify_pasword_bg.png) no-repeat scroll top right;
+}
+.page-myCeair-infoManage .info .basic p:first-child{
+    margin: 0;
+}
+.page-myCeair-infoManage .info .btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.page-myCeair-infoManage .info .btn-white{
+    border: 1px solid #a6a6a6;
+    background: #fff;
+}
+.page-myCeair-infoManage .info .title{
+    height: 40px;
+    line-height: 40px;
+    background: #f1f1f1;
+}
+.page-myCeair-infoManage .info .title .status{
+    background: #c2c2c2;
+    color: #fff;
+    border-radius: 30px;
+    padding: 4px 8px;
+}
+.page-myCeair-infoManage .info .title .status.red{
+    background: #e3797d;
+}
+.page-myCeair-infoManage .info .left{
+    float: left;
+}
+.page-myCeair-infoManage .info .right{
+    float: right;
+}
+.page-myCeair-infoManage .info .title .btn-white{
+    padding: 0 10px;
+    height: 26px;
+    line-height: 26px;
+    width: 75px;
+}
+.page-myCeair-infoManage .info .order-search p span{
+    display: inline-block;
+    background: #e6e6e6;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+.page-myCeair-infoManage .info .order-search .date{
+    float: left;
+    margin-right: 10px;
+}
+.page-myCeair-infoManage .info .order-search .date em{
+    margin: 12px 2px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.page-myCeair-infoManage .info .order-search .date div{
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 140px;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    background: #f8f8f8;
+    position: relative;
+}
+.page-myCeair-infoManage .info .order-search .date div i{
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    color: #999999;
+}
+.page-myCeair-infoManage .info .order-search .date div i:before{
+    content: "\e109";
+}
+.page-myCeair-infoManage .info .order-search .date div input{
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    height: 42px;
+    line-height: 42px;
+    border: 0;
+    background: transparent;
+    color:#666!important;
+    position: absolute;
+    left: 10px;
+}
+.page-myCeair-infoManage .info .order-search div .btn{
+    width: 100px;
+}
+
+/*鎴戠殑涓滆埅淇敼瀵嗙爜寮圭獥*/
+.myCeairModifyPs{
+    background-color: #fff;
+    width: 530px;
+    left: 50%;
+    top: 50%;
+    margin-left: -265px;
+    margin-top: -90px;
+    border-radius: 10px;
+    z-index: 4;
+    display: none;
+}
+.myCeairModifyPs .head{
+    background-color: #f8f8f8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-height: 36px;
+}
+.myCeairModifyPs label{
+    font-weight:normal
+}
+.myCeairModifyPs .body{
+    padding: 20px 50px;
+    height: 180px;
+}
+/* 鎴戠殑涓滆埅 鏀规湡纭 */
+.page-myCeair-orderChangeConfirm{
+    border-radius: 5px;
+    /*box-shadow: 0 0 4px rgba(0,0,0,.4);*/
+}
+.page-myCeair-orderChangeConfirm .customerCon{
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-orderChangeConfirm .customerCon h4{
+    text-align: center;
+    color: #000;
+    margin: 30px 0 25px;
+}
+.page-myCeair-orderChangeConfirm .customerCon ul{
+    padding: 0 20px;
+    list-style: none;
+}
+.page-myCeair-orderChangeConfirm .customerCon ul li{
+    padding-bottom:20px;
+}
+.page-myCeair-orderChangeConfirm .Ticket .left{
+    float: left;
+}
+.page-myCeair-orderChangeConfirm .Ticket .right{
+    float: right;
+    color: #ce1525;
+}
+.page-myCeair-orderChangeConfirm .Ticket .title{
+    background: #fff;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 20px;
+}
+.page-myCeair-orderChangeConfirm .Ticket .info{
+    background: #efefef;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.page-myCeair-orderChangeConfirm .Ticket .info p{
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+}
+.page-myCeair-orderChangeConfirm .Ticket .info p:last-child{
+    color: #003399;
+}
+.page-myCeair-orderChangeConfirm .Ticket .info:last-child{
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0 0 5px 5px;
+}
+/* 鎴戠殑涓滆埅 鏀规湡 */
+.page-myCeair-orderChangeDate .order-change-date{
+    border-radius: 5px;
+    background: #fff;
+    font-size: 15px;
+    /*box-shadow: 0 0 4px rgba(0,0,0,.4);*/
+}
+.page-myCeair-orderChangeDate .order-change-date .tip{
+    padding-top: 15px;
+    margin-left: 20px;
+}
+.page-myCeair-orderChangeDate .order-change-date ul{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li{
+    padding-bottom: 20px;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .title{
+    background: #1b4eac;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #1b4eac;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .title .left{
+    float: left;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .title .right{
+    float: right;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .title span{
+    margin-right: 10px;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li span.link{
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    background: url(../img/link.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare{
+    padding: 10px 20px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare:last-child{
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare .info{
+    height: 63px;
+    background: #f8f8f8;
+    border: 1px solid #c2c2c2;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 10px 0;
+    width: 90%;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare .info p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare .info p i:after{
+    content: "\e008";
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare .info p span{
+    display: block;
+}
+.page-myCeair-orderChangeDate .order-change-date ul li .fare .info p:nth-child(2){
+    width: 70%;
+}
+.page-myCeair-orderChangeDate .order-change-date .date{
+    margin: 0 20px;
+}
+.page-myCeair-orderChangeDate .order-change-date .date .left{
+    border: 1px solid #c2c2c2;
+    background: #f8f8f8;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.page-myCeair-orderChangeDate .order-change-date .date .left input{
+    height: 40px;
+    line-height: 40px;
+    width: 119%;
+    border: 0;
+    background: none;
+}
+.page-myCeair-orderChangeDate .order-change-date .date i{
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 25px;
+    z-index:5;
+}
+.page-myCeair-orderChangeDate .order-change-date .date i:after{
+    content: "\e109";
+}
+.page-myCeair-orderChangeDate .order-change-date .date div:nth-child(2){
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background: #f8f8f8;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 10px 0 0;
+    width: 100%;
+}
+.page-myCeair-orderChangeDate .order-change-date .date div span{
+    display: inline-block;
+    width: 84%;
+    z-index:10;
+}
+.page-myCeair-orderChangeDate .order-change-date .date .link{
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    line-height: 100px;
+    float: left;
+    width: 10%;
+}
+.page-myCeair-orderChangeDate .order-change-date .action{
+    border-top: 1px solid #c2c2c2;
+    padding: 20px;
+    text-align: center;
+    background: #e8e8e8;
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-orderChangeDate .order-change-date .action button{
+    font-size: 20px;
+}
+/* 鎴戠殑涓滆埅 璁㈠崟璇︾粏 */
+.page-myCeair-orderDetail .myCeair-left{
+    width: 390px;
+}
+.page-myCeair-orderDetail .myCeair-left .left,.page-myCeair-orderDetail .order-detail ul li .left{
+    float: left;
+}
+.page-myCeair-orderDetail .myCeair-left .right,.page-myCeair-orderDetail .order-detail ul li .right{
+    float: right;
+}
+.page-myCeair-orderDetail .myCeair-left .title,.page-myCeair-orderDetail .order-detail ul li .title{
+    border-radius: 5px 5px 0 0;
+    background: #1b4eac;
+    font-size: 15px;
+    color: #fff;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #1b4eac;
+}
+.page-myCeair-orderDetail .myCeair-left .status{
+    font-size: 20px;
+    border-radius: 0 0 5px 5px;
+    background: #f1f1f1;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #c2c2c2;
+}
+.page-myCeair-orderDetail .myCeair-left .status .left{
+    color: #666666;
+}
+.page-myCeair-orderDetail .myCeair-left .status .right{
+    color: #ce1525;
+}
+.page-myCeair-orderDetail .order-detail{
+    background: #fff;
+    border-radius: 5px;
+    /*box-shadow: 0 0 4px rgba(0,0,0,.4);*/
+}
+.page-myCeair-orderDetail .order-detail ul{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+.page-myCeair-orderDetail .order-detail ul li{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.page-myCeair-orderDetail .order-detail ul li:last-child{
+    padding-bottom: 20px;
+}
+.page-myCeair-orderDetail .order-detail ul li div.info-border{
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    padding: 15px 20px;
+}
+.page-myCeair-orderDetail .order-detail ul li div.info-last-child{
+    border-radius: 0 0 5px 5px;
+    background: #f1f1f1;
+}
+.page-myCeair-orderDetail .order-detail ul li div.info-border em{
+    font-style: normal;
+}
+.page-myCeair-orderDetail .order-detail ul li .address{
+    background: #fff;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .point,.page-myCeair-orderDetail .order-detail ul li .address .flight-num{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .flight-num .cabin{
+    position: absolute;
+    left: 32%;
+    bottom: -13px;
+    font-size: 12px;
+    color: #999;
+}
+.t-boxShadow{box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);}
+.page-myCeair-orderDetail .order-detail ul li .address .point span{
+    display: block;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .point span:first-child{
+    font-size: 24px;
+    color: #000;
+    margin: 23px auto 0;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .point span:last-child{
+    font-size: 12px;
+    color: #b3b3b3;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .flight-num span{
+    width: 80px;
+    padding-top: 60px;
+    background: url(../img/air2.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    color: #8599c4;
+    display: block;
+    margin: 0 auto;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .day{
+    font-size: 18px;
+    color: #6f6f6f;
+    margin: 0;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .day{
+    font-size: 18px;
+    color: #6f6f6f;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .time{
+    font-size: 20px;
+    color: #1444ac;
+    margin: 0;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .time span{
+    margin-right: 10px;
+}
+.page-myCeair-orderDetail .order-detail ul li .address .time .link{
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    background: url(../img/link.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.page-myCeair-orderDetail .order-detail ul li .tax .left p{
+    float: left;
+    margin: 0 20px;
+}
+.page-myCeair-orderDetail .order-detail ul li .tax .left p span{
+    display: block;
+    text-align: center;
+}
+.page-myCeair-orderDetail .order-detail ul li .tax .left p span:first-child{
+    font-size: 12px;
+    color: #000;
+}
+.page-myCeair-orderDetail .order-detail ul li .tax .left p span:last-child{
+    font-size: 15px;
+    color: #003399;
+}
+.page-myCeair-orderDetail .order-detail ul li .tax .right{
+    font-size: 27px;
+    color: #ce1525;
+}
+.page-myCeair-orderDetail .order-detail ul li .status{
+    color: #a3a3a3;
+}
+.page-myCeair-orderDetail .order-detail ul li .status .left em{
+    margin-right: 10px;
+}
+.page-myCeair-orderDetail .order-detail ul li .status .left em.name{
+    display: inline-block;
+    width: 50px;
+    color: #000;
+}
+.page-myCeair-orderDetail .order-detail ul li .content{
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+.page-myCeair-orderDetail .order-detail ul li .content .f18{
+    color: #1444ac;
+}
+.page-myCeair-orderDetail .order-detail ul li .content .bb{
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 10px;
+}
+.page-myCeair-orderDetail .order-detail .action{
+    border-top: 1px solid #c2c2c2;
+    padding: 20px;
+    text-align: center;
+}
+.page-myCeair-orderDetail .order-detail .action button{
+    width: 150px;
+    margin: 0 2%;
+    font-size: 20px;
+}
+/* 鎴戠殑涓滆埅 鏀规湡 閫夋嫨鏃ユ湡 */
+.page-myCeair-orderPickDate .order-pick-date{
+    border-radius: 5px;
+    background: #fff;
+    /*box-shadow: 0 0 4px rgba(0,0,0,.4);*/
+    font-size: 15px;
+}
+.page-myCeair-orderPickDate .order-pick-date .tip{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.page-myCeair-orderChangeDate .order-change-date ul{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li{
+    padding-bottom: 20px;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li .title{
+    background: #1b4eac;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #1b4eac;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li{
+    padding-bottom: 20px;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li .title{
+    background: #1b4eac;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #1b4eac;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-orderPickDate .order-pick-date .left{
+    float: left;
+}
+.page-myCeair-orderPickDate .order-pick-date .right{
+    float: right;
+}
+.page-myCeair-orderPickDate .order-pick-date ul{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li .title span{
+    margin-right: 10px;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li .title span.link{
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    background: url(../img/link.png) no-repeat;
+    vertical-align: middle;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li .fare{
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-orderPickDate .order-pick-date ul li .fare em{
+    display: inline-block;
+    width: 55px;
+    color: #000;
+    font-style: normal;
+}
+.page-myCeair-orderPickDate .order-pick-date .date{
+    margin: 0 20px;
+}
+.page-myCeair-orderPickDate .order-pick-date .date .left{
+    border: 1px solid #c2c2c2;
+    background: #f8f8f8;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.page-myCeair-orderPickDate .order-pick-date .date .left input{
+    height: 40px;
+    line-height: 40px;
+    width: 116%;
+    border: 0;
+    background: none;
+}
+.page-myCeair-orderPickDate .order-pick-date .date i{
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 25px;
+    position: relative;
+    z-index: 10;
+}
+.page-myCeair-orderPickDate .order-pick-date .date i:after{
+    content: "\e109";
+}
+.page-myCeair-orderPickDate .order-pick-date .date div:nth-child(2){
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background: #f8f8f8;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 10px 0 0;
+    width: 100%;
+}
+.page-myCeair-orderPickDate .order-pick-date .date div span{
+    display: inline-block;
+    width: 84%;
+    position:relative;
+    z-index:15;
+}
+.page-myCeair-orderPickDate .order-pick-date .date .link{
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    line-height: 100px;
+    float: left;
+    width: 10%;
+}
+.page-myCeair-orderPickDate .order-pick-date .action{
+    border-top: 1px solid #c2c2c2;
+    padding: 20px;
+    text-align: center;
+    background: #e8e8e8;
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-orderPickDate .order-pick-date .action button{
+    font-size: 20px;
+}
+/* 鎴戠殑涓滆埅 璁㈠崟鏌ヨ */
+.page-myCeair-orderSearch{
+    font-size: 15px;
+}
+.page-myCeair-orderSearch .title{
+    background: #0a2c77;
+    height: 60px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-orderSearch .title span,.page-myCeair-orderSearch .title em,.page-myCeair-orderSearch .title div,.page-myCeair-orderSearch .title button{
+    display: inline-block;
+    vertical-align: top;
+}
+.page-myCeair-orderSearch .title .month span{
+    color: #afc9fb;
+    margin: 22px 10px 0;
+}
+.page-myCeair-orderSearch .title .month span.on{
+    color: #fff;
+}
+.page-myCeair-orderSearch .title .date em{
+    color: #fff;
+    margin: 22px 2px 0;
+}
+.page-myCeair-orderSearch .title .date div{
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    position: relative;
+}
+.page-myCeair-orderSearch .title .date div i{
+    margin-top: 5px;
+    position:absolute;
+    right:10px;
+    z-index:5;
+}
+.page-myCeair-orderSearch .title .date div i:before{
+    content: "\e109";
+}
+.page-myCeair-orderSearch .title .date div span{
+    position: absolute;
+    left: 7px;
+    width: 130px;
+    z-index:10;
+}
+.page-myCeair-orderSearch .title .date div span input{
+    border: 0;
+    background: none;
+    height: 40px;
+    line-height: 40px;
+    width: 130px;
+}
+.page-myCeair-orderSearch .title button{
+    margin-top: 10px;
+    height: 40px;
+    float: right;
+    width: 13%;
+}
+.page-myCeair-orderSearch .option{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    background: #e7e7e7;
+}
+.page-myCeair-orderSearch .option .left{
+    float: left;
+}
+.page-myCeair-orderSearch .option .left:last-child{
+    width: 100px;
+}
+.page-myCeair-orderSearch .order-list{
+    padding: 0 20px 20px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    /*box-shadow: 0 3px 3px rgba(0,0,0,.4);*/
+}
+.page-myCeair-orderSearch .order-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-myCeair-orderSearch .order-list ul li{
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.page-myCeair-orderSearch .order-list ul a:last-child li{
+    padding-bottom: 20px;
+}
+.page-myCeair-orderSearch .order-list ul li div{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 0 20px;
+}
+.page-myCeair-orderSearch .order-list ul li div em{
+    font-style: normal;
+    padding-left: 10px;
+}
+.page-myCeair-orderSearch .order-list ul li .title{
+    background: #1b4eac;
+    border-color: #1b4eac;
+    color: #fff;
+}
+.page-myCeair-orderSearch .order-list ul li .left{
+    float: left;
+}
+.page-myCeair-orderSearch .order-list ul li .line{
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background: url(../img/link.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    vertical-align: top;
+    margin: 17px 10px 0;
+}
+.page-myCeair-orderSearch .order-list ul li .right{
+    float: right;
+}
+.page-myCeair-orderSearch .order-list ul li div.status{
+    height: 50px;
+    line-height: 50px;
+    background: #f1f1f1;
+    font-size: 24px;
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-orderSearch .order-list ul li div.cancel .left{
+    color: #999!important;
+    text-decoration: line-through;
+}
+.page-myCeair-orderSearch .order-list ul li div.status .left{
+    color: #128715;
+}
+.page-myCeair-orderSearch .order-list ul li div.status .right{
+    color: #ce1525;
+}
+.page-myCeair-orderSearch .order-list ul li div.payfor .left{
+    color: #ff6600;
+}
+.page-myCeair-orderSearch .order-list ul li div.payfor .right{
+    color: #ff6600;
+}
+.page-myCeair-orderSearch .order-list ul li div.payfor .right a{
+    padding: 0 20px;
+    margin-top: 5px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+.page-myCeair-orderSearch .order-list ul li i.stamp{
+    position: absolute;
+    right: 150px;
+    bottom: 25px;
+    z-index: 2;
+    width: 88px;
+    height: 88px;
+}
+.page-myCeair-orderSearch .order-list ul li i.stamp.change{
+    background: url(../img/stamp-change-date.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+}
+.page-myCeair-orderSearch .order-list ul li i.stamp.refund{
+    background: url(../img/mi5.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+}
+/* 鎴戠殑涓滆埅 閫�绁� */
+.page-myCeair-refundTicket .refund-ticket{
+    border-radius: 5px 5px 0 0;
+    background: #fff;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.page-myCeair-refundTicket .refund-ticket .cancelReasonOption-wrap{
+    padding: 0 20px 20px;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 5px;
+}
+.page-myCeair-refundTicket .refund-ticket .cancelReasonOption span{
+    margin-right: 5px;
+}
+.page-myCeair-refundTicket .refund-ticket .cancelReasonOption span.light{
+    color: #1444ac;
+    font-weight: 700;
+}
+.page-myCeair-refundTicket .refund-ticket .cancelReasonOption em{
+    font-style: normal;
+}
+.page-myCeair-refundTicket .refund-ticket .tip{
+    margin-top: 20px;
+}
+.page-myCeair-refundTicket .refund-ticket ul{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+.page-myCeair-refundTicket .refund-ticket ul li{
+    padding-bottom: 20px;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .title{
+    background: #1b4eac;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #1b4eac;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .title .left{
+    float: left;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .title .right{
+    float: right;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .title span{
+    margin-right: 10px;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .title span.link{
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    background: url(../img/link.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare{
+    padding: 10px 20px;
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare:last-child{
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare .info{
+    height: 63px;
+    background: #f8f8f8;
+    border: 1px solid #c2c2c2;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 10px 0;
+    width: 90%;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare .info p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare .info p i:after{
+    content: "\e008";
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare .info p span{
+    display: block;
+}
+.page-myCeair-refundTicket .refund-ticket ul li .fare .info p:nth-child(2){
+    width: 70%;
+}
+.page-myCeair-refundTicket .refund-ticket .form-control{
+    margin-left: 5px;
+}
+.page-myCeair-refundTicket .refund-ticket textarea.form-control{
+    min-height: 100px;
+    width: 100%;
+}
+.page-myCeair-refundTicket .refund-ticket.customerfooter{
+    border-radius: 0 0 5px 5px;
+}
+.page-myCeair-refundTicket .refund-ticket.customerfooter .right{
+    color: #ce1525;
+}
+.page-myCeair-refundTicket .refund-ticket .left{
+    float: left;
+}
+.page-myCeair-refundTicket .refund-ticket .right{
+    float: right;
+}
+/*鎴戠殑涓滆埅閫�绁ㄨ鎯�*/
+.page-myCeair-refundTicketDetail .myCeair-left{
+    width: 390px;
+}
+.page-myCeair-refundTicketDetail .myCeair-left .left{
+    float: left;
+}
+.page-myCeair-refundTicketDetail .myCeair-left .right{
+    float: right;
+}
+.page-myCeair-refundTicketDetail .myCeair-left .title{
+    border-radius: 5px 5px 0 0;
+    background: #1b4eac;
+    font-size: 15px;
+    color: #fff;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #1b4eac;
+}
+.page-myCeair-refundTicketDetail .myCeair-left .status{
+    font-size: 20px;
+    border-radius: 0 0 5px 5px;
+    background: #f1f1f1;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #c2c2c2;
+}
+.page-myCeair-refundTicketDetail .myCeair-left .status .left{
+    color: #666666;
+}
+.page-myCeair-refundTicketDetail .myCeair-left .status .right{
+    color: #ce1525;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail{
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail .list-nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 140px;
+    overflow: hidden;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail .list-nav span{
+    background: #f8f8f8;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    color: #000;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    float: right;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail .list-nav span.on{
+    background: #1c4ead;
+    color: #fff;
+    width: 140px;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail .list{
+    display: none;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dl{
+    margin-bottom: 10px;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dt{
+    background: #f2f2f2;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dl:first-child dt{
+    border-radius: 5px 5px 0 0;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dd{
+    padding: 0 20px;
+    margin-top: 10px;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dd span{
+    color: #ce1525;
+    font-size: 20px;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dd span[name]{
+    color: #000;
+    font-size: 15px;
+}
+.page-myCeair-refundTicketDetail .refund-ticket-detail dd span span[name]{
+    color: #ce1525;
+    font-size: 20px;
+}
+/* 鎴戠殑涓滆埅 閫�绁� */
+.page-myCeair-refundTicketInfo .lh40{
+    line-height: 40px;
+    height: 40px;
+}
+/*瀹㈢エ楠岀湡*/
+.ticket-verification-result-wrap{
+    border-radius: 5px;
+    background: #fff;
+    border-top: 5px solid #1b4eac;
+    padding: 0 18px;
+    font-size: 15px;
+}
+.ticket-verification-result-wrap .title{
+    margin-top: 34px;
+}
+.ticket-verification-result-wrap .cont{
+    border-radius: 5px;
+    border:1px solid #c2c2c2;
+    background: #f8f8f8;
+    margin-top: 15px;
+    padding: 20px;
+}
+.ticket-verification-result-wrap .trueTicket{
+    position: relative;
+}
+.ticket-verification-result-wrap .trueTicket:before{
+    position: absolute;
+    right: 25px;
+    top: -40px;
+    width: 90px;
+    height: 90px;
+    background: url(../img/mi6.png) no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    content: "";
+}
+/*鑸彮鍔ㄦ��*/
+.map-shade{
+    width: 80%;
+}
+.flight-cont{
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+.flight-cont .title{
+    height: 44px;
+    background: #0a2c77;
+    border-radius: 5px 5px 0 0;
+    color: #afc9fb;
+    font-size: 15px;
+    padding: 0 20px;
+}
+.flight-cont .title .on{
+    color: #fff;
+}
+.flight-cont .flight-name{
+    float: left;
+    line-height: 44px;
+}
+.flight-cont .tabs{
+    float: right;
+}
+.flight-cont .tabs span{
+    display: inline-block;
+    margin-top: 6px;
+    position: relative;
+}
+.flight-cont .tabs span:first-child{
+    margin-right: 20px;
+}
+.flight-cont .tabs span .no-normal{
+    font-size: 28px;
+}
+.flight-cont .tabs span .time-icon{
+    font-size: 22px;
+}
+.flight-cont .tabs span .no-normal:before{
+    content: "\2a";
+}
+.flight-cont .tabs span .time-icon:before{
+    content: "\e023";
+}
+.flight-cont .tabs span:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    border: 10px solid;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(255,255,255,1) rgba(0,0,0,0);
+    display: none;
+}
+.flight-cont .tabs span.on:after{
+    display: block;
+}
+.flight-cont .flight-detail{
+    /*box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);*/
+}
+.flight-cont .flight-detail .flight-list .status{
+    background: #fff;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+.flight-cont .flight-detail .flight-list:last-child div:first-child{
+    border-bottom: 0;
+}
+.flight-cont .flight-detail .flight-list .status:nth-child(2n){
+    background: #fafafa;
+}
+.flight-cont .flight-detail .flight-list .status .left h3{
+    margin-top: 0;
+}
+.flight-cont .flight-detail .flight-list .status .left p{
+    font-size: 15px;
+    color: #1444ac;
+}
+.flight-cont .flight-detail .flight-list .status .left p span{
+    display: inline-block;
+    vertical-align: top;
+}
+.flight-cont .flight-detail .flight-list .status .left p span.link{
+    padding-top: 25px;
+    background: url(/pad/map/static/img/air.png) no-repeat scroll center 0 ;
+    font-size: 12px;
+    color: #aaaaaa;
+    width: 100px;
+    text-align: center;
+}
+.flight-cont .flight-detail .flight-list .status .right p{
+    text-align: right;
+}
+.flight-cont .flight-detail .flight-list p,.flight-cont .flight-detail .flight-list h4{
+    margin: 0;
+}
+.flight-cont .flight-detail .flight-list .status .left{
+    float: left;
+}
+.flight-cont .flight-detail .flight-list .status .right{
+    float: right;
+}
+.flight-cont .flight-detail .flight-list .station .station-name{
+    font-size: 15px;
+    padding: 20px;
+}
+.flight-cont .flight-detail .flight-list .station .station-name h4{
+    float: left;
+}
+.flight-cont .flight-detail .flight-list .station .station-name .date{
+    float: right;
+    color: #464646;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail{
+    position: relative;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.1) inset;
+    width: 100%;
+    height: 10px;
+    content: "";
+    display: block;
+    z-index: 2;
+}
+.flight-cont .flight-detail .flight-list .status-bg{
+    position: absolute;
+    top:40px;
+    left:48%;
+    width:100px;
+    height: 100px;
+}
+.flight-cont .flight-detail .flight-list.no-take-off .status .right p:first-child{
+    color: #5ab9b6;
+}
+.flight-cont .flight-detail .flight-list.no-take-off .station .station-name{
+    background: #e7f5f4;
+}
+.flight-cont .flight-detail .flight-list.no-take-off .station .station-detail{
+    position: relative;
+    background: #f2faf9;
+}
+.flight-cont .flight-detail .flight-list.no-take-off .schedule-bg{
+    background:transparent url(../img/Schedule.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list.on-the-way .status .right p:first-child{
+    color: #058bca;
+}
+.flight-cont .flight-detail .flight-list.on-the-way .station .station-name{
+    background: #dbeef8;
+}
+.flight-cont .flight-detail .flight-list.on-the-way .station .station-detail{
+    position: relative;
+    background: #ebf6fb;
+}
+.flight-cont .flight-detail .flight-list.on-the-way .takeoff-bg{
+    background:transparent url(../img/Takeoff.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list.delay .status .right p:first-child{
+    color: #f00;
+}
+.flight-cont .flight-detail .flight-list.delay .station .station-name{
+    background: #ffdada;
+}
+.flight-cont .flight-detail .flight-list.delay .station .station-detail{
+    position: relative;
+    background: #ffebeb;
+}
+.flight-cont .flight-detail .flight-list.delay .cancel-bg{
+    background:transparent url(../img/Cancel.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list.arrived .status .right p:first-child{
+    color: #1f9501;
+}
+.flight-cont .flight-detail .flight-list.arrived .station .station-name{
+    background: #ddefd9;
+}
+.flight-cont .flight-detail .flight-list.arrived .station .station-detail{
+    position: relative;
+    background: #edf7eb;
+}
+.flight-cont .flight-detail .flight-list.arrived .arrived-bg{
+    background:transparent url(../img/Arrived.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list.plan-cancel .status .right p:first-child{
+    color: #ff6363;
+}
+.flight-cont .flight-detail .flight-list.plan-cancel .station .station-name{
+    background: #ffe9e9;
+}
+.flight-cont .flight-detail .flight-list.plan-cancel .station .station-detail{
+    position: relative;
+    background: #fff3f3;
+}
+.flight-cont .flight-detail .flight-list.plan-cancel .plancancel-bg{
+    background:transparent url(../img/Plan_cancel.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list.return-back .status .right p:first-child{
+    color: #b8ae01;
+}
+.flight-cont .flight-detail .flight-list.return-back .station .station-name{
+    background: #f4f4da;
+}
+.flight-cont .flight-detail .flight-list.return-back .station .station-detail{
+    position: relative;
+    background: #f9f9eb;
+}
+.flight-cont .flight-detail .flight-list.return-back .back-bg{
+    background:transparent url(../img/Back.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list.go-down .status .right p:first-child{
+    color: #e89216;
+}
+.flight-cont .flight-detail .flight-list.go-down .station .station-name{
+    background: #fbeedc;
+}
+.flight-cont .flight-detail .flight-list.go-down .station .station-detail{
+    position: relative;
+    background: #fdf6ed;
+}
+.flight-cont .flight-detail .flight-list.go-down .alternate-bg{
+    background:transparent url(../img/Alternate.png) no-repeat;
+    background-size: 100px;
+}
+.flight-cont .flight-detail .flight-list .status .right p:first-child{
+    font-size: 27px;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail{
+    padding: 20px 20px 0;
+}
+.flight-cont .flight-detail .flight-list .station:last-child .station-detail{
+    padding-bottom: 20px;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table{
+    width: 100%;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr,.flight-cont .flight-detail .flight-list .station .station-detail table tr.content i{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr span{
+    display: block;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr.content{
+    font-size: 20px;
+    font-weight: 700;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr.content td{
+    padding-bottom: 20px;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr .division span{
+    width: 10px;
+    position: relative;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail table tr .division span:before{
+    border-bottom: 1px solid #464646;
+    content: "";
+    height: 1px;
+    left: -28px;
+    position: absolute;
+    top: -12px;
+    -moz-transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+    -o-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+    width: 74px;
+}
+#flightWrap,#flightWrap2,#flightWrap3{
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special{
+    margin:0 20px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #464646;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .left{
+    float: left;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .right{
+    float: right;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .left p{
+    line-height: 38px;
+    height: 38px;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .left p i{
+    color: #c2c2c2;
+    font-size: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .left p:nth-child(1) i:before{
+    content: "\e101";
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .left p:nth-child(2) i:before{
+    content: "\2a";
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .right{
+    margin-top: 18px;
+}
+.flight-cont .flight-detail .flight-list .station .station-detail .special .search{
+    color: #fff;
+    background: #464646;
+    border-radius: 5px;
+    width: 64px;
+    text-align: center;
+    display: block;
+}
+.page-flighting-city .back,.page-flighting-abnormal .back{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.page-flighting-abnormal .flight-detail .station{
+    display: none;
+}
+.page-flighting-abnormal .flight-detail-title{
+    background:#eaeaea;
+    padding-left: 10px;
+}
+.page-flighting-abnormal .flight-detail-title span{
+    width:15%;
+    display: inline-block;
+    text-align: center;
+}
+.page-flighting-abnormal .flight-detail span.early{
+    color:#058bca;
+}
+.page-flighting-abnormal .flight-detail span.normal{
+    color:#1f9501;
+}
+.page-flighting-abnormal .flight-detail span.delay{
+    color:#f00;
+}
+.page-flighting-abnormal .flight-detail .reset_p{
+    padding:10px 0 10px 15px;
+    padding-left: 15px!important;
+}
+.page-flighting-abnormal .flight-detail .status span{
+    width:15%;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+.page-flighting-abnormal .flight-detail .no-take-off span.state_color{
+    color:#5ab9b6;
+    font-size:20px;
+}
+.page-flighting-abnormal .flight-detail .on-the-way span.state_color{
+    color:#058bca;
+    font-size:20px;
+}
+.page-flighting-abnormal .flight-detail .delay span.state_color{
+    color:#f00;
+    font-size:20px;
+}
+.page-flighting-abnormal .flight-detail .arrived span.state_color{
+    color:#1f9501;
+    font-size:20px;
+}
+.page-flighting-abnormal .flight-detail .plan-cancel span.state_color{
+    color:#ff6363;
+    font-size:20px;
+}
+.page-flighting-abnormal .flight-detail .return-back span.state_color{
+    color:#b8ae01;
+    font-size:20px;
+}
+.page-flighting-abnormal .flight-detail .go-down span.state_color{
+    color:#e89216;
+    font-size:20px;
+}
+.page-flighting-abnormal .flightBottomDate{
+    height: 60px;
+    background: #f7f7f7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.page-flighting-abnormal .flightBottomDate span{
+    display: inline-block;
+    width:33.3333333333%;
+    text-align: center;
+    height: 100%;
+    width:32.5%;
+}
+.page-flighting-abnormal .flightBottomDate span i{
+    display: block;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+.page-flighting-abnormal .flightBottomDate span.s{
+    background: #1c4ead;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color:#fff;
+}
+/*鏈哄満鏀荤暐 start*/
+.airport-page .titleH{
+    height: 55px;
+}
+.airport-page .titleH span{
+    height: 55px;
+    font-size: 30px;
+    float: right;
+    position: relative;
+    top: 13px;
+    right: 5px;
+}
+.airport-page h4.bt0{
+    border-bottom:0!important;
+}
+.airport-page .brfff{
+    border-right: 1px solid rgba(255,255,255,.3);
+}
+.airport-page .w-icon ul li{
+    width:33.33333333333%;
+    float:left;
+    padding:20px;
+    text-align: center;
+    list-style:none;
+    position: relative;
+}
+.airport-page span.size{
+    width: 65px;
+    height: 60px;
+    margin:auto;
+    position: relative;
+    right:31px;
+}
+.airport-page span.temperature{
+    position: absolute;
+    top:25px;
+    right: 38px;
+    color:#fff;
+    font-size: 20px;
+}
+/*----------------------------------鏈哄満鏀荤暐棣栭〉澶╂皵icon start*/
+/*闆舵槦闃甸洦*/
+.airport-page .w1{
+    background:url(/pad/map/static/img/climate/white/wicon1.png) ;
+    background-size:100%;
+}
+/*缁嗗喕闆�*/
+.airport-page .w2{
+    background:url(/pad/map/static/img/climate/white/wicon2.png) ;
+    background-size:100%;
+}
+/*缁嗛洦*/
+.airport-page .w3{
+    background:url(/pad/map/static/img/climate/white/wicon3.png) ;
+    background-size:100%;
+}
+/*闃甸洦*/
+.airport-page .w4{
+    background:url(/pad/map/static/img/climate/white/wicon4.png) ;
+    background-size:100%;
+}
+/*鍐婚洦*/
+.airport-page .w5{
+    background:url(/pad/map/static/img/climate/white/wicon5.png) ;
+    background-size:100%;
+}
+/*澶ч洦*/
+.airport-page .w6{
+    background:url(/pad/map/static/img/climate/white/wicon6.png) ;
+    background-size:100%;
+}
+/*闆�*/
+.airport-page .w7{
+    background:url(/pad/map/static/img/climate/white/wicon7.png) ;
+    background-size:100%;
+}
+/*灏忛洦*/
+.airport-page .w8{
+    background:url(/pad/map/static/img/climate/white/wicon8.png) ;
+    background-size:100%;
+}
+/*闃撮溇*/
+.airport-page .w9{
+    background:url(/pad/map/static/img/climate/white/wicon9.png) ;
+    background-size:100%;
+}
+/*鍐伴浌*/
+.airport-page .w10{
+    background:url(/pad/map/static/img/climate/white/wicon10.png) ;
+    background-size:100%;
+}
+/*娣峰悎闆ㄥ拰鍐伴浌*/
+.airport-page .w11{
+    background:url(/pad/map/static/img/climate/white/wicon11.png) ;
+    background-size:100%;
+}
+/*椋橀洩  闆舵槦闃甸洩*/
+.airport-page .w12{
+    background:url(/pad/map/static/img/climate/white/wicon12.png) ;
+    background-size:100%;
+}
+/*鏆撮闆� 鏆撮洩*/
+.airport-page .w13{
+    background:url(/pad/map/static/img/climate/white/wicon13.png) ;
+    background-size:100%;
+}
+/*澶ч洩*/
+.airport-page .w14{
+    background:url(/pad/map/static/img/climate/white/wicon14.png) ;
+    background-size:100%;
+}
+/*涓洩*/
+.airport-page .w15{
+    background:url(/pad/map/static/img/climate/white/wicon15.png) ;
+    background-size:100%;
+}
+/*灏忛洩 鍚归洩*/
+.airport-page .w16{
+    background:url(/pad/map/static/img/climate/white/wicon16.png) ;
+    background-size:100%;
+}
+/*闆ㄥす闆� 闆ㄩ洩 闆ㄥ拰闆ㄩ洩 娣峰悎闆ㄩ洩*/
+.airport-page .w17{
+    background:url(/pad/map/static/img/climate/white/wicon17.png) ;
+    background-size:100%;
+}
+/*闃甸洩 灏忛樀闆�*/
+.airport-page .w18{
+    background:url(/pad/map/static/img/climate/white/wicon18.png) ;
+    background-size:100%;
+}
+/*鐐庣儹*/
+.airport-page .w19{
+    background:url(/pad/map/static/img/climate/white/wicon19.png) ;
+    background-size:100%;
+}
+/*鏅存湕 鏅存湕(鐧斤級 灞�閮ㄦ櫞 澶ч儴鍒嗘櫞 澶ч儴鍒嗘櫞鏈�*/
+.airport-page .w20{
+    background:url(/pad/map/static/img/climate/white/wicon20.png) ;
+    background-size:100%;
+}
+/*澶氫簯杞櫞*/
+.airport-page .w21{
+    background:url(/pad/map/static/img/climate/white/wicon21.png) ;
+    background-size:100%;
+}
+/*鏅磋浆澶氫簯 鏅撮棿澶氫簯*/
+.airport-page .w22{
+    background:url(/pad/map/static/img/climate/white/wicon22.png) ;
+    background-size:100%;
+}
+/*鏅存湕锛堝锛�*/
+.airport-page .w23{
+    background:url(/pad/map/static/img/climate/white/wicon23.png) ;
+    background-size:100%;
+}
+/*鐑熼浘*/
+.airport-page .w24{
+    background:url(/pad/map/static/img/climate/white/wicon24.png) ;
+    background-size:100%;
+}
+/*灏樺焹*/
+.airport-page .w25{
+    background:url(/pad/map/static/img/climate/white/wicon25.png) ;
+    background-size:100%;
+}
+/*澶氫簯 澶ч儴鍒嗗浜戯紙鐧斤級 灞�閮ㄥ浜戯紙鐧斤級*/
+.airport-page .w26{
+    background:url(/pad/map/static/img/climate/white/wicon26.png) ;
+    background-size:100%;
+}
+/*澶ч儴鍒嗗浜戯紙澶滐級 灞�閮ㄥ浜戯紙澶滐級*/
+.airport-page .w27{
+    background:url(/pad/map/static/img/climate/white/wicon27.png) ;
+    background-size:100%;
+}
+/*闂风儹*/
+.airport-page .w28{
+    background:url(/pad/map/static/img/climate/white/wicon28.png) ;
+    background-size:100%;
+}
+/*鎵矙*/
+.airport-page .w29{
+    background:url(/pad/map/static/img/climate/white/wicon29.png) ;
+    background-size:100%;
+}
+/*鎵皹*/
+.airport-page .w30{
+    background:url(/pad/map/static/img/climate/white/wicon30.png) ;
+    background-size:100%;
+}
+/*闆舵槦闆烽洦  灞�閮ㄩ浄闃甸洦  闆烽樀闆�*/
+.airport-page .w31{
+    background:url(/pad/map/static/img/climate/white/wicon31.png) ;
+    background-size:100%;
+}
+/*闆�*/
+.airport-page .w32{
+    background:url(/pad/map/static/img/climate/white/wicon32.png) ;
+    background-size:100%;
+}
+/*闂數*/
+.airport-page .w33{
+    background:url(/pad/map/static/img/climate/white/wicon33.png) ;
+    background-size:100%;
+}
+/*鍐�*/
+.airport-page .w34{
+    background:url(/pad/map/static/img/climate/white/wicon34.png) ;
+    background-size:100%;
+}
+/*寮洪浄鏆�  鐗瑰己闆锋毚*/
+.airport-page .w35{
+    background:url(/pad/map/static/img/climate/white/wicon35.png) ;
+    background-size:100%;
+}
+/*闆锋毚  灞�閮ㄥ湴鍖烘�ч浄鏆�*/
+.airport-page .w36{
+    background:url(/pad/map/static/img/climate/white/wicon36.png) ;
+    background-size:100%;
+}
+/*澶ч*/
+.airport-page .w37{
+    background:url(/pad/map/static/img/climate/white/wicon37.png) ;
+    background-size:100%;
+}
+/*椋撻*/
+.airport-page .w38{
+    background:url(/pad/map/static/img/climate/white/wicon38.png) ;
+    background-size:100%;
+}
+/*鐑甫椋庢毚*/
+.airport-page .w39{
+    background:url(/pad/map/static/img/climate/white/wicon39.png) ;
+    background-size:100%;
+}
+/*榫欏嵎椋�*/
+.airport-page .w40{
+    background:url(/pad/map/static/img/climate/white/wicon40.png) ;
+    background-size:100%;
+}
+/*椋�  椋庢毚*/
+.airport-page .w41{
+    background:url(/pad/map/static/img/climate/white/wicon41.png) ;
+    background-size:100%;
+}
+/*寮烘矙灏樻毚*/
+.airport-page .w42{
+    background:url(/pad/map/static/img/climate/white/wicon42.png) ;
+    background-size:100%;
+}
+/*娌欏皹鏆�*/
+.airport-page .w43{
+    background:url(/pad/map/static/img/climate/white/wicon43.png) ;
+    background-size:100%;
+}
+/*闆�*/
+.airport-page .w44{
+    background:url(/pad/map/static/img/climate/white/wicon44.png) ;
+    background-size:100%;
+}
+/*---------------------------------------鏈哄満鏀荤暐棣栭〉澶╂皵icon end*/
+.airport-weather-page ul li{
+    list-style: none;
+    color:#fff;
+    font-size:18px;
+    padding:5px 20px;
+    line-height: 40px;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+.airport-weather-page .bort-n{border-bottom: none!important;}
+.airport-weather-page ul li span.width30{width:30%;}
+.airport-weather-page ul li span.width40{width:40%;}
+.airport-weather-page ul li span.width25{width:25%;}
+.airport-weather-page .w-icon{
+    width:40px;
+    height: 40px;
+}
+/*----------------------------------澶╂皵璇︽儏icon start*/
+/*闆舵槦闃甸洦*/
+.airport-weather-page .w1{
+    background:url(/pad/map/static/img/climate/white/wicon1.png) no-repeat;
+    background-size:18%;
+}
+/*缁嗗喕闆�*/
+.airport-weather-page .w2{
+    background:url(/pad/map/static/img/climate/white/wicon2.png) no-repeat;
+    background-size:18%;
+}
+/*缁嗛洦*/
+.airport-weather-page .w3{
+    background:url(/pad/map/static/img/climate/white/wicon3.png) no-repeat;
+    background-size:18%;
+}
+/*闃甸洦*/
+.airport-weather-page .w4{
+    background:url(/pad/map/static/img/climate/white/wicon4.png) no-repeat;
+    background-size:18%;
+}
+/*鍐婚洦*/
+.airport-weather-page .w5{
+    background:url(/pad/map/static/img/climate/white/wicon5.png) no-repeat;
+    background-size:18%;
+}
+/*澶ч洦*/
+.airport-weather-page .w6{
+    background:url(/pad/map/static/img/climate/white/wicon6.png) no-repeat;
+    background-size:18%;
+}
+/*闆�*/
+.airport-weather-page .w7{
+    background:url(/pad/map/static/img/climate/white/wicon7.png) no-repeat;
+    background-size:18%;
+}
+/*灏忛洦*/
+.airport-weather-page .w8{
+    background:url(/pad/map/static/img/climate/white/wicon8.png) no-repeat;
+    background-size:18%;
+}
+/*闃撮溇*/
+.airport-weather-page .w9{
+    background:url(/pad/map/static/img/climate/white/wicon9.png) no-repeat;
+    background-size:18%;
+}
+/*鍐伴浌*/
+.airport-weather-page .w10{
+    background:url(/pad/map/static/img/climate/white/wicon10.png) no-repeat;
+    background-size:18%;
+}
+/*娣峰悎闆ㄥ拰鍐伴浌*/
+.airport-weather-page .w11{
+    background:url(/pad/map/static/img/climate/white/wicon11.png) no-repeat;
+    background-size:18%;
+}
+/*椋橀洩  闆舵槦闃甸洩*/
+.airport-weather-page .w12{
+    background:url(/pad/map/static/img/climate/white/wicon12.png) no-repeat;
+    background-size:18%;
+}
+/*鏆撮闆� 鏆撮洩*/
+.airport-weather-page .w13{
+    background:url(/pad/map/static/img/climate/white/wicon13.png) no-repeat;
+    background-size:18%;
+}
+/*澶ч洩*/
+.airport-weather-page .w14{
+    background:url(/pad/map/static/img/climate/white/wicon14.png) no-repeat;
+    background-size:18%;
+}
+/*涓洩*/
+.airport-weather-page .w15{
+    background:url(/pad/map/static/img/climate/white/wicon15.png) no-repeat;
+    background-size:18%;
+}
+/*灏忛洩 鍚归洩*/
+.airport-weather-page .w16{
+    background:url(/pad/map/static/img/climate/white/wicon16.png) no-repeat;
+    background-size:18%;
+}
+/*闆ㄥす闆� 闆ㄩ洩 闆ㄥ拰闆ㄩ洩 娣峰悎闆ㄩ洩*/
+.airport-weather-page .w17{
+    background:url(/pad/map/static/img/climate/white/wicon17.png) no-repeat;
+    background-size:18%;
+}
+/*闃甸洩 灏忛樀闆�*/
+.airport-weather-page .w18{
+    background:url(/pad/map/static/img/climate/white/wicon18.png) no-repeat;
+    background-size:18%;
+}
+/*鐐庣儹*/
+.airport-weather-page .w19{
+    background:url(/pad/map/static/img/climate/white/wicon19.png) no-repeat;
+    background-size:18%;
+}
+/*鏅存湕 鏅存湕(鐧斤級 灞�閮ㄦ櫞 澶ч儴鍒嗘櫞 澶ч儴鍒嗘櫞鏈�*/
+.airport-weather-page .w20{
+    background:url(/pad/map/static/img/climate/white/wicon20.png) no-repeat;
+    background-size:18%;
+}
+/*澶氫簯杞櫞*/
+.airport-weather-page .w21{
+    background:url(/pad/map/static/img/climate/white/wicon21.png) no-repeat;
+    background-size:18%;
+}
+/*鏅磋浆澶氫簯 鏅撮棿澶氫簯*/
+.airport-weather-page .w22{
+    background:url(/pad/map/static/img/climate/white/wicon22.png) no-repeat;
+    background-size:18%;
+}
+/*鏅存湕锛堝锛�*/
+.airport-weather-page .w23{
+    background:url(/pad/map/static/img/climate/white/wicon23.png) no-repeat;
+    background-size:18%;
+}
+/*鐑熼浘*/
+.airport-weather-page .w24{
+    background:url(/pad/map/static/img/climate/white/wicon24.png) no-repeat;
+    background-size:18%;
+}
+/*灏樺焹*/
+.airport-weather-page .w25{
+    background:url(/pad/map/static/img/climate/white/wicon25.png) no-repeat;
+    background-size:18%;
+}
+/*澶氫簯 澶ч儴鍒嗗浜戯紙鐧斤級 灞�閮ㄥ浜戯紙鐧斤級*/
+.airport-weather-page .w26{
+    background:url(/pad/map/static/img/climate/white/wicon26.png) no-repeat;
+    background-size:18%;
+}
+/*澶ч儴鍒嗗浜戯紙澶滐級 灞�閮ㄥ浜戯紙澶滐級*/
+.airport-weather-page .w27{
+    background:url(/pad/map/static/img/climate/white/wicon27.png) no-repeat;
+    background-size:18%;
+}
+/*闂风儹*/
+.airport-weather-page .w28{
+    background:url(/pad/map/static/img/climate/white/wicon28.png) no-repeat;
+    background-size:18%;
+}
+/*鎵矙*/
+.airport-weather-page .w29{
+    background:url(/pad/map/static/img/climate/white/wicon29.png) no-repeat;
+    background-size:18%;
+}
+/*鎵皹*/
+.airport-weather-page .w30{
+    background:url(/pad/map/static/img/climate/white/wicon30.png) no-repeat;
+    background-size:18%;
+}
+/*闆舵槦闆烽洦  灞�閮ㄩ浄闃甸洦  闆烽樀闆�*/
+.airport-weather-page .w31{
+    background:url(/pad/map/static/img/climate/white/wicon31.png) no-repeat;
+    background-size:18%;
+}
+/*闆�*/
+.airport-weather-page .w32{
+    background:url(/pad/map/static/img/climate/white/wicon32.png) no-repeat;
+    background-size:18%;
+}
+/*闂數*/
+.airport-weather-page .w33{
+    background:url(/pad/map/static/img/climate/white/wicon33.png) no-repeat;
+    background-size:18%;
+}
+/*鍐�*/
+.airport-weather-page .w34{
+    background:url(/pad/map/static/img/climate/white/wicon34.png) no-repeat;
+    background-size:18%;
+}
+/*寮洪浄鏆�  鐗瑰己闆锋毚*/
+.airport-weather-page .w35{
+    background:url(/pad/map/static/img/climate/white/wicon35.png) no-repeat;
+    background-size:18%;
+}
+/*闆锋毚  灞�閮ㄥ湴鍖烘�ч浄鏆�*/
+.airport-weather-page .w36{
+    background:url(/pad/map/static/img/climate/white/wicon36.png) no-repeat;
+    background-size:18%;
+}
+/*澶ч*/
+.airport-weather-page .w37{
+    background:url(/pad/map/static/img/climate/white/wicon37.png) no-repeat;
+    background-size:18%;
+}
+/*椋撻*/
+.airport-weather-page .w38{
+    background:url(/pad/map/static/img/climate/white/wicon38.png) no-repeat;
+    background-size:18%;
+}
+/*鐑甫椋庢毚*/
+.airport-weather-page .w39{
+    background:url(/pad/map/static/img/climate/white/wicon39.png) no-repeat;
+    background-size:18%;
+}
+/*榫欏嵎椋�*/
+.airport-weather-page .w40{
+    background:url(/pad/map/static/img/climate/white/wicon40.png) no-repeat;
+    background-size:18%;
+}
+/*椋�  椋庢毚*/
+.airport-weather-page .w41{
+    background:url(/pad/map/static/img/climate/white/wicon41.png) no-repeat;
+    background-size:18%;
+}
+/*寮烘矙灏樻毚*/
+.airport-weather-page .w42{
+    background:url(/pad/map/static/img/climate/white/wicon42.png) no-repeat;
+    background-size:18%;
+}
+/*娌欏皹鏆�*/
+.airport-weather-page .w43{
+    background:url(/pad/map/static/img/climate/white/wicon43.png) no-repeat;
+    background-size:18%;
+}
+/*闆�*/
+.airport-weather-page .w44{
+    background:url(/pad/map/static/img/climate/white/wicon44.png) no-repeat;
+    background-size:18%;
+}
+/*---------------------------------------澶╂皵璇︽儏icon end*/
+/*鏅�(澶滄櫄) 鏅存湕 鏅存湕(澶滄櫄) 鏅存湕(鐧藉ぉ) 鏅撮棿澶氫簯  鏅磋浆澶氫簯 灞�閮ㄦ櫞 鍐�  澶氫簯 澶ч儴鍒嗗浜�(澶滄櫄) 澶ч儴鍒嗗浜�(鐧藉ぉ) 灞�閮ㄥ浜�(澶滄櫄) 灞�閮ㄥ浜�(鐧藉ぉ) 鐐庣儹 闂风儹 澶ч儴鍒嗘櫞  澶ч儴鍒嗘櫞鏈� 澶氫簯杞櫞*/
+.airport-page .c-bg1 .bluetitbg{
+    background-color:#1b4eac;
+}
+.airport-page .c-bg1 .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_bg1.jpg);
+    background-size: 100%;
+}
+/*寮洪浄鏆� 闆锋毚 灞�閮ㄥ湴鍖烘�ч浄鏆�*/
+.airport-page .c-bg2 .bluetitbg{
+    background-color:#1c1a23;
+}
+.airport-page .c-bg2 .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_bg2.jpg);
+    background-size: 100%;
+}
+/*闆ㄥす闆� 闆ㄥ拰闆ㄩ洩 娣峰悎闆ㄩ洩 闆ㄩ洩 娣峰悎闆ㄥ拰鍐伴浌 椋橀洩 灏忛樀闆� 鍚归洩 闆� 澶ч洩 闆舵槦闃甸洩 闃甸洩 灏忛洩 涓洩 鏆撮洩 鍐伴浌*/
+.airport-page .c-bg3 .bluetitbg{
+    background-color:#5c7c97;
+}
+.airport-page .c-bg3 .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_bg3.jpg);
+    background-size: 100%;
+}
+/*闆舵槦闆烽洦 闆烽樀闆� 灞�閮ㄩ浄闃甸洦 澶ч洦 灏忛洦 闆� 闆舵槦闃甸洦 鍐荤粏闆� 缁嗛洦 鍐婚洦 闃甸洦*/
+.airport-page .c-bg4 .bluetitbg{
+    background-color:#39758d;
+}
+.airport-page .c-bg4 .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_bg4.jpg);
+    background-size: 100%;
+}
+/*灏樺焹 闆� 闃撮溇 鐑熼浘 娴皹 鎵矙 娌欏皹鏆� 寮烘矙灏樻毚 鐗瑰己娌欏皹鏆�*/
+.airport-page .c-bg5 .bluetitbg{
+    background-color:#696d70;
+}
+.airport-page .c-bg5 .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_bg5.jpg);
+    background-size: 100%;
+}
+/*榫欏嵎椋� 鐑甫椋庢毚 椋撻 澶ч 鏈夐 椋庢毚*/
+.airport-page .c-bg6 .bluetitbg{
+    background-color:#152c57;
+}
+.airport-page .c-bg6 .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_bg6.jpg);
+    background-size: 100%;
+}
+/*---------------------鏈哄満鏀荤暐棣栭〉鑳屾櫙 end----------------------------------------*/
+/*---------------------鏈哄満鏀荤暐鏄熸湡鑳屾櫙 start----------------------------------------*/
+/*鏅�(澶滄櫄) 鏅存湕 鏅存湕(澶滄櫄) 鏅存湕(鐧藉ぉ) 鏅撮棿澶氫簯  鏅磋浆澶氫簯 灞�閮ㄦ櫞 鍐�  澶氫簯 澶ч儴鍒嗗浜�(澶滄櫄) 澶ч儴鍒嗗浜�(鐧藉ぉ) 灞�閮ㄥ浜�(澶滄櫄) 灞�閮ㄥ浜�(鐧藉ぉ) 鐐庣儹 闂风儹 澶ч儴鍒嗘櫞  澶ч儴鍒嗘櫞鏈� 澶氫簯杞櫞*/
+.airport-weather-page .c-bg1 .bluetitbg{
+    background-color:#1b4eac;
+}
+.airport-weather-page .c-bg1 .weatherbg{
+    background:url(/pad/map/static/img/climate/w-detail-bg1.jpg) 0 -5px no-repeat #3c8ad1;
+    background-size: 100%;
+}
+/*寮洪浄鏆� 闆锋毚 灞�閮ㄥ湴鍖烘�ч浄鏆�*/
+.airport-weather-page .c-bg2 .bluetitbg{
+    background-color:#1c1a23;
+}
+.airport-weather-page .c-bg2 .weatherbg{
+    background:url(/pad/map/static/img/climate/w-detail-bg2.jpg) 0 -5px no-repeat #2a2833;
+    background-size: 100%;
+}
+/*闆ㄥす闆� 闆ㄥ拰闆ㄩ洩 娣峰悎闆ㄩ洩 闆ㄩ洩 娣峰悎闆ㄥ拰鍐伴浌 椋橀洩 灏忛樀闆� 鍚归洩 闆� 澶ч洩 闆舵槦闃甸洩 闃甸洩 灏忛洩 涓洩 鏆撮洩 鍐伴浌*/
+.airport-weather-page .c-bg3 .bluetitbg{
+    background-color:#5c7c97;
+}
+.airport-weather-page .c-bg3 .weatherbg{
+    background:url(/pad/map/static/img/climate/w-detail-bg3.jpg) 0 -5px no-repeat #87a9c5;
+    background-size: 100%;
+}
+/*闆舵槦闆烽洦 闆烽樀闆� 灞�閮ㄩ浄闃甸洦 澶ч洦 灏忛洦 闆� 闆舵槦闃甸洦 鍐荤粏闆� 缁嗛洦 鍐婚洦 闃甸洦*/
+.airport-weather-page .c-bg4 .bluetitbg{
+    background-color:#39758d;
+}
+.airport-weather-page .c-bg4 .weatherbg{
+    background:url(/pad/map/static/img/climate/w-detail-bg4.jpg) 0 -5px no-repeat #18457c;
+    background-size: 100%;
+}
+/*灏樺焹 闆� 闃撮溇 鐑熼浘 娴皹 鎵矙 娌欏皹鏆� 寮烘矙灏樻毚 鐗瑰己娌欏皹鏆�*/
+.airport-weather-page .c-bg5 .bluetitbg{
+    background-color:#696d70;
+}
+.airport-weather-page .c-bg5 .weatherbg{
+    background:url(/pad/map/static/img/climate/w-detail-bg5.jpg) 0 -5px no-repeat #8e9193;
+    background-size: 100%;
+}
+/*榫欏嵎椋� 鐑甫椋庢毚 椋撻 澶ч 鏈夐 椋庢毚*/
+.airport-weather-page .c-bg6 .bluetitbg{
+    background-color:#152c57;
+}
+.airport-weather-page .c-bg6 .weatherbg{
+    background:url(/pad/map/static/img/climate/w-detail-bg6.jpg) 0 -5px no-repeat #659ae8;
+    background-size: 100%;
+}
+/*---------------------鏈哄満鏀荤暐鏄熸湡鑳屾櫙 end----------------------------------------*/
+.airport-page .weather_none .bluetitbg{
+    background-color:#4692d5;
+}
+.airport-page .weather_none .weatherbg{
+    height: 142px;
+    width:100%;
+    background:url(/pad/map/static/img/climate/weather_none.jpg);
+    background-size: 100%;
+	text-align:center;
+}
+.airport-page .weather_none .weatherbg p{padding-top:60px;}
+/*鏈哄満鏀荤暐 end*/
+
+/*鎴戠殑琛岀▼ start*/
+.mytrip-leftbox{
+    top: 137px;
+    left: 35px;
+    border-radius: 5px;
+    width:80%;
+}
+.mytrip-leftbox ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.mytrip-leftbox span.first_w{
+    width:15%;
+    height: 28px;
+    vertical-align: middle;
+}
+.mytrip-leftbox span.second_w{
+    width:34%;
+}
+.mytrip-leftbox span.third_w{
+    width:40%;
+}
+.mytrip-leftbox .trip-icon1{
+    background:url(../img/trip_icon1.png) no-repeat;
+    background-size: 28px;
+}
+.mytrip-leftbox .trip-icon2{
+    background:url(../img/trip_icon2.png) no-repeat;
+    background-size: 28px;
+}
+.mytrip-leftbox .trip-icon3{
+    background:url(../img/trip_icon3.png) no-repeat;
+    background-size: 28px;
+}
+.mytrip-leftbox .trip-icon4{
+    background:url(../img/trip_icon4.png) no-repeat;
+    background-size: 28px;
+}
+
+
+.page-my-trip #my-trip ul{
+    list-style: none;
+    padding: 0;
+}
+.page-my-trip #my-trip ul li{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.page-my-trip #my-trip ul li:last-child{
+    padding-bottom: 20px;
+}
+.page-my-trip #my-trip ul li>div{
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    background: #f1f1f1;
+    padding: 15px 20px;
+}
+.page-my-trip #my-trip ul li>div:last-child{
+    border-radius: 0 0 5px 5px;
+}
+.page-my-trip #my-trip ul li>div em{
+    font-style: normal;
+}
+.page-my-trip #my-trip ul li .address{
+    background: #fff;
+}
+.page-my-trip #my-trip ul li .address .point,.page-my-trip #my-trip ul li .address .flight-num{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.page-my-trip #my-trip ul li .address .point span{
+    display: block;
+}
+.page-my-trip #my-trip ul li .address .point span:first-child{
+    font-size: 24px;
+    color: #000;
+    margin: 35px auto 0;
+}
+.page-my-trip #my-trip ul li .address .point span:last-child{
+    font-size: 12px;
+    color: #b3b3b3;
+}
+.page-my-trip #my-trip ul li .address .flight-num span{
+    width: 84px;
+    padding-top: 60px;
+    background: url(../img/air2.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    color: #8599c4;
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.page-my-trip #my-trip ul li .address .flight-num span i{
+    font-style: normal;
+    display: inline-block;
+    margin-left: 10px;
+}
+.page-my-trip #my-trip ul li .address .day{
+    font-size: 18px;
+    color: #6f6f6f;
+    margin: 0;
+}
+.page-my-trip #my-trip ul li .address .day{
+    font-size: 18px;
+    color: #6f6f6f;
+}
+.page-my-trip #my-trip ul li .address .time{
+    font-size: 20px;
+    color: #1444ac;
+    margin: 0;
+}
+.page-my-trip #my-trip ul li .address .time span{
+    margin-right: 10px;
+}
+.page-my-trip #my-trip ul li .address .time .link{
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    background: url(../img/link.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.page-my-trip #my-trip ul li .content{
+    border-left: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+.page-my-trip #my-trip ul li .content .f18{
+    color: #1444ac;
+}
+.page-my-trip #my-trip ul li .content .bb{
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 10px;
+}
+.page-my-trip #my-trip ul li .title{
+    border-radius: 5px 5px 0 0;
+    background: #1b4eac;
+    font-size: 15px;
+    color: #fff;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #1b4eac;
+}
+/*鎴戠殑琛岀▼ end*/
+/*杈句汉鍒� start*/
+.quan_list .btd2d2d2{
+    border-bottom: 1px solid #d2d2d2;
+}
+.quan-leftbox{
+    top: 137px;
+    left: 35px;
+    border-radius: 5px;
+    width:350px;
+    height:285px;
+}
+.quan-leftbox .b_mask{
+    height: 25px;
+    width:329px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    background: rgba(0,0,0,.2);
+}
+.quan_list ul li{
+    list-style: none;
+    position: relative;
+    margin-top: 20px;
+}
+.quan_list ul li:last-child{
+    padding-bottom: 20px;
+}
+.quan_list ul li>div:first-child{
+    border-top:1px solid #d2d2d2;
+    padding:15px 20px;
+    position: relative;
+    height: 159px;
+    background: #fff;
+}
+.quan_list ul li i.leftBar{
+    width:5px;
+    height: 158px;
+    background:url(../img/quan_left_bg.png) repeat-y;
+    background-size: 100%;
+    top:0;
+    left:0;
+    background-position: -1px -19px;
+}
+.quan_list ul li i.rightBar{
+    width:7px;
+    height: 158px;
+    background:url(../img/quan_right_bg.png) repeat-y;
+    background-size: 5px auto;
+    top:0;
+    right:0;
+    background-position: 2px -19px;
+}
+.quan_list ul li .address .point, .quan_list ul li .address .flight-num{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.quan_list ul li .address .point span{
+    font-size: 24px;
+    color: #000;
+    margin: 33px auto 0;
+    display: inline-block;
+}
+.quan_list ul li .address .flight-num span{
+    width: 84px;
+    padding-top: 60px;
+    background: url(../img/air2.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    color: #8599c4;
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.quan_list ul li .b_cont{
+    height: 50px;
+    line-height: 50px;
+    background:#f1f1f1;
+    border-left:1px solid #d2d2d2;
+    border-right:1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.quan_list ul li .b_cont .activeBtn{
+    line-height: normal!important;
+    margin-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.quan_list ul li .t_state{
+    width:105px;
+    height: 85px;
+    position:absolute;
+    top:0;
+    right: 2px;
+}
+.quan_list ul li .unactive{
+    background:url(../img/unactive.png);
+    background-size: 100%;
+}
+.quan_list ul li .unused{
+    background:url(../img/unused.png);
+    background-size: 100%;
+}
+.quan_list ul li .used{
+    background:url(../img/used.png);
+    background-size: 100%;
+}
+.quan_list ul li .overdue{
+    background:url(../img/overdue.png);
+    background-size: 100%;
+}
+.quan_name_tip,.quan_seat_tip,.activeSuccess{
+    width: 500px;
+    top: 50%;
+    display: none;
+    z-index: 4;
+    left: 50%;
+    background: #fff;
+}
+.activeSuccess .actived_list dl dt span,.activeSuccess .actived_list dl dd span{
+    display: inline-block;
+    width:49%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.activeSuccess .actived_list dl dd:nth-child(2n){
+    background:#f0f0f0;
+}
+.glyphicon-quan:before{
+    content: '\e042';
+    position: relative;
+    right:2px;
+    top:5px;
+}
+#quanUsePop{
+    width:435px;
+}
+#quanUsePop .flightNo{
+    color: #8599c4;
+    top: 70px;
+    left: 172px;
+}
+#quanUsePop .qBtn a.abled{
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+    border:1px solid #e6e6e6;
+    background:#f8f8f8;
+    color: #1b4eac;
+}
+/*#quanUsePop .qBtn a.abled:hover{
+    background:#eee;
+}
+#quanUsePop .qBtn a.abled:visited{
+    background:#f8f8f8;
+}*/
+#quanUsePop .qBtn a.disabled{
+    background:#d7d7d7;
+    color: #a9a9a9;
+}
+#quanUsePop .qBtn input{
+    border:none;
+    display: inline-block;
+    width:50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+#quanUsePop .f_date{
+    position: relative;
+    top:10px;
+}
+.page-quan-use .quan_howToUse ul{
+    color:#333;
+}
+.page-quan-use .quan_howToUse ul li{
+    list-style: none;
+    padding-left: 25px;
+    border-left: 2px solid #1b4eac;
+    margin-left: 20px;
+    position: relative;
+    height: 60px;
+    padding-top: 3px;
+}
+.page-quan-use .quan_howToUse ul li span{
+    width:28px;
+    height: 28px;
+    line-height: 28px;
+    background: #1b4eac;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left: -15px;
+    color: #fff;
+}
+/*杈句汉鍒� end*/
+/*涓嶆甯歌埅鐝嚜鍔╂敼鏈� start*/
+.airports_pop{
+    width: 500px;
+    top: 50%;
+    display: none;
+    z-index: 4;
+    left: 50%;
+    background: #fff;
+}
+.page-unusual-flight .unusual-flight-box,.page-unusual-resultIn .unusual-flight-box{
+    border-radius: 5px;
+    background: #fff;
+    border-top: 5px solid #1b4eac;
+}
+.page-unusual-flight .unusual-flight-box .title,.page-unusual-resultIn .unusual-flight-box .title {
+    padding: 0 28px;
+    border-bottom: 1px solid #ccc;
+    height: 48px;
+    line-height: 48px;
+}
+.page-unusual-flight .unusual-flight-box .title h3 ,.page-unusual-resultIn .unusual-flight-box .title h3{
+    float: left;
+    font-size: 24px;
+    margin: 0;
+    height: 48px;
+    line-height: 48px;
+}
+.unusual-flight-form{
+    padding: 28px;
+    font-size: 15px;
+}
+.unusual-flight-form .form-group label{
+    padding-top:13px;
+}
+.unusual-flight-form .form-group .form-control{
+    height: 43px;
+    line-height: 43px;
+}
+.unusual-flight-form p{
+    margin-top: 20px;
+}
+.unusual-flight-form p label{
+    float: left;
+    width: 120px;
+    text-align: right;
+    margin-top: 12px;
+}
+.unusual-flight-form p span.input-wrap{
+    display: block;
+    margin-left: 135px;
+    margin-right: 50px;
+}
+.unusual-flight-form p .select2{
+    display: block;
+}
+.unusual-flight-form p .form-control{
+    background: #f8f8f8;
+    height: 43px;
+    line-height: 43px;
+}
+.unusual-flight-form p .select2-choice{
+    height: 43px;
+    line-height: 43px;
+}
+.unflight-tip{
+    padding: 28px;
+    font-size: 15px;
+}
+.page-unusual-resultIn .moveinF_l .depart, .page-unusual-resultIn .moveinF_l .mid-fly, .page-unusual-resultIn .moveinF_l .arrive{
+    width:31.5%;
+}
+.page-unusual-resultIn li.h75{height: 75px;}
+.page-unusual-resultIn .moveinF_l .mid-fly{
+    background: transparent url(../img/air2.png) center no-repeat;
+    background-size:50%;
+    height: 45px;
+}
+.page-unusual-resultIn .ml-30{
+    margin-left: 27%;
+}
+.page-unusual-resultIn .f-num{
+    left:20px;
+    top:13px;
+    position:absolute;
+}
+.page-unusual-resultIn .time-line{
+    display: inline-block;
+    height:19px;
+    width:60px;
+    background: url(/pad/map/static/img/air.png) no-repeat;
+    margin:0 10px;
+    position:relative;
+    top:4px;
+}
+.page-unusual-resultIn .f-time{
+    right:8px;
+    top:8px;
+    position:absolute;
+}
+.page-unusual-resultIn .airline{
+    width: 60px;
+    height: 19px;
+    background: url(../img/link.png) no-repeat center 5px;
+    color: #999;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+.page-unusual-resultIn .unusual-List{
+    list-style: none;
+    background-color: #fff;
+    min-height: 400px;
+}
+.page-unusual-resultIn .unusual-List li {
+    padding: 26px 20px 0px;
+    position: relative;
+}
+.page-unusual-resultIn .unusual-List li:nth-child(2n) {
+    background-color: #fafafa;
+}
+.page-unusual-resultIn .unusual-List .line {
+    margin-top: 4px;
+}
+.page-unusual-resultIn .unusual-List .line span {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+}
+.page-unusual-resultIn .unusual-List .sub {
+    padding: 4px 10px 20px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #fafafa;
+    margin-bottom: -20px;
+    display: none;
+}
+.page-unusual-resultIn .unusual-List .b-shadow{
+    width:105.7%;
+    height: 1px;
+    margin-left: -20px;
+    background:rgba(0, 0, 0, 0.15);
+}
+.page-unusual-resultIn .unusual-List .morethan-down{
+    color: #999;
+    padding: 10px;
+    padding-right: 26px;
+}
+.page-unusual-resultIn .unusual-List .morethan-down:before {
+    border: solid;
+    border-color: #999 transparent;
+    border-width: 6px;
+    border-bottom: 6px solid transparent;
+    right: 10px;
+    top: 14px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.page-unusual-resultIn .unusual-List .morethan-up{
+    color: #999;
+    padding: 10px;
+    padding-right: 26px;
+}
+.page-unusual-resultIn .unusual-List .morethan-up:before {
+    border: solid;
+    border-color: #999 transparent;
+    border-width: 6px;
+    border-top: 6px solid transparent;
+    right: 10px;
+    top: 8px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.page-unusual-resultIn .flight-in-date{
+    background:#edf5fa;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+.page-unusual-resultIn .flight-in-date i{
+    color:#9fc46c;
+    position: absolute;
+    top:7px;
+    right: 1px;
+}
+.page-unusual-resultIn .flight-in-date i:before{
+    content: "\e109";
+}
+.flightIn-pop {
+    background-color: #fff;
+    width: 370px;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 4;
+    display: none;
+}
+.page-unusual-resultIn .unusual-List .row {
+    margin-right: -10px;
+    margin-left: -20px;
+}
+.page-unusual-resultIn .flight-in-date div.dateBorder{
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 140px;
+    height: 39px;
+    line-height: 39px;
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    background: #f8f8f8;
+    position: relative;
+    top: 3px;
+    right: 15px;
+}
+.page-unusual-resultIn .flight-in-date input{
+    width: 140px;
+    background: transparent;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: -1px;
+    top:0;
+    padding-left: 21px;
+    border: none;
+}
+/*涓嶆甯歌埅鐝嚜鍔╂敼鏈� end*/
+/*鑱旂▼ start*/
+.missbg{
+    background: url(../img/missBg.png) no-repeat 35px 30px;
+    height: 700px;
+    background-size: 76%;
+}
+.f-flight-pop .flightNo{
+    color: #8599c4;
+    top: 70px;
+    left: 172px;
+}
+.ot-leftbox{
+    height: 145px;
+    background: #093183;
+}
+.ot-leftbox .mask{
+    width: 100%;
+    height: 100%;
+    background:rgba(9,45,120,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.flight .form-box {
+    height: 135px;
+    background: url(/pad/map/static/img/flightBg.png);
+    background-size: 100% 100%;
+    padding-top:0;
+}
+.page-flight-next .order-detail ul li .title{
+    border-radius: 5px 5px 0 0;
+    background: #1b4eac;
+    font-size: 15px;
+    color: #fff;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #1b4eac;
+}
+.page-flight-next .order-detail ul {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+.page-flight-next .order-detail {
+    background: #fff;
+    border-radius: 5px;
+}
+.page-flight-next .order-detail ul li {
+    padding-top: 20px;
+    font-size: 15px;
+}
+.page-flight-next .order-detail ul li .address {
+    background: #fff;
+}
+.page-flight-next .order-detail ul li>div {
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    background: #f1f1f1;
+    padding: 15px 20px;
+}
+.page-flight-next .order-detail ul li>div:last-child {
+    border-radius: 0 0 5px 5px;
+}
+.page-flight-next .order-detail ul li .address .point,.page-flight-next .order-detail ul li .address .flight-num{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.page-flight-next .order-detail ul li .address .point span:first-child {
+    font-size: 24px;
+    color: #000;
+    margin: 23px auto 0;
+}
+.page-flight-next .order-detail ul li .address .point span:last-child{
+    font-size: 12px;
+    color: #b3b3b3;
+}
+.page-flight-next .order-detail ul li .address .point span {
+    display: block;
+}
+.page-flight-next .order-detail ul li .address .flight-num span {
+    width: 80px;
+    padding-top: 60px;
+    background: url(../img/air2.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    color: #8599c4;
+    display: block;
+    margin: 0 auto;
+}
+.page-flight-next .order-detail ul li .address .day {
+    font-size: 18px;
+    color: #6f6f6f;
+    margin:0;
+}
+.page-flight-next .order-detail ul li .address .time span {
+    margin-right: 10px;
+}
+.page-flight-next .order-detail ul li .address .time .link {
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    background: url(../img/link.png) no-repeat scroll 0 0;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.page-flight-next .order-detail ul li .address .time{
+    font-size: 20px;
+    color: #1444ac;
+    margin: 0;
+}
+.page-flight-next .order-detail ul li .address .time span {
+    margin-right: 10px;
+}
+.page-flight-next .order-detail .action{
+    border-top: 1px solid #c2c2c2;
+    padding: 20px;
+    text-align: center;
+}
+.ot-add-flight{
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    background:url(../img/add-icon.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 4px;
+    right: 5px;
+}
+.ot-cicon{
+    width:22px;
+    height: 22px;
+    display: inline-block;
+    background:url(../img/ot-close.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 19px;
+    top: 8px;
+}
+/*鑱旂▼ end*/
+/*涓撳尯娲诲姩 start*/
+.index-act{
+    width: 100%;
+    height: 100%;
+    background:url(../img/act/zuche_act.jpg) no-repeat 0 -40px;
+    background-size: 100%;
+}
+.index-act-detail{
+    width: 100%;
+    height: 100%;
+    background:url(../img/act/rent-detail.jpg) no-repeat 0 -50px;
+    background-size: 100%;
+}
+.index-act .act-cont{
+    position: absolute;
+    right: 17px;
+    top: 120px;
+    width: 467px;
+}
+.index-mask{
+    background: rgba(255,255,255,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.index-act-detail .act-cont{
+    position: absolute;
+    right: 50px;
+    top: 105px;
+    width: 467px;
+}
+.index-act .act-title, .index-act-detail .act-title{
+    width:310px;
+    height: 70px;
+    background:url(../img/act/rentCar_bg.png) no-repeat;
+    background-size: 100%;
+    line-height: 70px;
+}
+.index-act .act-rule{
+    background: #fff;
+    border-radius: 10px;
+    max-height: 400px;
+}
+.index-act .act-rule p{
+    padding-left: 34px;
+    font-size: 16px;
+    color: #ec6400;
+    line-height: 30px;
+}
+.index-act .rule-title{
+    font-size: 20px;
+    color: #ec6400;
+}
+.index-act .act-btn{
+    width:293px;
+    height:55px;
+    line-height: 55px;
+    background: #ec6400;
+    border-radius: 5px;
+}
+.index-act .act-btn:hover{
+    background:#e06003;
+}
+.index-act .list-num{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background:#f9d15f;
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    left: 15px;
+}
+.index-act-detail .t-bg{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background:#ec6400;
+    z-index: 100;
+    position: absolute;
+    top:0;
+}
+.index-act-detail .t-head ul{
+    color:#fff;
+    height: 40px;
+    line-height: 40px;
+    z-index: 500;
+    position: relative;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    width: 97%;
+    position: absolute;
+    top:0;
+}
+.index-act-detail .t-head-bg{
+    width: 50px;
+    height: 30px;
+    background: url(../img/act/tb-r-icon.png) no-repeat right;
+    position: absolute;
+    right: -24px;
+    z-index: 5;
+    top: 31px;
+    background-size: 100%;
+}
+.index-act-detail .ticket-list{
+    background:#fff;
+    color:#ec6400;
+    position: relative;
+    z-index: 30;
+    width: 97%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.index-act-detail .t-head ul li,.index-act-detail .ticket-list ul li{
+    float: left;
+    text-align: center;
+}
+.index-act-detail .ticket-list ul{
+    border-bottom: 1px dotted #ccc;
+}
+.index-act-detail .book-btn{
+    width:118px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 5px;
+    background: #6bbbff;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+.index-act-detail .book-btn:hover{
+    background: #5fa3dd;
+}
+.index-act-detail ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 65px;
+    line-height: 65px;
+}
+.index-act-detail .h-position{
+    position: relative;
+    left: -3px;
+    top: 1px;
+}
+.index-act-detail .h-cont-position{
+    top: -19px;
+}
+.index-act-detail .w30{
+    width:30%;
+}
+.index-act-detail .w20{
+    width:20%;
+}
+.index-act-detail .w10{
+    width:10%;
+}
+.index-act-detail .act-detail-rules{
+    position: absolute;
+    left: 30px;
+    bottom:15px;
+    color: #ec6400;
+    width:440px;
+}
+/*涓撳尯娲诲姩 end*/
+/*鏃ュ巻 plug start*/
+.calendar-wrap{height:555px; overflow: hidden;}
+.calendarPop{
+    background-color: #fff;
+    width:852px;
+    height:623px;
+    left: 50%;
+    top: 50%;
+    border-radius: 7px;
+    z-index: 4;
+    display: none;
+}
+.calendarPop .top-fixed{
+    height: 60px;
+    line-height: 60px;
+    background:#1b4eac;
+
+}
+.calendarPop .top-fixed:before{
+    content:"";
+    display: block;
+    width:25px;
+    height: 25px;
+    border-top-left-radius: 5px;
+    background:#fff;
+    transform:rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform:rotateZ(-45deg);
+    position: absolute;
+    top: 47px;
+    left: 48.3%;
+}
+.calendarPop a.td{
+    height: 40px;
+    width: 107px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+.calendarPop a.td:hover{
+    border:1px solid #779adb;
+    color:#779adb;
+}
+.lalender-city{
+    margin-left: 240px;
+}
+/*.calendarPop a.td:active{
+    border:1px solid #779adb;
+    color:#779adb;
+}
+.calendarPop a.td:visited{
+    color:#fff;
+    border:1px solid #fff;
+}*/
+/*.calendarPop .calendar-cont .each-mon{
+    height: 390px;
+}*/
+.calendarPop .calendar-cont .each-mon{
+    height: /*390px*/auto;overflow: auto;
+}
+.calendarPop .calendar-cont .each-mon .top-bar{
+    height:60px;
+    line-height: 60px;
+    background: #f8f8f8;
+}
+.calendarPop .calendar-cont .each-mon .top-bar .r-arrow{
+    position: relative;
+    top: 3px;
+    left: 20px;
+}
+.calendarPop .calendar-cont .each-mon .top-bar .input-date{
+    filter:alpha(opacity=0);   
+    -moz-opacity:0;   
+    -khtml-opacity: 0;   
+    opacity: 0;
+    left: 0;
+    top:0;
+    /*width: 850px;*/
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+}
+.calendar-table ul{
+    margin:0;
+    padding:0;
+}
+/*.calendar-table ul li.week:hover,.calendar-table ul li.none:hover,.calendar-table ul li.empty:hover{
+    border-right:1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+    border-top:none;
+    border-left:none;
+    box-shadow: none;
+}*/
+.calendar-table ul li{
+    border-right:1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+    float: left;
+    width: 14.28%;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    position: relative;
+}
+.calendar-table ul li:nth-child(7n){
+    border-right: none;
+}
+.calendar-table ul li.week{
+    color:#c1c1c1;
+}
+.calendar-table ul li.weekends{
+    color:#0d42aa;
+}
+.calendar-table ul li.festival{
+    color:#dd2b39;
+}
+.calendar-table ul li i{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+.calendar-table ul li i.hover{
+    border: 1px solid #dd2b39;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 10px rgba(211,43,57,0.3);
+}
+.calendar-table ul li.selected-td span{
+    position: relative;
+    z-index: 4;
+    color:#fff;
+}
+.calendar-table ul li i.td{
+    border:1px solid #dd2b39;
+    border-radius: 5px;
+}
+.calendar-table ul li.selected-td i{
+    background:#dd2b39;
+    color:#fff;
+    border-radius: 5px;
+    z-index: 1;
+}
+.calendar-table ul li.selected-td:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    left: 49.5%;
+    bottom: 4px;
+    display: block;
+    z-index: 10;
+    border-radius: 50%;
+}
+.calendar-table ul li.none{
+    color:#cacaca;
+    font-size:12px;
+}
+.calendar-table ul li span.yinli{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    font-size:12px;
+    line-height: normal;
+}
+.calendar-table ul li span.price_date{
+    position: absolute;
+    left: 10px;
+    top:5px;
+    font-size: 16px;
+    line-height: normal;
+}
+/*鏃ュ巻 plug end*/
+/*part loading start*/
+.airport-page div.loadingPart{
+    width:100%;
+    height: 142px;
+    background:url(/pad/map/static/img/loading.gif) center no-repeat #fff;
+    position:absolute;
+    top:0;
+    left: 0;
+}
+.airport-page .loadding-wrap{
+    height: 142px;
+}
+/*part loading end*/
+
+/*map start*/
+.semantics .form-box{
+    height: 145px;
+}
+.semantics .semantics-source{
+    padding: 15px;
+}
+.semantics .global-closeBtn{
+    top: 25%;
+}
+.semantics .submit {
+  background: none;
+  padding: 15px;
+}
+
+.semantics-airport .from {
+    top: 48px;  /*88px*/
+}
+.semantics-airport .to {
+    top: 48px;  /*88px*/
+}
+.semantics-airport .fromAirport, .semantics-airport .toAirport {
+    top: 80px;      /*126px*/
+}
+/* semantics end*/
+
+.b092b76{background:#092b76;}
+.air-choose{
+    width:390px;
+}
+.airtopbg {
+    width: 396px;
+}
+.input-date{
+    position: relative;
+    bottom: -180px;
+    left: 18px;
+}
+.airport-bg{
+    background:url(/pad/map/static/img/airport-bg.png) no-repeat;
+    background-size:100%;
+    height: 180px;
+}
+.special-btm{
+    width: 396px;
+}
+.cbox{
+    width:30px;
+    height: 30px;
+    background:url(../img/cbox.png) center no-repeat #fff;
+    background-size: 80%;
+}
+.cbox-on{
+    width:30px;
+    height: 30px;
+    background:url(../img/cbox-s.png) center no-repeat #fff;
+    background-size:80%;
+}
+.infobox .map-infoBtm {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 1;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.multiple-cont{
+    height: 75px;
+    line-height: 75px;
+    font-size: 18px;
+    background: #09307f;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.multiple-date-bg{
+    background: url(/pad/map/static/img/dateiconbg.png) 0 28px no-repeat!important;
+}
+.multiple-cont .date{
+    background: transparent;
+    border:none;
+    background: transparent;
+    border: none;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+.sight-wrap{
+    width:245px;
+}
+.sight-wrap .sight-cont{
+    border-radius: 5px;
+    background:#fff;
+    box-shadow: 0 -1px 10px rgba(14,5,10,.7);
+    z-index:100px;
+}
+.sight-wrap .sight-bg{
+    background: url(/pad/map/static/img/city-arrow.png) center no-repeat;
+    background-size: 100%;
+    height: 20px;
+    position: relative;
+    bottom: 1px;
+    padding:0 6px;
+}
+.view-bottom{
+     background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.02));
+     background:-moz-linear-gradient(bottom,#000,#fff);
+     background:-o-linear-gradient(bottom,,#000,#fff);
+     position: absolute;
+     bottom:0;
+     padding:7px 0 2px 0;
+     width:100%;
+     color:#fff;
+}
+.sight-cont i.size{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.mutip-flight-list{
+    width:396px;
+    border-radius: 5px;
+    background:#fff;
+}
+.mutip-flight-list a{
+    color:#86a9ec;
+}
+.mutip-flight-list ul li,.mutip-flight-list ul{
+    padding:0;
+    list-style: none;
+}
+.mutip-flight-list ul li{
+    padding:10px 10px 10px 20px;
+}
+.mutip-flight-list ul li:nth-child(odd){
+    background: #eee;
+}
+.mutip-flight-list ul li:last-child{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.list-top{
+    background:#1b4eac;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/*----------------------------------map icon start*/
+/*闆舵槦闃甸洦*/
+.sight-cont .w1{
+    background:url(/pad/map/static/img/climate/white/wicon1.png) ;
+    background-size:100%;
+}
+/*缁嗗喕闆�*/
+.sight-cont .w2{
+    background:url(/pad/map/static/img/climate/white/wicon2.png) ;
+    background-size:100%;
+}
+/*缁嗛洦*/
+.sight-cont .w3{
+    background:url(/pad/map/static/img/climate/white/wicon3.png) ;
+    background-size:100%;
+}
+/*闃甸洦*/
+.sight-cont .w4{
+    background:url(/pad/map/static/img/climate/white/wicon4.png) ;
+    background-size:100%;
+}
+/*鍐婚洦*/
+.sight-cont .w5{
+    background:url(/pad/map/static/img/climate/white/wicon5.png) ;
+    background-size:100%;
+}
+/*澶ч洦*/
+.sight-cont .w6{
+    background:url(/pad/map/static/img/climate/white/wicon6.png) ;
+    background-size:100%;
+}
+/*闆�*/
+.sight-cont .w7{
+    background:url(/pad/map/static/img/climate/white/wicon7.png) ;
+    background-size:100%;
+}
+/*灏忛洦*/
+.sight-cont .w8{
+    background:url(/pad/map/static/img/climate/white/wicon8.png) ;
+    background-size:100%;
+}
+/*闃撮溇*/
+.sight-cont .w9{
+    background:url(/pad/map/static/img/climate/white/wicon9.png) ;
+    background-size:100%;
+}
+/*鍐伴浌*/
+.sight-cont .w10{
+    background:url(/pad/map/static/img/climate/white/wicon10.png) ;
+    background-size:100%;
+}
+/*娣峰悎闆ㄥ拰鍐伴浌*/
+.sight-cont .w11{
+    background:url(/pad/map/static/img/climate/white/wicon11.png) ;
+    background-size:100%;
+}
+/*椋橀洩  闆舵槦闃甸洩*/
+.sight-cont .w12{
+    background:url(/pad/map/static/img/climate/white/wicon12.png) ;
+    background-size:100%;
+}
+/*鏆撮闆� 鏆撮洩*/
+.sight-cont .w13{
+    background:url(/pad/map/static/img/climate/white/wicon13.png) ;
+    background-size:100%;
+}
+/*澶ч洩*/
+.sight-cont .w14{
+    background:url(/pad/map/static/img/climate/white/wicon14.png) ;
+    background-size:100%;
+}
+/*涓洩*/
+.sight-cont .w15{
+    background:url(/pad/map/static/img/climate/white/wicon15.png) ;
+    background-size:100%;
+}
+/*灏忛洩 鍚归洩*/
+.sight-cont .w16{
+    background:url(/pad/map/static/img/climate/white/wicon16.png) ;
+    background-size:100%;
+}
+/*闆ㄥす闆� 闆ㄩ洩 闆ㄥ拰闆ㄩ洩 娣峰悎闆ㄩ洩*/
+.sight-cont .w17{
+    background:url(/pad/map/static/img/climate/white/wicon17.png) ;
+    background-size:100%;
+}
+/*闃甸洩 灏忛樀闆�*/
+.sight-cont .w18{
+    background:url(/pad/map/static/img/climate/white/wicon18.png) ;
+    background-size:100%;
+}
+/*鐐庣儹*/
+.sight-cont .w19{
+    background:url(/pad/map/static/img/climate/white/wicon19.png) ;
+    background-size:100%;
+}
+/*鏅存湕 鏅存湕(鐧斤級 灞�閮ㄦ櫞 澶ч儴鍒嗘櫞 澶ч儴鍒嗘櫞鏈�*/
+.sight-cont .w20{
+    background:url(/pad/map/static/img/climate/white/wicon20.png) ;
+    background-size:100%;
+}
+/*澶氫簯杞櫞*/
+.sight-cont .w21{
+    background:url(/pad/map/static/img/climate/white/wicon21.png) ;
+    background-size:100%;
+}
+/*鏅磋浆澶氫簯 鏅撮棿澶氫簯*/
+.sight-cont .w22{
+    background:url(/pad/map/static/img/climate/white/wicon22.png) ;
+    background-size:100%;
+}
+/*鏅存湕锛堝锛�*/
+.sight-cont .w23{
+    background:url(/pad/map/static/img/climate/white/wicon23.png) ;
+    background-size:100%;
+}
+/*鐑熼浘*/
+.sight-cont .w24{
+    background:url(/pad/map/static/img/climate/white/wicon24.png) ;
+    background-size:100%;
+}
+/*灏樺焹*/
+.sight-cont .w25{
+    background:url(/pad/map/static/img/climate/white/wicon25.png) ;
+    background-size:100%;
+}
+/*澶氫簯 澶ч儴鍒嗗浜戯紙鐧斤級 灞�閮ㄥ浜戯紙鐧斤級*/
+.sight-cont .w26{
+    background:url(/pad/map/static/img/climate/white/wicon26.png) ;
+    background-size:100%;
+}
+/*澶ч儴鍒嗗浜戯紙澶滐級 灞�閮ㄥ浜戯紙澶滐級*/
+.sight-cont .w27{
+    background:url(/pad/map/static/img/climate/white/wicon27.png) ;
+    background-size:100%;
+}
+/*闂风儹*/
+.sight-cont .w28{
+    background:url(/pad/map/static/img/climate/white/wicon28.png) ;
+    background-size:100%;
+}
+/*鎵矙*/
+.sight-cont .w29{
+    background:url(/pad/map/static/img/climate/white/wicon29.png) ;
+    background-size:100%;
+}
+/*鎵皹*/
+.sight-cont .w30{
+    background:url(/pad/map/static/img/climate/white/wicon30.png) ;
+    background-size:100%;
+}
+/*闆舵槦闆烽洦  灞�閮ㄩ浄闃甸洦  闆烽樀闆�*/
+.sight-cont .w31{
+    background:url(/pad/map/static/img/climate/white/wicon31.png) ;
+    background-size:100%;
+}
+/*闆�*/
+.sight-cont .w32{
+    background:url(/pad/map/static/img/climate/white/wicon32.png) ;
+    background-size:100%;
+}
+/*闂數*/
+.sight-cont .w33{
+    background:url(/pad/map/static/img/climate/white/wicon33.png) ;
+    background-size:100%;
+}
+/*鍐�*/
+.sight-cont .w34{
+    background:url(/pad/map/static/img/climate/white/wicon34.png) ;
+    background-size:100%;
+}
+/*寮洪浄鏆�  鐗瑰己闆锋毚*/
+.sight-cont .w35{
+    background:url(/pad/map/static/img/climate/white/wicon35.png) ;
+    background-size:100%;
+}
+/*闆锋毚  灞�閮ㄥ湴鍖烘�ч浄鏆�*/
+.sight-cont .w36{
+    background:url(/pad/map/static/img/climate/white/wicon36.png) ;
+    background-size:100%;
+}
+/*澶ч*/
+.sight-cont .w37{
+    background:url(/pad/map/static/img/climate/white/wicon37.png) ;
+    background-size:100%;
+}
+/*椋撻*/
+.sight-cont .w38{
+    background:url(/pad/map/static/img/climate/white/wicon38.png) ;
+    background-size:100%;
+}
+/*鐑甫椋庢毚*/
+.sight-cont .w39{
+    background:url(/pad/map/static/img/climate/white/wicon39.png) ;
+    background-size:100%;
+}
+/*榫欏嵎椋�*/
+.sight-cont .w40{
+    background:url(/pad/map/static/img/climate/white/wicon40.png) ;
+    background-size:100%;
+}
+/*椋�  椋庢毚*/
+.sight-cont .w41{
+    background:url(/pad/map/static/img/climate/white/wicon41.png) ;
+    background-size:100%;
+}
+/*寮烘矙灏樻毚*/
+.sight-cont .w42{
+    background:url(/pad/map/static/img/climate/white/wicon42.png) ;
+    background-size:100%;
+}
+/*娌欏皹鏆�*/
+.sight-cont .w43{
+    background:url(/pad/map/static/img/climate/white/wicon43.png) ;
+    background-size:100%;
+}
+/*闆�*/
+.sight-cont .w44{
+    background:url(/pad/map/static/img/climate/white/wicon44.png) ;
+    background-size:100%;
+}
+/*---------------------------------------map icon end*/
+.m5{margin:5px;}
+.departAir, .arriveAir{
+    width:28px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    top:4px;
+    margin-right: 5px;
+}
+.departAir:before{
+    content: "\e171";
+    font-family: 'Glyphicons Halflings'!important;
+    font-size: 27px;
+    color: #fff;
+}
+.arriveAir:before{
+    content: "\e094";
+    font-family: 'Glyphicons Halflings'!important;
+    font-size: 27px;
+    color: #fff;
+}
+.city-info{
+    box-shadow: 0 0 10px rgba(14,5,10,.7);
+    font-size: 15px;
+    border-radius: 5px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    background: #fff;
+    width: 137px;
+    margin-left: 20px;
+    top: 3px;
+}
+.city-info:before{
+    display: block;
+    content: "";
+    width:20px;
+    height: 20px;
+    border-left: 10px solid transparent;
+    border-right:10px solid #fff;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    position: absolute;
+    top: 8px;
+    left: -15px;
+}
+.status-mark{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    /*bottom: -5px;*/
+    left: -22px;
+    z-index: 100;
+}
+/*鍒拌揪 icon*/
+.arr-mark{
+    background:url(/pad/map/static/img/arr-mark.png) no-repeat;
+    background-size:90%;
+}
+/*涓浆 icon*/
+.ex-mark{
+    background:url(/pad/map/static/img/ex-mark.png) no-repeat -1px 0;
+    background-size:90%;
+}
+/*涓浆 涓嶅彲鎷栧姩 icon*/
+.ex-unmove-mark{
+    background:url(/pad/map/static/img/ex-unmove-mark.png) no-repeat -3px 0;
+    background-size:90%;
+}
+/*鍑哄彂 涓嶅彲鎷栧姩 icon*/
+.dep-unmove-mark{
+    background:url(/pad/map/static/img/dep-unmove-mark.png) no-repeat -2px 0;
+    background-size:90%;
+}
+/*杈惧埌 涓嶅彲鎷栧姩 icon*/
+.arr-unmove-mark{
+    background:url(/pad/map/static/img/arr-unmove-mark.png) no-repeat -3px 0;
+    background-size:90%;
+}
+/*鍑哄彂 icon*/
+.dep-mark{
+    background:url(/pad/map/static/img/dep-mark.png) no-repeat;
+    background-size:90%;
+}
+.flight-info{
+    box-shadow: 0 0 10px rgba(14,5,10,.7);
+    background-size: 100%;
+    border-radius: 5px;
+    background:#fff;
+}
+.w240{
+    width:240px;
+}
+.w278{
+    width:278px;
+}
+.flight-bg{
+    background: url(/pad/map/static/img/flight-bg.png) top left no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    right: -19px;
+    top: 8px;
+}
+.flight-info .top-info{
+    padding:5px;
+    border:1px solid #9bb7ec;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 8px 10px 1px 10px;
+    color:#86a9ec;
+    font-size: 14px;
+}
+.flight-info a{
+    color:#9bb7ec;
+}
+.flight-info .bottom-info{
+    padding:5px 5px 0 10px;
+}
+.flight-info .f-row-info{
+    padding:5px 5px 15px 10px;
+}
+.flight-info .p-bg{
+    background:url(/pad/map/static/img/air.png) center no-repeat;
+    background-size: 100%;
+    width:35px;
+    margin:0 2px;
+    position: relative;
+    top:-2px;
+}
+.mutip-flight-list .p-bg{
+    background:url(/pad/map/static/img/air.png) center no-repeat;
+    background-size: 100%;
+    width:55px;
+    margin:0 10px;
+    position: relative;
+    bottom:16px;
+}
+.mutip-flight-list .ex-bg{
+    background:url(../img/ex-icon.png) center no-repeat;
+    background-size: 100%;
+}
+.t30{top:30px!important;}
+.ce1525{
+    color:#ce1525;
+}
+.btm-9bb7ec{border-bottom:1px dashed #9bb7ec;}
+.a-position{
+    position: relative;
+    top:15px;
+}
+.lowest-price{
+    background:url(/pad/map/static/img/low-icon.png) no-repeat;
+    background-size: 100%;
+    width:45px;
+    height: 20px;
+    position: relative    left: 15px;
+}
+.go-back-cont{
+    padding:3px;
+    border-radius: 3px;
+    border:1px solid #fd8d2c;
+    width:22px;
+    font-size: 14px;
+    color:#fd8d2c;
+    margin-right: 10px;
+    margin-top:5px;
+}
+.h173{
+    height: 173px;
+}
+.map-error-pop{
+    position: fixed;
+    top:40%;
+    left:40%;
+    box-shadow:1px 1px 5px rgba(0,0,0,.4);
+}
+.map-cbox{
+    height: 21px;
+    position: relative;
+    top: 2px;
+}
+.checkbox-uact{
+    background: url(/pad/map/static/img/inputBg.png) 0px -46px no-repeat;
+}
+.checkbox-act{
+    background: url(/pad/map/static/img/inputBg.png) 0px -69px no-repeat!important;
+}
+.map-mark-wrap{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.4);
+    width:50px;
+}
+.map-mark-wrap a.mark-style{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+.map-mark-wrap a.mark-arrow{
+    background: url(/pad/map/static/img/map-arrow.png) no-repeat center;
+    background-size:50%;
+}
+.map-mark-wrap a.btm{
+    border-bottom: 1px solid #eee;
+}
+.map-mark-wrap a.left{
+    border-left: 1px solid #eee;
+}
+.map-mark-wrap a.right{
+    border-right: 1px solid #eee;
+}
+.map-mark-wrap a.top{
+    border-top: 1px solid #eee;
+}
+.map-mark-wrap a.mark-arrow:hover,.map-mark-wrap a.mark-narrow:hover,.map-mark-wrap a.mark-enlarge:hover{
+    background-color:#f1f1f1;
+}
+.map-mark-wrap a.mark-arrow:first-child,.map-mark-wrap a.mark-arrow:last-child,.map-mark-wrap a.mark-narrow{
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+}
+.map-mark-wrap a.mark-enlarge{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
+}
+.map-mark-wrap .mark-narrow{
+    background:url(/pad/map/static/img/narrow.png) no-repeat center;
+    background-size:50%;
+}
+.map-mark-wrap .mark-enlarge{
+    background:url(/pad/map/static/img/enlarge.png) no-repeat center;
+    background-size:50%;
+}
+.go-border{
+    border:1px solid #fd8d2c;
+    border-radius: 5px;
+    padding:0 5px;
+    color:#fd8d2c;
+}
+.zhida-border{
+    border:1px solid #8145e5;
+    border-radius: 5px;
+    padding:0 5px;
+    color:#8145e5;
+}
+.zhongzhuan-border{
+    border:1px solid #88be07;
+    border-radius: 5px;
+    padding:0 5px;
+    color:#88be07;
+}
+.map-close{
+    width:20px;
+    height: 20px;
+    background:url(/pad/map/static/img/map_close.png) no-repeat center;
+    background-size:100%;
+    display:inline-block;
+}
+.flight-r{
+    width:63%;
+    margin-right: 10px;
+}
+.map-more{
+    border-top:1px solid #9bb7ec;
+    padding:7px 10px 5px 10px;
+}
+.f-row-info span i:first-child{
+    height: 18px;
+    max-width: 65px;
+    overflow: hidden;
+}
+.map-icon-tip{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.map-icon-tip .tip-trigger{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background:url(/pad/map/static/img/map-icon-bg.png) no-repeat;
+    background-size: 100%;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+}
+.map-icon-tip .icon-container{
+    position: absolute;
+    right: 60px;
+    bottom: -23px;
+    width:623px;
+    height: 253px;
+    padding:10px;
+    border-radius: 5px;
+    background:#fff;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+}
+.map-icon-tip .icon-container:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-right:20px solid transparent;
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-left: 20px solid #fff;
+    display: block;
+    position: absolute;
+    right: -34px;
+    bottom: 25px;
+}
+/*map end*/
+/*娑堣垂瀵嗙爜 start*/
+.consume-success-Pop {
+    width: 350px;
+    height: 147px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -175px;
+    z-index: 3000;
+}
+/*娑堣垂瀵嗙爜 end*/
+/*涓浆鑱旂▼ start*/
+.transfer-icon{
+    width:20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    line-height: 18px;
+    border-radius:50%;
+    background:#9bb7ec;
+    color: #fff;
+    font-size: 14px;
+    margin:auto;
+}
+.transfer-time{
+    position: absolute;
+    top: 36px;
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+    width: 110px;
+    left: -42px;
+}
+.transfer-mark{
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background: #9bb7ec;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.transfer-f-no{
+    top:34px!important;
+}
+.stand-by{
+    top:68px!important;
+}
+.transfer-info .transfer-line{
+    border-bottom: 1px dashed #999;
+    width: 98%;
+    margin: auto;
+    position: relative;
+    top:6px;
+}
+.transfer-info .transfer-text{
+    margin: auto;
+    position: relative;
+    top: 10px;
+    z-index: 5;
+    background: #fff;
+    padding:0 10px;
+}
+.transfer-bottom{
+    background: url(../img/lboxBg.png) center top repeat-y;
+    margin-left: -5px;
+    margin-top: -1px;
+}
+.transfer-info{
+    background: url(../img/lboxBg.png) center top repeat-y;
+    margin-left: -4px;
+    margin-top: -1px;
+    height: 35px;
+    text-align: center;
+}
+.vb-line{vertical-align: baseline!important;}
+.order-detail .bg-pic{
+    background: url(../img/air3.png) no-repeat center 33px;
+    background-size: 50%;
+    height: 70px;
+}
+.btd_none{border-bottom: none!important;}
+.order-transfer-info{padding:0 10px;text-align:center;border-left:1px solid #c2c2c2;border-right:1px solid #c2c2c2;margin-bottom:0;}
+.order-transfer-info .split-line{
+    height: 1px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px dashed #999;
+    position: relative;
+    top:10px;
+}
+.order-transfer-info .text{
+    position: relative;
+    padding:0 10px;
+    background:#fff;
+}
+.cabin-rule{
+    width: 500px;
+    top: 50%;
+    display: none;
+    z-index: 4;
+    left: 50%;
+    background: #fff;
+}
+.way-mark{
+    width:0;
+    height: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    border-top:25px solid #9bb7ec;
+    border-left: 25px solid #9bb7ec;
+    border-bottom: 25px solid transparent;
+    border-right:25px solid transparent;
+}
+.mark-text{
+    position: absolute;
+    top: -19px;
+    left: -26px;
+    color: #fff;
+    font-size: 13px;
+}
+.order-list .title-up:after{
+    content: "";
+    display: block;
+    border-top: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+.order-list .title-down:after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+/*涓浆鑱旂▼ end*/
+.logo {
+    background-image: url(/pad/map/static/img/logo.png);
+    width: 210px;
+    height: 33px;
+    display: inline-block;
+    margin-right: 20px;
+    left:35px;
+    top:35px;
+    position: absolute;
+}
+
+.logo a{ display: block; width: 100%;height:33px; text-indent: -200px}

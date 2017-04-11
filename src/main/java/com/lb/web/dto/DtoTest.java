@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.lb.web.dto;
 
 import java.io.Serializable;

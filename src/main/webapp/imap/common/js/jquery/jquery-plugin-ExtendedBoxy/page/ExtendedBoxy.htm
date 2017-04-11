@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Boxy扩展</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link rel="stylesheet" href="../css/common.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/Selector.js"></script>
+    
+
+    <script type="text/javascript">
+        $(function() {
+            $("#ask").click(function() {
+                Boxy.ask("你感觉怎么样?", ["好极了", "还好", "不太好"], function(val) {
+                    alert("你选择的是: " + val);
+                }, { title: "这是一个问题……" });
+                return false;
+            });
+            $("#alert").click(function() {
+                Boxy.alert("文件未找到", null, { title: "提示信息" });
+                return false;
+            });
+            $("#confirm").click(function() {
+                Boxy.confirm("请确认:", function() { alert("已经确认!"); }, { title: "提示信息" });
+                return false;
+            });
+            $("#industry").click(function() {
+                Boxy.industry("1,2", function(val) {
+                    alert("你选择的是: " + val);
+                }, { title: "行业类别选择器" });
+                return false;
+            });
+            $("#city").click(function() {
+                Boxy.area("d1,d2", "1,724", function(val) {
+                    alert("你选择的是: " + val);
+                }, { title: "工作地区选择器" });
+                return false;
+            });
+            $("#job").click(function() {
+                Boxy.job("s1,b2", "23", function(val) {
+                    alert("你选择的是: " + val);
+                }, { title: "职位类别选择器" });
+                return false;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <ul style="margin:100px;font:12px/16px; font-family:Arial;">
+            <li>提问 - <a href="javascript:void(0);" id="ask">Boxy.ask()</a> - 用户定义的选项，选择项传递给回调函数</li>
+            <li>弹出 - <a href="javascript:void(0);" id="alert">Boxy.alert()</a> - 回调函数总是不被调用</li>
+            <li>确认 - <a href="javascript:void(0);" id="confirm">Boxy.confirm()</a> - 仅当用户选择了“确认”时回调函数会被调用</li>
+            <li>行业选择器 - <a href="javascript:void(0);" id="industry">Boxy.industry()</a> - 仅当用户选择了“确认”时回调函数会被调用</li>
+            <li>工作地区选择器 - <a href="javascript:void(0);" id="city">Boxy.city()</a> - 仅当用户选择了“确认”时回调函数会被调用</li>
+            <li>职位类别选择器 - <a href="javascript:void(0);" id="job">Boxy.job()</a> - 仅当用户选择了“确认”时回调函数会被调用</li>
+        </ul>
+    </div>
+    <div style=" height:500px;">
+    
+    </div>
+</body>
+</html>

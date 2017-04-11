@@ -1,0 +1,330 @@
+.flight-navigable {
+	width: 390px;
+	height: 300px;
+	background-color: white;
+	position: absolute;
+	right: 10px;
+	top: 60px;
+	-moz-border-radius: 5px; /* Gecko browsers */
+	-webkit-border-radius: 5px; /* Webkit browsers */
+	border-radius: 5px; /* W3C syntax */
+	font-size: 16px;
+	background:url('../../../images/map/shoppingmap/flightBg.png');
+	box-shadow: -1px 0 1px #9bb7ec, /*左边阴影*/;
+	color:white;
+	
+	
+}
+
+.flight-navigable-orig {
+	margin-top: 30px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.flight-navigable-orig-name {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.flight-navigable-orig-code {
+	width: 40%;
+	float: left;
+	margin-top: 10px;
+}
+
+.flight-navigable-orig-search {
+	width: 30%;
+	float: left;
+	margin-left: 10px;
+}
+
+.flight-navigable-dest {
+	margin-top: 20px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.flight-navigable-dest-name {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.flight-navigable-dest-code {
+	width: 40%;
+	float: left;
+	margin-top: 10px;
+}
+
+.flight-navigable-dest-search {
+	width: 30%;
+	float: left;
+	margin-left: 10px;
+}
+
+.orig-date {
+	margin-top: 30px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.orig-left {
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+
+.search-date {
+	width: 40%;
+	float: left;
+	margin-top: 10px;
+}
+
+
+.msg {
+	display:none;
+	line-height: 37px;
+	height: 37px;
+	font-size: 16px;
+	text-align:center;
+	color: red;
+}
+.flight-navigable-btn{
+	width:130px;
+	height: 45px;
+}
+
+/* .turnSearch{
+	top:5px;
+	right:20px;
+	position:absolute;
+} */
+
+ .map-head{
+	width: 390px;
+	height: 60px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	-moz-border-radius: 5px; /*Gecko browsers*/
+	-webkit-border-radius: 5px; /*Webkit browsers*/
+	border-radius: 5px; /*W3C syntax*/
+	font-size: 16px;
+	background:url('../../../images/map/shoppingmap/flightBg.png');
+	box-shadow: -1px 0 1px #9bb7ec, 左边阴影;
+	color:#AFC9FB;
+	line-height: 40px;
+}
+.flight-show{
+	width: 390px;
+	background: url('../../../images/map/dragging/airport-bg.png');
+	background-repeat:no-repeat;
+	height:170px;
+	margin-bottom: 15px;
+	color:white;
+	font-size: 18px;
+} 
+.flight-show-dep{
+  position: absolute;
+  right: 245px;
+  top: 180px;
+  width:100px;
+  text-align: center;
+	}
+.flight-show-arr{
+    position: absolute;
+  	right: 45px;
+  	top: 180px;
+  	width:100px;
+  	text-align: center;
+	}
+
+.flight-show-dep-small{
+	margin-top:5px;
+	font-size: 14px;
+	color:#AFC9FB;
+}
+.flight-show-arr-small{
+	margin-top:5px;
+	font-size: 14px;
+	color:#AFC9FB;
+}
+.msgModal{
+	position: absolute;
+	left:300px;
+	top:250px;
+	height:100px;
+	width:300px;
+	background-color: white;
+	display: none;
+	font-size: 16px;
+	-moz-border-radius: 5px; /* Gecko browsers */
+	-webkit-border-radius: 5px; /* Webkit browsers */
+	border-radius: 5px; /* W3C syntax */
+	box-shadow: -1px 0 1px black, /*左边阴影*/;
+	border:1px solid #DEDDDB;
+}
+.errorImage{
+	background:  url('../../../images/map/dragging/error.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height: 45px;
+	margin-left: 125px;
+}
+.errorMsg{
+	margin-left: 30px;
+}
+ .closeBox{
+	width:40px;
+	height: 35px;
+	position: absolute;
+	right:-10px;
+	top:2px;
+} 
+.glyphicon-remove{
+ font-size: 25px;
+ }
+
+ label {
+ font-size:16px;
+ background-color: white;
+ position: absolute;
+ -moz-border-radius: 5px; 
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+/* // border: solid thin #DBDADB ; */
+} 
+.msg{
+	background-color:white;
+	border-bottom: solid thin #DBDADB ;
+	border-top: solid thin #DBDADB ;
+}
+#depart-date{
+	font-size: 14px;
+}
+#return-date{
+	font-size: 14px;
+}
+.selectAirport{
+	background-color: white;
+	width:157px;
+	margin-left:78px;
+	color:#757575;
+	z-index: 11;
+	position: fixed;
+	margin-top: 45px;
+	height:100px;
+	overflow:auto; 
+	display: none;
+}
+.airs{
+	text-align: left;
+	font-size: 14px;
+	height:30px;
+	line-height: 30px;
+	cursor:pointer;
+}
+.bkblue{
+	background-color: #96d2ff;
+}
+.left-control{
+	position: absolute;
+	left:10px;
+	top:10px;
+	z-index: 100;
+	display: none;
+}
+
+.left-control-top ,.left-control-down ,.left-control-left,.left-control-right{
+	width:50px;
+	height:50px;
+    background: url(/imap/common/images/map/drawing/map-arrow.png) no-repeat center;
+    display: inline-block;
+    display: block;
+    background-color: white;
+    background-size:50%;
+   }
+.left-control-top:hover ,.left-control-down:hover ,.left-control-left:hover,.left-control-right:hover,.left-control-zoomIn:hover,.left-control-zoomOut:hover{
+    background-color:#f1f1f1;
+ }
+.control-border-top-left-radius {
+	border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+}
+.control-border-bottom-left-radius {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
+
+}
+.control-border-right-radius {
+    border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.left-control-zoomIn{
+	margin-top:40px;
+	width:50px;
+	height:50px;
+    background:url(/imap/common/images/map/drawing/narrow.png) no-repeat center;
+    display: inline-block;
+    display: block;
+    background-color: white;
+    background-size:50%;
+
+}
+.left-control-zoomOut{
+	width:50px;
+	height:50px;
+    background:url(/imap/common/images/map/drawing/enlarge.png) no-repeat center;
+    display: inline-block;
+    display: block;
+    background-color: white;
+    background-size:50%;
+}
+.rz90{-webkit-transform:rotateZ(90deg);-moz-transform:rotateZ(90deg);-ms-transform:rotateZ(90deg);-o-transform:rotateZ(90deg);transform:rotateZ(90deg);}
+.rz_90{-webkit-transform:rotateZ(-90deg);-moz-transform:rotateZ(-90deg);-ms-transform:rotateZ(-90deg);-o-transform:rotateZ(-90deg);transform:rotateZ(-90deg);}
+.rz180{-webkit-transform:rotateZ(180deg);-moz-transform:rotateZ(180deg);-ms-transform:rotateZ(180deg);-o-transform:rotateZ(180deg);transform:rotateZ(180deg);}
+.rz_180{-webkit-transform:rotateZ(-180deg);-moz-transform:rotateZ(-180deg);-ms-transform:rotateZ(-180deg);-o-transform:rotateZ(-180deg);transform:rotateZ(-180deg);}
+.depart-date-fixed{
+	background-color: white;
+	position: fixed;
+	z-index: 999999;
+	font-size: 18px;
+	margin-left: 25px;
+	width:130px;
+	margin-top: 3px;
+} 
+.return-date-fixed{
+	background-color: white;
+	position: fixed;
+	z-index: 999999;
+	font-size: 18px;
+	margin-left: 220px;
+	width:130px;
+	margin-top: 3px;
+	display: none;
+} 
+.search-date-fixed{
+	background-color: white;
+	position: fixed;
+	z-index: 10;
+	font-size: 16px;
+	margin-left: 80px;
+	width:123px;
+	margin-top: 13px;
+	color: black;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 5px;
+	
+}
+.flight-show-mid{
+  position: absolute;
+  right: 168px;
+  top: 170px;
+  width:55px;
+  height:55px;
+  text-align: center;
+}

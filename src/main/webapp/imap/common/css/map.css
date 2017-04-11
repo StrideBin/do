@@ -1,0 +1,67 @@
+/*! */
+body{background-color:#c8c8c8;}
+.china {background-image:url(/pad/map/static/img/china.jpg); width:1024px; height:768px; }
+.world {background-image:url(/pad/map/static/img/world.jpg); width:1024px; height:768px;}
+.topshadow{ background:url(/pad/map/static/img/topshadow.png); height:253px; width:100%;pointer-events:none}
+.tab{bottom:30px;right:30px;}
+.toHome {}
+
+
+.area{ display:block; width:30px;height:30px; margin-left:-15px;margin-top:-15px; position:absolute; background:rgba(0,0,0,0.2);}
+.selectArea {background:url(/pad/map/static/img/point-c.png) no-repeat center center; margin-top:10px}
+
+.shanghai{top:365px;left:419px}
+.nanjing{top:355px;left:356px}
+.xian{top:297px;left:143px}
+.hangzhou{top:402px;left:383px}
+.nanchang{top:439px;left:295px}
+.changsha{top:449px;left:228px}
+
+#pop{}
+
+.popbox{width:245px; height:244px; background:#fff; border-radius:5px;box-shadow:0 3px 3px #ccc}
+.popbox:before {
+    border: solid;
+    border-color: #fff transparent;
+    border-width: 10px;
+    border-bottom: 10px solid transparent;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 45%;
+    position: absolute;
+    z-index: 99;
+}
+
+.pop-img{width:245px; height:133px; border-top-left-radius:5px; border-top-right-radius:5px; overflow:hidden;}
+.img-shanghai {background-image:url(/pad/map/static/img/shanghai.jpg); }
+.popbtm {height:40px;line-height:40px; margin:10px; border-radius:5px; background:#0f3d92; color:#fff; display:block; text-align:center}
+.popbtm:hover{color:#fff; text-decoration:none;}
+#city {color:#fff;left:10px; bottom:10px}
+#weather {color:#999;right:10px; bottom:10px}
+
+.popFromBox,.popToBox{height:30px;line-height:30px; border-radius:15px; background:#fff;padding:0 10px;box-shadow:0 2px 4px #999; display:none}
+
+
+#tomap {}
+#tomap .pagelb {width:181px;height:72px;text-align:right;margin-left:-109px; border-radius:5px;}
+#tomap .pagelb img{margin-right:-9px; margin-top:-6px}
+
+#maptohome .pagelb {width:181px;height:72px;text-align:right;margin-left:-109px; border-radius:5px;}
+#maptohome .pagelb img{margin-right:-9px; margin-top:-6px}
+
+#mappage {width:100%;height:100%}
+#mappage .pageChild{background: #C8C8C8 url(/pad/map/static/img/china.jpg) no-repeat scroll 0 top;background-size:auto 100%;position: relative;width:100%;height:100%}
+#mappage .pageChild .chinaMap canvas{position:absolute;left:0;right:0;}
+
+.points{position:absolute;text-align:center;font-size:10px;z-index:5;cursor:pointer;}
+.points i{display:block;width:8px;height:8px;background:#1691D8;border:2px solid #fff;border-radius:30px;margin:0 auto;}
+.startP,.endP{position:absolute;left:0;top:0;display:none;z-index:6;cursor:pointer;}
+.startP>div,.endP>div{position:relative;}
+.startP{left:20px;top:20px;}
+.startP span,.endP span{display:block;width:34px;height:42px;z-index:2;position:relative;}
+.startP span{background:url(/pad/map/static/img/plane_start.png) no-repeat scroll 0 0;background-size: 100% 100%;}
+.endP span{background:url(/pad/map/static/img/plane_end.png) no-repeat scroll 0 0;background-size: 100% 100%;}
+.startP i,.endP i{position:absolute;left:-2px;bottom:-25px;z-index:1;display: block;width: 40px;height: 40px;}
+.startP i{background:url(/pad/map/static/img/plane_start_p.png) no-repeat scroll 0 0;background-size: 100% 100%;}
+.endP i{background:url(/pad/map/static/img/plane_end_p.png) no-repeat scroll 0 0;background-size: 100% 100%;}

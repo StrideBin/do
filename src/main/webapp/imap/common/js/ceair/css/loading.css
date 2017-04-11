@@ -1,0 +1,62 @@
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+#loading .load_bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-color: #000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+
+#loading .cmsg{
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	font-size:14px;
+	margin-top:260px;
+	text-align:center;
+	color:#fff;
+}
+
+#loading .cmsg #load_percent{
+	margin-left:5px;
+}
+
+#loading .lpb{
+	margin:16px auto 0;
+	width:434px;
+	height:30px;
+	background: url(../images/loading_bg.png) center no-repeat;
+}
+
+#loading .lpb .lpt{
+	width:100%;
+	height:100%;
+}
+
+#loading .lpb .lpt .lptl{
+	width:13px;
+	height:100%;
+	background: url(../images/loading_bar_left.png) top left no-repeat;
+	float:left;
+}
+
+#loading .lpb .lpt .lptc{
+	height:100%;
+	background: url(../images/loading_bar_center.png) top left repeat-x;
+	float:left;
+}
+
+#loading .lpb .lpt .lptr{
+	width:13px;
+	height:100%;
+	background: url(../images/loading_bar_right.png) top left no-repeat;
+	float:left;
+}

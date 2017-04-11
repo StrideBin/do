@@ -1,0 +1,18 @@
+#map-stage,#map_container{width:100%;height:100%}
+#map_widgets{position: absolute; left: 0; top:0; z-index: 1001}
+.map-widget{ position: absolute; z-index: 10001;  top:0; display: none}
+.canvas-container{ position: absolute; left:0; top:0; background-color: rgba(0,0,0,.5)}
+.citymarker_near{ width: 15px; height:15px; background-image: url("../../common/map/dragging/city-mark.png"); background-size:15px 15px}
+.citymarker_nomorl{ width: 15px; height:15px; background-image: url("../../common/map/dragging/c-mark-on.png"); background-size:15px 15px}
+.citymarker_hover{ width: 15px; height:15px; background-image: url("../../common/map/dragging/c-mark-un.png"); background-size:15px 15px}
+.citymarker_nearflag{ width: 15px; height:15px; background-image: url("../../common/map/dragging/city-mark.png"); background-size:15px 15px}
+.citymarker_lab{display: none;  margin-top: -65px; margin-left: -30px}
+#cmap_dashedline{position: absolute; z-index: -1; margin: 0; padding: 0}
+.ico_plane{width: 20px; height:20px; background-image: url('../../common/map/dragging/air-loadding.gif'); background-size: 20px 20px}
+.ico_plane_done{ background-image: url('../img/g-icon.png')}
+.ico_plane_d{background-image: url('../../common/map/dragging/gb-loadding.gif');}
+.ico_plane_d_done{background-image: url('../img/gb-icon.png');}
+.map_masks{ width: 100%; height: 100%; background:rgba(0,0,0,0); position: absolute; left:0; top:0}
+
+
+

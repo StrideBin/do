@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Microsoft Yahei,Arial,Helvetica,sans-serif;
+}
+
+.box-set:before, .box-set:after {
+	content: "";
+	display: table;
+}
+
+.box-set:after {
+	clear: both;
+}
+
+.box-set {
+	*zoom: 1;
+}
+
+.box {
+	float:left;
+}
+
+.box-right {
+	float:right;
+}
+
+div {
+	/* outline: 1px solid red; */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.display-none {
+	display:none;
+}
+
+.display-block {
+	display:block;
+}
