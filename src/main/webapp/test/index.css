@@ -1,0 +1,13 @@
+body {
+	     background-image: url('./bg.jpg'); 
+	     text-align:center;
+	     background-repeat:no-repeat;
+ 		 background-position:top;
+ 	     background-attachment:fixed;
+         background-size:100% 100%;
+}
+#logindiv{
+	position: absolute; left:50%; top:50%; margin-left:-120px; margin-top:-100px;
+}
+#canvas{display: inline-block;}
+fieldset{border:0px}
