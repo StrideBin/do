@@ -1,4 +1,10 @@
 eclipse.preferences.version=1
+encoding//src/main/java/python/script/backoff.py=utf-8
+encoding//src/main/java/python/script/backups.py=utf-8
+encoding//src/main/java/python/script/install.py=utf-8
+encoding//src/main/java/python/script/modify.py=utf-8
+encoding//src/main/java/python/script/update.py=utf-8
+encoding//src/main/java/python/script/user_conf.py=utf-8
 encoding//src/main/resources/log4j.properties=UTF-8
 encoding//src/main/webapp/test/canvas.js=UTF-8
 encoding//src/test/java/org/common/test/quartz/MyJob.java=UTF-8

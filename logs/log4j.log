@@ -5,4 +5,12 @@
   2017-04-05 15:33:37 [ INFO] - io.netty.handler.logging.LoggingHandler -AbstractInternalLogger.java(150) -[id: 0xaa4343f4] BIND: 0.0.0.0/0.0.0.0:8992
   2017-04-05 15:33:37 [ INFO] - io.netty.handler.logging.LoggingHandler -AbstractInternalLogger.java(150) -[id: 0xaa4343f4, L:/0:0:0:0:0:0:0:0:8992] ACTIVE
   2017-04-05 15:33:46 [ INFO] - io.netty.handler.logging.LoggingHandler -AbstractInternalLogger.java(150) -[id: 0xaa4343f4, L:/0:0:0:0:0:0:0:0:8992] RECEIVED: [id: 0x6636909f, L:/127.0.0.1:8992 - R:/127.0.0.1:62445]
+  2017-04-21 14:28:03 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(439) -I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+  2017-04-21 14:28:03 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(445) -Retrying request
+  2017-04-21 14:30:33 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(439) -I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+  2017-04-21 14:30:33 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(445) -Retrying request
+  2017-04-21 14:30:54 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(439) -I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+  2017-04-21 14:30:54 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(445) -Retrying request
+  2017-04-21 14:31:15 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(439) -I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+  2017-04-21 14:31:15 [ INFO] - org.apache.commons.httpclient.HttpMethodDirector -HttpMethodDirector.java(445) -Retrying request
   
