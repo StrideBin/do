@@ -11,14 +11,83 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="<%=basePath%>/common/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<%=basePath%>/common/css/index.css" />
+
 <script type="text/javascript" src="<%=basePath%>/common/js/jquery.min.js"></script>
 <script type="text/javascript" src="<%=basePath%>/common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=basePath%>/common/js/canvas.js"></script>
-
+<script type="text/javascript" src="<%=basePath%>/common/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="<%=basePath%>/stridebin/css/index.css" />
+<script type="text/javascript" src="<%=basePath%>/stridebin/js/index.js"></script>
 <title>首页</title>
 </head>
 <body>
-<div style="position:absolute;z-index:1"><canvas id="canvas" style="width:97%;height:97%" width="1920" height="974"></canvas></div>
+
+<div style="position:absolute;z-index:1">
+<canvas id="canvas" style="width:97%;height:97%" width="1920" height="974"></canvas>
+<div class="cd-user-modal is-visible">
+	<div class="cd-user-modal-container">
+		<ul class="cd-switcher">
+			<li><a href="javascript:;" class="selected">用户登录</a></li>
+			<li><a href="javascript:;">注册新用户</a></li>
+		</ul>
+
+		<div id="cd-login" class="is-selected"> <!-- 登录表单 -->
+			<div class="cd-form">
+				<p class="fieldset">
+					<label class="image-replace cd-username" for="signin-username">用户名</label>
+					<input class="full-width has-padding has-border" id="signin-username" name=username type="text" placeholder="输入用户名">
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signin-password">密码</label>
+					<input class="full-width has-padding has-border" id="signin-password" name="password" type="password"  placeholder="输入密码">
+				</p>
+				
+				<p class="fieldset">
+					<input type="checkbox" id="remember-me" checked>
+					<label for="remember-me">记住登录状态</label>
+				</p>
+ 				<input type="hidden" name="action" value="signin">
+				<p class="fieldset">
+					<input class="full-width2" type="submit" value="登 录">
+				</p>
+        <div class="err-msg"></div>
+			</div>
+		</div>
+
+		<div id="cd-signup"> <!-- 注册表单 -->
+			<div class="cd-form">
+				<p class="fieldset">
+					<label class="image-replace cd-username" for="signup-username">用户名</label>
+					<input class="full-width has-padding has-border" id="signup-username" name="name" type="text" placeholder="输入用户名">
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-email" for="signup-email">邮箱</label>
+					<input class="full-width has-padding has-border" name="email" id="signup-email" type="email" placeholder="输入mail">
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signup-password">密码</label>
+					<input class="full-width has-padding has-border" id="signup-password" name="password" type="password"  placeholder="输入密码">
+				</p>
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signup-password">重复输入密码</label>
+					<input class="full-width has-padding has-border" id="signup-password" name="password2" type="password"  placeholder="重复输入密码">
+				</p>
+				
+				<input type="hidden" name="action" value="signup">
+				<p class="fieldset">
+					<input class="full-width2" type="submit" value="注册新用户">
+				</p>
+				<div class="err-msg"></div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+</div> 
+
 </body>
 <script>
 			//定义画布宽高和生成点的个数
