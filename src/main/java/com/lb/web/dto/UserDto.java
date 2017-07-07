@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * 创建人: lb 日期:2017年4月10日 下午5:22:45
  */
-public class DtoTest implements Serializable {
+public class UserDto implements Serializable {
 	/**
 	 * 
 	 */
