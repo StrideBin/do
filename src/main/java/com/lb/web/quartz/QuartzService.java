@@ -1,4 +1,4 @@
-package com.lb.web.service.job;
+package com.lb.web.quartz;
 
 import org.springframework.stereotype.Component;
 
