@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+			    http://www.springframework.org/schema/data/mongo
+         		http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
+
+	<context:annotation-config />
+
+		
+	<!-- 定时发邮件任务 -->
+    <bean id="sendEmailJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="quartzService"/>
+        </property>
+		<property name="targetMethod" value="sendEmail" />
+	</bean>
+	
+	<!--  定时发邮件任务触发器 -->
+	<bean id="sendEmailTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+		    <ref bean="sendEmailJobDetail"/>
+	    </property>
+		<property name="cronExpression">
+		    <value>* * * * * ? *</value>
+		</property>
+	</bean>
+
+    <!-- 调度器 -->	
+	<bean  class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+ 		        <!--  定时发邮件任务触发器 -->
+ 		        <ref bean="sendEmailTrigger"/>  
+ 			</list>
+		</property>
+	</bean>
+</beans>

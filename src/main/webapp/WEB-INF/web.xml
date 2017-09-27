@@ -4,12 +4,30 @@
   <welcome-file-list>
     <welcome-file>/index.jsp</welcome-file>
   </welcome-file-list>
+	<!--    1.启动一个WEB项目的时候,容器(如:Tomcat)会去读它的配置文件web.xml.
+			     读两个节点: <listener></listener> 和 <context-param></context-param>
+			2.紧接着,容器创建一个ServletContext(上下文),这个WEB项目所有部分都将共享这个上下文.
+			3.容器将<context-param></context-param>转化为键值对,并交给ServletContext.
+			4.容器创建<listener></listener>中的类实例,即创建监听. -->
+  	<!-- Spring Config -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:spring/applicationContext-db.xml
+			,classpath:spring/applicationContext-mvc.xml
+			,classpath:spring/applicationContext-quartz.xml
+		</param-value>
+	</context-param>
+	<!-- 创建context监听  加载context-param-->
+  	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
   <servlet>
     <servlet-name>SpringMVC</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:spring-mvc.xml,classpath:spring-mybatis.xml</param-value>
+      <param-value>classpath:spring/applicationContext-mvc.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>

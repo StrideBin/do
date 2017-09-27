@@ -25,13 +25,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div style="position:absolute;z-index:1">
 <canvas id="canvas" style="width:97%;height:97%" width="1920" height="974"></canvas>
 <div class="cd-user-modal is-visible">
-	<div class="cd-user-modal-container">
+	<!-- <div class="cd-user-modal-container">
 		<ul class="cd-switcher">
 			<li><a href="javascript:;" class="selected">用户登录</a></li>
 			<li><a href="javascript:;">注册新用户</a></li>
 		</ul>
 
-		<div id="cd-login" class="is-selected"> <!-- 登录表单 -->
+		<div id="cd-login" class="is-selected"> 登录表单
 			<div class="cd-form">
 				<p class="fieldset">
 					<label class="image-replace cd-username" for="signin-username">用户名</label>
@@ -55,7 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 		</div>
 
-		<div id="cd-signup"> <!-- 注册表单 -->
+		<div id="cd-signup"> 注册表单
 			<div class="cd-form">
 				<p class="fieldset">
 					<label class="image-replace cd-username" for="signup-username">用户名</label>
@@ -83,7 +83,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="err-msg"></div>
 			</div>
 
-		</div>
+		</div> -->
 	</div>
 	</div>
 </div> 
