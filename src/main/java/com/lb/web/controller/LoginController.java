@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.lb.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.lb.web.dto.UserDto;
-import com.lb.web.service.impl.LoginServiceImpl;
+import com.lb.web.service.login.LoginServiceImpl;
 
 /**
  * 创建人: lb 日期:2017年4月6日 下午2:57:07

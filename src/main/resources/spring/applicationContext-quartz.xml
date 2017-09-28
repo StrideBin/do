@@ -27,7 +27,7 @@
 		    <ref bean="sendEmailJobDetail"/>
 	    </property>
 		<property name="cronExpression">
-		    <value>* * * * * ? *</value>
+		    <value>0 * * * * ? *</value>
 		</property>
 	</bean>
 

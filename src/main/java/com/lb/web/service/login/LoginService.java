@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.lb.web.service;
+package com.lb.web.service.login;
 
 import com.lb.web.dto.UserDto;
 
