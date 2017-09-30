@@ -159,16 +159,4 @@ public class EmailUtils {
 		return bool;
 	}
 	
-	
-	/**
-	 * @param args
-	 * @throws MessagingException
-	 * @throws AddressException
-	 */
-	public static void main(String[] args) throws AddressException,
-			MessagingException {
-		sendMail(
-				"213",
-				"<table border='1px' cellspacing='0' cellpadding='0' ><tr><td>错误出现的次数</td><td>错误具体类型</td></tr>","it_tanshijie@ceair.com");
-	}
 }

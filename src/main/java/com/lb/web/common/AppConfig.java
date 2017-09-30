@@ -33,8 +33,13 @@ public class AppConfig {
 		}
 	}
 	
-	//public static final int DOCALL_DAYS = AppConfig.getInt("DOCALL_DAYS");    // 清除日志的天数
-	
-	/** */
 	public static final String RECEIVE_ADDRESS = AppConfig.get("RECEIVE_ADDRESS");
+	
+	public static final String OD_31_ADDRESS = AppConfig.get("OD_31_ADDRESS");
+	public static final String OD_31_USR = AppConfig.get("OD_31_USR");
+	public static final String OD_31_PWD = AppConfig.get("OD_31_PWD");
+	
+	
+	
+	
 }

@@ -82,7 +82,7 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>4.3.7.RELEASE</version>
 		</dependency>
-	
+
 		<dependency>
 			<!-- spring 和junit整合 -->
 			<groupId>org.springframework</groupId>
@@ -150,6 +150,14 @@
 			<version>1.5.0-b01</version>
 		</dependency>
 		<!-- mail end -->
+		
+		<!-- 连接ssh服务器 并执行相关命令 -->
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.54</version>
+		</dependency>
+
 		<!-- apache common -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
