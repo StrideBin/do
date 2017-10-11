@@ -88,8 +88,35 @@ public class ShellUtils {
 		}
 	}
 
+	
+	/**
+	 * 过滤并执行重命名 (move)
+	 * @param cs
+	 * @param fname
+	 */
+	public  void choose(ChannelSftp cs,String fname){
+		String line=null;
+		InputStream in=null;
+		BufferedReader br=null;
+		try {
+			in=cs.get(fname);
+			br=new BufferedReader(new InputStreamReader(in));
+			while((line=br.readLine())!=null) {
+				if(line.contains("hello")){
+					br.close();
+					cs.rename(fname, target_dirname+fname);
+					break;
+				}
+			 }
+
+		}catch (Exception e) {
+			e.printStackTrace();
+		} 
+	}
+	
 	/**
 	 * 把original_dirname路径下的txt文件 含有hello的挪到target_dirname
+	 * (源文件都在test下 把符合条件的移到test1)
 	 */
 	@Test
 	@SuppressWarnings("unchecked")
@@ -126,30 +153,6 @@ public class ShellUtils {
 		}
 		
 		
-	}
-	/**
-	 * 过滤并执行重命名 (move)
-	 * @param cs
-	 * @param fname
-	 */
-	public  void choose(ChannelSftp cs,String fname){
-		String line=null;
-		InputStream in=null;
-		BufferedReader br=null;
-		try {
-			in=cs.get(fname);
-			br=new BufferedReader(new InputStreamReader(in));
-			while((line=br.readLine())!=null) {
-				if(line.contains("hello")){
-					br.close();
-					cs.rename(fname, target_dirname+fname);
-					break;
-				}
-			 }
-
-		}catch (Exception e) {
-			e.printStackTrace();
-		} 
 	}
 	
 }
